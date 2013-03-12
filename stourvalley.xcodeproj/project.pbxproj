@@ -18,6 +18,12 @@
 		7F1F62B016EE4DBA00018974 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F1F62AF16EE4DBA00018974 /* Default-568h@2x.png */; };
 		7F1F62B316EE4DBA00018974 /* SVViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F1F62B216EE4DBA00018974 /* SVViewController.m */; };
 		7F1F62B616EE4DBA00018974 /* SVViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F1F62B416EE4DBA00018974 /* SVViewController.xib */; };
+		7F1F62FE16EF668300018974 /* SVAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F1F62FC16EF668300018974 /* SVAboutViewController.m */; };
+		7F1F62FF16EF668300018974 /* SVAboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F1F62FD16EF668300018974 /* SVAboutViewController.xib */; };
+		7F1F630516EF66BF00018974 /* SVMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F1F630316EF66BF00018974 /* SVMapViewController.m */; };
+		7F1F630616EF66BF00018974 /* SVMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F1F630416EF66BF00018974 /* SVMapViewController.xib */; };
+		7F1F630A16EF66CB00018974 /* SVEventsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F1F630816EF66CB00018974 /* SVEventsViewController.m */; };
+		7F1F630B16EF66CB00018974 /* SVEventsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F1F630916EF66CB00018974 /* SVEventsViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +43,15 @@
 		7F1F62B116EE4DBA00018974 /* SVViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SVViewController.h; sourceTree = "<group>"; };
 		7F1F62B216EE4DBA00018974 /* SVViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SVViewController.m; sourceTree = "<group>"; };
 		7F1F62B516EE4DBA00018974 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SVViewController.xib; sourceTree = "<group>"; };
+		7F1F62FB16EF668300018974 /* SVAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVAboutViewController.h; sourceTree = "<group>"; };
+		7F1F62FC16EF668300018974 /* SVAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVAboutViewController.m; sourceTree = "<group>"; };
+		7F1F62FD16EF668300018974 /* SVAboutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SVAboutViewController.xib; sourceTree = "<group>"; };
+		7F1F630216EF66BF00018974 /* SVMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVMapViewController.h; sourceTree = "<group>"; };
+		7F1F630316EF66BF00018974 /* SVMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVMapViewController.m; sourceTree = "<group>"; };
+		7F1F630416EF66BF00018974 /* SVMapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SVMapViewController.xib; sourceTree = "<group>"; };
+		7F1F630716EF66CB00018974 /* SVEventsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVEventsViewController.h; sourceTree = "<group>"; };
+		7F1F630816EF66CB00018974 /* SVEventsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVEventsViewController.m; sourceTree = "<group>"; };
+		7F1F630916EF66CB00018974 /* SVEventsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SVEventsViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +98,9 @@
 		7F1F629F16EE4DBA00018974 /* stourvalley */ = {
 			isa = PBXGroup;
 			children = (
+				7F1F630116EF66A900018974 /* Map */,
+				7F1F630016EF66A300018974 /* Events */,
+				7F1F62FA16EF667200018974 /* About */,
 				7F1F62A816EE4DBA00018974 /* SVAppDelegate.h */,
 				7F1F62A916EE4DBA00018974 /* SVAppDelegate.m */,
 				7F1F62B116EE4DBA00018974 /* SVViewController.h */,
@@ -105,6 +123,36 @@
 				7F1F62AF16EE4DBA00018974 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7F1F62FA16EF667200018974 /* About */ = {
+			isa = PBXGroup;
+			children = (
+				7F1F62FB16EF668300018974 /* SVAboutViewController.h */,
+				7F1F62FC16EF668300018974 /* SVAboutViewController.m */,
+				7F1F62FD16EF668300018974 /* SVAboutViewController.xib */,
+			);
+			name = About;
+			sourceTree = "<group>";
+		};
+		7F1F630016EF66A300018974 /* Events */ = {
+			isa = PBXGroup;
+			children = (
+				7F1F630716EF66CB00018974 /* SVEventsViewController.h */,
+				7F1F630816EF66CB00018974 /* SVEventsViewController.m */,
+				7F1F630916EF66CB00018974 /* SVEventsViewController.xib */,
+			);
+			name = Events;
+			sourceTree = "<group>";
+		};
+		7F1F630116EF66A900018974 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				7F1F630216EF66BF00018974 /* SVMapViewController.h */,
+				7F1F630316EF66BF00018974 /* SVMapViewController.m */,
+				7F1F630416EF66BF00018974 /* SVMapViewController.xib */,
+			);
+			name = Map;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,6 +212,9 @@
 				7F1F62AE16EE4DBA00018974 /* Default@2x.png in Resources */,
 				7F1F62B016EE4DBA00018974 /* Default-568h@2x.png in Resources */,
 				7F1F62B616EE4DBA00018974 /* SVViewController.xib in Resources */,
+				7F1F62FF16EF668300018974 /* SVAboutViewController.xib in Resources */,
+				7F1F630616EF66BF00018974 /* SVMapViewController.xib in Resources */,
+				7F1F630B16EF66CB00018974 /* SVEventsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,6 +228,9 @@
 				7F1F62A616EE4DBA00018974 /* main.m in Sources */,
 				7F1F62AA16EE4DBA00018974 /* SVAppDelegate.m in Sources */,
 				7F1F62B316EE4DBA00018974 /* SVViewController.m in Sources */,
+				7F1F62FE16EF668300018974 /* SVAboutViewController.m in Sources */,
+				7F1F630516EF66BF00018974 /* SVMapViewController.m in Sources */,
+				7F1F630A16EF66CB00018974 /* SVEventsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +353,7 @@
 				7F1F62BB16EE4DBA00018974 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
