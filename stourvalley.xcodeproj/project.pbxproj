@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		25EAD3C28D1E40998AEB958C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FDFB84CA4F32455DA4A4A79D /* libPods.a */; };
 		7F1F629A16EE4DBA00018974 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F1F629916EE4DBA00018974 /* UIKit.framework */; };
 		7F1F629C16EE4DBA00018974 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F1F629B16EE4DBA00018974 /* Foundation.framework */; };
 		7F1F629E16EE4DBA00018974 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F1F629D16EE4DBA00018974 /* CoreGraphics.framework */; };
@@ -16,14 +17,17 @@
 		7F1F62AC16EE4DBA00018974 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F1F62AB16EE4DBA00018974 /* Default.png */; };
 		7F1F62AE16EE4DBA00018974 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F1F62AD16EE4DBA00018974 /* Default@2x.png */; };
 		7F1F62B016EE4DBA00018974 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F1F62AF16EE4DBA00018974 /* Default-568h@2x.png */; };
-		7F1F62B316EE4DBA00018974 /* SVViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F1F62B216EE4DBA00018974 /* SVViewController.m */; };
-		7F1F62B616EE4DBA00018974 /* SVViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F1F62B416EE4DBA00018974 /* SVViewController.xib */; };
 		7F1F62FE16EF668300018974 /* SVAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F1F62FC16EF668300018974 /* SVAboutViewController.m */; };
 		7F1F62FF16EF668300018974 /* SVAboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F1F62FD16EF668300018974 /* SVAboutViewController.xib */; };
 		7F1F630516EF66BF00018974 /* SVMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F1F630316EF66BF00018974 /* SVMapViewController.m */; };
 		7F1F630616EF66BF00018974 /* SVMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F1F630416EF66BF00018974 /* SVMapViewController.xib */; };
 		7F1F630A16EF66CB00018974 /* SVEventsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F1F630816EF66CB00018974 /* SVEventsViewController.m */; };
 		7F1F630B16EF66CB00018974 /* SVEventsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F1F630916EF66CB00018974 /* SVEventsViewController.xib */; };
+		7F9C50FD16F7210500BAD5F7 /* SVMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F9C50FB16F7210500BAD5F7 /* SVMenuViewController.m */; };
+		7F9C510716F725B800BAD5F7 /* list.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F9C510516F725B800BAD5F7 /* list.png */; };
+		7F9C510816F725B800BAD5F7 /* list@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F9C510616F725B800BAD5F7 /* list@2x.png */; };
+		7F9C510B16F7269000BAD5F7 /* MenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F9C510A16F7269000BAD5F7 /* MenuCell.xib */; };
+		7F9C510E16F7275D00BAD5F7 /* SVMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F9C510D16F7275D00BAD5F7 /* SVMenuCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,9 +44,6 @@
 		7F1F62AB16EE4DBA00018974 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		7F1F62AD16EE4DBA00018974 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		7F1F62AF16EE4DBA00018974 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		7F1F62B116EE4DBA00018974 /* SVViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SVViewController.h; sourceTree = "<group>"; };
-		7F1F62B216EE4DBA00018974 /* SVViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SVViewController.m; sourceTree = "<group>"; };
-		7F1F62B516EE4DBA00018974 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SVViewController.xib; sourceTree = "<group>"; };
 		7F1F62FB16EF668300018974 /* SVAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVAboutViewController.h; sourceTree = "<group>"; };
 		7F1F62FC16EF668300018974 /* SVAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVAboutViewController.m; sourceTree = "<group>"; };
 		7F1F62FD16EF668300018974 /* SVAboutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SVAboutViewController.xib; sourceTree = "<group>"; };
@@ -52,6 +53,15 @@
 		7F1F630716EF66CB00018974 /* SVEventsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVEventsViewController.h; sourceTree = "<group>"; };
 		7F1F630816EF66CB00018974 /* SVEventsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVEventsViewController.m; sourceTree = "<group>"; };
 		7F1F630916EF66CB00018974 /* SVEventsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SVEventsViewController.xib; sourceTree = "<group>"; };
+		7F9C50FA16F7210500BAD5F7 /* SVMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVMenuViewController.h; sourceTree = "<group>"; };
+		7F9C50FB16F7210500BAD5F7 /* SVMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVMenuViewController.m; sourceTree = "<group>"; };
+		7F9C510516F725B800BAD5F7 /* list.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = list.png; sourceTree = "<group>"; };
+		7F9C510616F725B800BAD5F7 /* list@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "list@2x.png"; sourceTree = "<group>"; };
+		7F9C510A16F7269000BAD5F7 /* MenuCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuCell.xib; sourceTree = "<group>"; };
+		7F9C510C16F7275D00BAD5F7 /* SVMenuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVMenuCell.h; sourceTree = "<group>"; };
+		7F9C510D16F7275D00BAD5F7 /* SVMenuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVMenuCell.m; sourceTree = "<group>"; };
+		FD017F1215EF4B949E75B2F9 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		FDFB84CA4F32455DA4A4A79D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +72,7 @@
 				7F1F629A16EE4DBA00018974 /* UIKit.framework in Frameworks */,
 				7F1F629C16EE4DBA00018974 /* Foundation.framework in Frameworks */,
 				7F1F629E16EE4DBA00018974 /* CoreGraphics.framework in Frameworks */,
+				25EAD3C28D1E40998AEB958C /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +85,7 @@
 				7F1F629F16EE4DBA00018974 /* stourvalley */,
 				7F1F629816EE4DBA00018974 /* Frameworks */,
 				7F1F629716EE4DBA00018974 /* Products */,
+				FD017F1215EF4B949E75B2F9 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -91,6 +103,7 @@
 				7F1F629916EE4DBA00018974 /* UIKit.framework */,
 				7F1F629B16EE4DBA00018974 /* Foundation.framework */,
 				7F1F629D16EE4DBA00018974 /* CoreGraphics.framework */,
+				FDFB84CA4F32455DA4A4A79D /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -98,14 +111,13 @@
 		7F1F629F16EE4DBA00018974 /* stourvalley */ = {
 			isa = PBXGroup;
 			children = (
+				7F9C510416F725AD00BAD5F7 /* Images */,
+				7F9C50F916F720E300BAD5F7 /* Menu */,
 				7F1F630116EF66A900018974 /* Map */,
 				7F1F630016EF66A300018974 /* Events */,
 				7F1F62FA16EF667200018974 /* About */,
 				7F1F62A816EE4DBA00018974 /* SVAppDelegate.h */,
 				7F1F62A916EE4DBA00018974 /* SVAppDelegate.m */,
-				7F1F62B116EE4DBA00018974 /* SVViewController.h */,
-				7F1F62B216EE4DBA00018974 /* SVViewController.m */,
-				7F1F62B416EE4DBA00018974 /* SVViewController.xib */,
 				7F1F62A016EE4DBA00018974 /* Supporting Files */,
 			);
 			path = stourvalley;
@@ -155,6 +167,35 @@
 			name = Map;
 			sourceTree = "<group>";
 		};
+		7F9C50F916F720E300BAD5F7 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				7F9C510916F7267A00BAD5F7 /* Cells */,
+				7F9C50FA16F7210500BAD5F7 /* SVMenuViewController.h */,
+				7F9C50FB16F7210500BAD5F7 /* SVMenuViewController.m */,
+			);
+			name = Menu;
+			sourceTree = "<group>";
+		};
+		7F9C510416F725AD00BAD5F7 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				7F9C510516F725B800BAD5F7 /* list.png */,
+				7F9C510616F725B800BAD5F7 /* list@2x.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		7F9C510916F7267A00BAD5F7 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				7F9C510A16F7269000BAD5F7 /* MenuCell.xib */,
+				7F9C510C16F7275D00BAD5F7 /* SVMenuCell.h */,
+				7F9C510D16F7275D00BAD5F7 /* SVMenuCell.m */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -165,6 +206,7 @@
 				7F1F629216EE4DBA00018974 /* Sources */,
 				7F1F629316EE4DBA00018974 /* Frameworks */,
 				7F1F629416EE4DBA00018974 /* Resources */,
+				3D788F464B1A409D866C943E /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -211,14 +253,33 @@
 				7F1F62AC16EE4DBA00018974 /* Default.png in Resources */,
 				7F1F62AE16EE4DBA00018974 /* Default@2x.png in Resources */,
 				7F1F62B016EE4DBA00018974 /* Default-568h@2x.png in Resources */,
-				7F1F62B616EE4DBA00018974 /* SVViewController.xib in Resources */,
 				7F1F62FF16EF668300018974 /* SVAboutViewController.xib in Resources */,
 				7F1F630616EF66BF00018974 /* SVMapViewController.xib in Resources */,
 				7F1F630B16EF66CB00018974 /* SVEventsViewController.xib in Resources */,
+				7F9C510716F725B800BAD5F7 /* list.png in Resources */,
+				7F9C510816F725B800BAD5F7 /* list@2x.png in Resources */,
+				7F9C510B16F7269000BAD5F7 /* MenuCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3D788F464B1A409D866C943E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7F1F629216EE4DBA00018974 /* Sources */ = {
@@ -227,10 +288,11 @@
 			files = (
 				7F1F62A616EE4DBA00018974 /* main.m in Sources */,
 				7F1F62AA16EE4DBA00018974 /* SVAppDelegate.m in Sources */,
-				7F1F62B316EE4DBA00018974 /* SVViewController.m in Sources */,
 				7F1F62FE16EF668300018974 /* SVAboutViewController.m in Sources */,
 				7F1F630516EF66BF00018974 /* SVMapViewController.m in Sources */,
 				7F1F630A16EF66CB00018974 /* SVEventsViewController.m in Sources */,
+				7F9C50FD16F7210500BAD5F7 /* SVMenuViewController.m in Sources */,
+				7F9C510E16F7275D00BAD5F7 /* SVMenuCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,14 +305,6 @@
 				7F1F62A316EE4DBA00018974 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		7F1F62B416EE4DBA00018974 /* SVViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7F1F62B516EE4DBA00018974 /* en */,
-			);
-			name = SVViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -314,6 +368,7 @@
 		};
 		7F1F62BA16EE4DBA00018974 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD017F1215EF4B949E75B2F9 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "stourvalley/stourvalley-Prefix.pch";
@@ -325,6 +380,7 @@
 		};
 		7F1F62BB16EE4DBA00018974 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD017F1215EF4B949E75B2F9 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "stourvalley/stourvalley-Prefix.pch";

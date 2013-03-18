@@ -8,16 +8,21 @@
 
 #import "SVAppDelegate.h"
 
-#import "SVViewController.h"
-
+#import "SVMapViewController.h"
+#import "SVMenuViewController.h"
+#import "NVSlideMenuController.h"
 @implementation SVAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    self.viewController = [[SVViewController alloc] initWithNibName:@"SVViewController" bundle:nil];
-    self.window.rootViewController = self.viewController;
+    
+    self.viewController = [[SVMapViewController alloc] initWithNibName:@"SVMapViewController" bundle:nil];
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:self.viewController];
+    SVMenuViewController *menuController = [[SVMenuViewController alloc] initWithNibName:@"SVMenuViewController" bundle:nil];
+    NVSlideMenuController *slideController = [[NVSlideMenuController alloc] initWithMenuViewController:menuController andContentViewController:navController];
+    self.window.rootViewController = slideController;
     [self.window makeKeyAndVisible];
     return YES;
 }

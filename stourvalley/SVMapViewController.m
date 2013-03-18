@@ -7,6 +7,7 @@
 //
 
 #import "SVMapViewController.h"
+#import "NVSlideMenuController.h"
 
 @interface SVMapViewController ()
 
@@ -23,10 +24,23 @@
     return self;
 }
 
+- (UIImage *)listImage {
+    return [UIImage imageNamed:@"list.png"];
+}
+
+- (UIBarButtonItem *)slideOutBarButton {
+    return [[UIBarButtonItem alloc] initWithImage:[self listImage]
+                                            style:UIBarButtonItemStyleBordered
+                                           target:self
+                                           action:@selector(slideOut:)];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    self.navigationItem.leftBarButtonItem = [self slideOutBarButton];
+
 }
 
 - (void)didReceiveMemoryWarning
@@ -34,5 +48,11 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+#pragma mark - Event handlers
+
+- (void)slideOut:(id)sender {
+    [self.slideMenuController toggleMenuAnimated:self];
+}
+
 
 @end
