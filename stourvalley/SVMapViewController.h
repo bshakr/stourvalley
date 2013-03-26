@@ -7,7 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MapKit/MapKit.h>
+#import <CoreLocation/CoreLocation.h>
+@interface SVMapViewController : UIViewController <CLLocationManagerDelegate, MKMapViewDelegate>
+{
+    CLLocationManager *locationManager;
+    IBOutlet MKMapView *worldView;
 
-@interface SVMapViewController : UIViewController
+}
+
+-(void) findLocation;
+-(void) foundLocation:(CLLocation *)loc;
+
 
 @end

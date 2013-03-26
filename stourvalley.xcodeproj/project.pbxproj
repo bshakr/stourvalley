@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		25EAD3C28D1E40998AEB958C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FDFB84CA4F32455DA4A4A79D /* libPods.a */; };
+		7F109E411700B6A6008C0048 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F109E401700B6A6008C0048 /* CoreData.framework */; };
+		7F109E441700B716008C0048 /* Stourvalley.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7F109E421700B716008C0048 /* Stourvalley.xcdatamodeld */; };
+		7F109E481700BFE7008C0048 /* SVArtist.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F109E471700BFE7008C0048 /* SVArtist.m */; };
+		7F109E4B1700C0B1008C0048 /* SVArtInstallation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F109E4A1700C0B1008C0048 /* SVArtInstallation.m */; };
 		7F1F629A16EE4DBA00018974 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F1F629916EE4DBA00018974 /* UIKit.framework */; };
 		7F1F629C16EE4DBA00018974 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F1F629B16EE4DBA00018974 /* Foundation.framework */; };
 		7F1F629E16EE4DBA00018974 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F1F629D16EE4DBA00018974 /* CoreGraphics.framework */; };
@@ -28,9 +32,17 @@
 		7F9C510816F725B800BAD5F7 /* list@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F9C510616F725B800BAD5F7 /* list@2x.png */; };
 		7F9C510B16F7269000BAD5F7 /* MenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F9C510A16F7269000BAD5F7 /* MenuCell.xib */; };
 		7F9C510E16F7275D00BAD5F7 /* SVMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F9C510D16F7275D00BAD5F7 /* SVMenuCell.m */; };
+		7F9C511016F74B6D00BAD5F7 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F9C510F16F74B6D00BAD5F7 /* MapKit.framework */; };
+		7F9C511216F7679B00BAD5F7 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F9C511116F7679B00BAD5F7 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7F109E401700B6A6008C0048 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		7F109E431700B716008C0048 /* Stourvalley.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Stourvalley.xcdatamodel; sourceTree = "<group>"; };
+		7F109E461700BFE7008C0048 /* SVArtist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVArtist.h; sourceTree = "<group>"; };
+		7F109E471700BFE7008C0048 /* SVArtist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVArtist.m; sourceTree = "<group>"; };
+		7F109E491700C0B1008C0048 /* SVArtInstallation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVArtInstallation.h; sourceTree = "<group>"; };
+		7F109E4A1700C0B1008C0048 /* SVArtInstallation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVArtInstallation.m; sourceTree = "<group>"; };
 		7F1F629616EE4DBA00018974 /* stourvalley.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = stourvalley.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F1F629916EE4DBA00018974 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		7F1F629B16EE4DBA00018974 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -60,6 +72,8 @@
 		7F9C510A16F7269000BAD5F7 /* MenuCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuCell.xib; sourceTree = "<group>"; };
 		7F9C510C16F7275D00BAD5F7 /* SVMenuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVMenuCell.h; sourceTree = "<group>"; };
 		7F9C510D16F7275D00BAD5F7 /* SVMenuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVMenuCell.m; sourceTree = "<group>"; };
+		7F9C510F16F74B6D00BAD5F7 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		7F9C511116F7679B00BAD5F7 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		FD017F1215EF4B949E75B2F9 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		FDFB84CA4F32455DA4A4A79D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -69,6 +83,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F109E411700B6A6008C0048 /* CoreData.framework in Frameworks */,
+				7F9C511216F7679B00BAD5F7 /* CoreLocation.framework in Frameworks */,
+				7F9C511016F74B6D00BAD5F7 /* MapKit.framework in Frameworks */,
 				7F1F629A16EE4DBA00018974 /* UIKit.framework in Frameworks */,
 				7F1F629C16EE4DBA00018974 /* Foundation.framework in Frameworks */,
 				7F1F629E16EE4DBA00018974 /* CoreGraphics.framework in Frameworks */,
@@ -79,9 +96,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7F109E451700BFBB008C0048 /* Model Class */ = {
+			isa = PBXGroup;
+			children = (
+				7F109E461700BFE7008C0048 /* SVArtist.h */,
+				7F109E471700BFE7008C0048 /* SVArtist.m */,
+				7F109E491700C0B1008C0048 /* SVArtInstallation.h */,
+				7F109E4A1700C0B1008C0048 /* SVArtInstallation.m */,
+			);
+			name = "Model Class";
+			sourceTree = "<group>";
+		};
 		7F1F628D16EE4DBA00018974 = {
 			isa = PBXGroup;
 			children = (
+				7F109E401700B6A6008C0048 /* CoreData.framework */,
 				7F1F629F16EE4DBA00018974 /* stourvalley */,
 				7F1F629816EE4DBA00018974 /* Frameworks */,
 				7F1F629716EE4DBA00018974 /* Products */,
@@ -100,6 +129,8 @@
 		7F1F629816EE4DBA00018974 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7F9C511116F7679B00BAD5F7 /* CoreLocation.framework */,
+				7F9C510F16F74B6D00BAD5F7 /* MapKit.framework */,
 				7F1F629916EE4DBA00018974 /* UIKit.framework */,
 				7F1F629B16EE4DBA00018974 /* Foundation.framework */,
 				7F1F629D16EE4DBA00018974 /* CoreGraphics.framework */,
@@ -111,6 +142,7 @@
 		7F1F629F16EE4DBA00018974 /* stourvalley */ = {
 			isa = PBXGroup;
 			children = (
+				7F109E451700BFBB008C0048 /* Model Class */,
 				7F9C510416F725AD00BAD5F7 /* Images */,
 				7F9C50F916F720E300BAD5F7 /* Menu */,
 				7F1F630116EF66A900018974 /* Map */,
@@ -133,6 +165,7 @@
 				7F1F62AB16EE4DBA00018974 /* Default.png */,
 				7F1F62AD16EE4DBA00018974 /* Default@2x.png */,
 				7F1F62AF16EE4DBA00018974 /* Default-568h@2x.png */,
+				7F109E421700B716008C0048 /* Stourvalley.xcdatamodeld */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -293,6 +326,9 @@
 				7F1F630A16EF66CB00018974 /* SVEventsViewController.m in Sources */,
 				7F9C50FD16F7210500BAD5F7 /* SVMenuViewController.m in Sources */,
 				7F9C510E16F7275D00BAD5F7 /* SVMenuCell.m in Sources */,
+				7F109E441700B716008C0048 /* Stourvalley.xcdatamodeld in Sources */,
+				7F109E481700BFE7008C0048 /* SVArtist.m in Sources */,
+				7F109E4B1700C0B1008C0048 /* SVArtInstallation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +448,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7F109E421700B716008C0048 /* Stourvalley.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7F109E431700B716008C0048 /* Stourvalley.xcdatamodel */,
+			);
+			currentVersion = 7F109E431700B716008C0048 /* Stourvalley.xcdatamodel */;
+			path = Stourvalley.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 7F1F628E16EE4DBA00018974 /* Project object */;
 }

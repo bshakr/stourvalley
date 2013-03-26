@@ -7,13 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "SVMapViewController.h"
 @class SVViewController;
 
 @interface SVAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
-@property (strong, nonatomic) SVViewController *viewController;
+@property (strong, nonatomic) SVMapViewController *viewController;
 
 @end
