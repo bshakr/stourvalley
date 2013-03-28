@@ -20,7 +20,7 @@
     
     self.viewController = [[SVMapViewController alloc] initWithNibName:@"SVMapViewController" bundle:nil];
     UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:self.viewController];
-    SVMenuViewController *menuController = [[SVMenuViewController alloc] initWithNibName:@"SVMenuViewController" bundle:nil];
+    SVMenuViewController *menuController = [[SVMenuViewController alloc]init];
     NVSlideMenuController *slideController = [[NVSlideMenuController alloc] initWithMenuViewController:menuController andContentViewController:navController];
     self.window.rootViewController = slideController;
     [self.window makeKeyAndVisible];
