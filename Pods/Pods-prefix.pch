@@ -2,6 +2,12 @@
 #import <UIKit/UIKit.h>
 #endif
 
+#import "Pods-header.h"
+
+
+
+
+
 //
 // Prefix header for all source files of the 'MapView' target in the 'MapView' project
 //
@@ -27,3 +33,5 @@
 #define WarnDeprecated() 
 #define NS_BLOCK_ASSERTIONS 1
 #endif
+
+
