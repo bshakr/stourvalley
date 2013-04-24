@@ -15,11 +15,15 @@
 {
     Event *event;
     Event *exhibition;
+    
 
 }
 
 @property (nonatomic, strong) NSManagedObjectModel *managedObjectModel;
 - (NSString *)documentsDirectory;
+- (NSArray *)eventArray;
+- (NSArray *) arrayForKey;
+- (NSArray *) arrayForObject;
 
 @end
 
@@ -140,32 +144,35 @@
 }
 
 -(void)creatEvents{
-   
+ 
     NSDateFormatter *df = [[NSDateFormatter alloc] init]; //date format - MONTH DD, YYYY
     [df setDateStyle:NSDateFormatterLongStyle];
 
-    NSArray *name = [NSArray arrayWithArray:[self arrayForNames]];
-    NSArray *st = [NSArray arrayWithArray:[self arrayForStartDates]];
-    NSArray *ed = [NSArray arrayWithArray:[self arrayForEndDates]];
-    NSArray *dt = [NSArray arrayWithArray:[self arrayForDetails]];
-    NSArray *img = [NSArray arrayWithArray:[self arrayForImages]];
-    NSArray *num = [NSArray arrayWithArray:[self arrayForCount]];
-    
-    
-    for (int i=0; i<name.count; i++) {
+    NSArray *array = [NSArray arrayWithArray:[self eventArray]];
+  
+    for (NSDictionary *obj in array) {
+        NSString *name = [obj objectForKey:@"eventName"];
+        NSDate *stdate = [df dateFromString:[obj objectForKey:@"startDate"]];
+        NSDate *endate = [df dateFromString:[obj objectForKey:@"endDate"]];
+        NSString *detail = [obj objectForKey:@"detail"];
+        NSString *tag = [obj objectForKey:@"imageTag"];
+        NSString *count = [obj objectForKey:@"imageCount"];
+        
+        // NSLog(@"This is installation %@ by %@ at %@, %@  - %@ : %@", name, artist, lat, lon, createDate, info);
         event = [NSEntityDescription insertNewObjectForEntityForName:@"Event" inManagedObjectContext:_mainContext];
-       // NSLog(@"Event %d is %@, %@", i, [name objectAtIndex:i], [st objectAtIndex:i]);
-        [event setEventName:[name objectAtIndex:i]];
-        NSDate *stdate = [df dateFromString:[st objectAtIndex:i]];
+        
+        [event setEventName:name];
         [event setStartDate:stdate];
-         NSDate *eddate = [df dateFromString:[ed objectAtIndex:i]];
-        [event setEndDate:eddate];
-        [event setDetail:[dt objectAtIndex:i]];
-        [event setImageTag:[img objectAtIndex:i]];
-        [event setImageCount:[num objectAtIndex:i]];
+        [event setEndDate:endate];
+        [event setDetail:detail];
+        [event setImageTag:tag];
+        [event setImageCount:[NSNumber numberWithInt:[count intValue]]];
         
         [_mainContext save:nil];
+
     }
+    NSLog(@"Created");
+    
     
 }
 
@@ -176,53 +183,44 @@
 }
 
 
-
-
 #pragma mark - DataSource methods
 
-- (NSArray *)arrayForNames;
+- (NSArray *) arrayForKey
 {
-    return [NSArray arrayWithObjects:@"Make believe : Holy Story", @"Exhibition in May", @"Exhibition in June",@"Exhibition in July",
-            @"Exhibition in August",nil];
-}
-- (NSArray *)arrayForStartDates;
-{
-    return [NSArray arrayWithObjects:@"April 27, 2013", @"May 01, 2013", @"June 01, 2013",@"July 01, 2013",
-                          @"August 01, 2013",nil];
-}
-- (NSArray *)arrayForEndDates;
-{
-    return  [NSArray arrayWithObjects:@"June 01, 2013", @"May 01, 2013", @"June 01, 2013",@"July 01, 2013",
-     @"August 01, 2013",nil];
-}
-- (NSArray *)arrayForDetails;
-{
-    return [NSArray arrayWithObjects:@"Launch & forest walk - 11 - 2 Drinks & speeches 12.30 Forest Walk, led by the artist - 2.45. This exhibition brings together the woven objects and selected den photographs, revealing some of the artist’s and the children’s shared impulses to construct in the forest environment.",
-            @"This is event 2",
-            @"This is event 3",
-            @"This is event 4",
-            @"This is event 5",nil];
+    return [NSArray arrayWithObjects:@"eventName", @"startDate", @"endDate",@"detail", @"imageTag",@"imageCount" , nil];
 }
 
-- (NSArray *)arrayForImages
+- (NSArray *)eventArray
 {
-    return [NSArray arrayWithObjects:@"event1", @"event2", @"event3",@"event4",
-            @"event5",nil];
+    
+    NSMutableArray *events = [[NSMutableArray alloc] init] ;
+    
+    NSArray *key = [NSArray arrayWithArray:[self arrayForKey]];
+    NSArray *arrayObj = [NSArray arrayWithArray:[self arrayForObject]];
+    
+    for (int i = 0; i < [[self arrayForObject] count]; i++) {
+        NSArray *obj = [NSArray arrayWithArray:[arrayObj objectAtIndex:i]];
+        
+        NSDictionary *dict = [NSDictionary dictionaryWithObjects:obj forKeys:key];
+        [events addObject:dict];
+    }
+    
+    
+    return events;
 }
 
-- (NSArray *)arrayForCount
+
+- (NSArray *) arrayForObject
 {
-    ///number of images for event default = 0
-    NSMutableArray *myNumbers = [NSMutableArray array];
-    [myNumbers addObject:[NSNumber numberWithInt:5]];
-    [myNumbers addObject:[NSNumber numberWithInt:3]];
-    [myNumbers addObject:[NSNumber numberWithInt:3]];
-    [myNumbers addObject:[NSNumber numberWithInt:4]];
-    [myNumbers addObject:[NSNumber numberWithInt:5]];
+    NSArray *event1 = [NSArray arrayWithObjects:@"Make believe : Holy Story", @"April 27, 2013", @"June 01, 2013",@"Launch & forest walk - 11 - 2 Drinks & speeches 12.30 Forest Walk, led by the artist - 2.45. This exhibition brings together the woven objects and selected den photographs, revealing some of the artist’s and the children’s shared impulses to construct in the forest environment.", @"event1",@"5" , nil];
+    
+    NSArray *event2 = [NSArray arrayWithObjects:@"Science Nature & Identity", @"November 10, 2012", @"December 15, 2012",@"This new exhibition marks the end of the four-year Down Time  project during which SVA aimed to address physical and mental wellbeing through a series of training and artist-led activities working with 320 vulnerable young people and those at risk of disengagement.", @"event2",@"4" , nil];
     
     
-    return myNumbers;
     
+    NSArray *all = [NSArray arrayWithObjects:event1, event2, nil];
+    
+    return [NSArray arrayWithArray:all] ;
 }
 
 //+ (id)insertInManagedObjectContext:(NSManagedObjectContext*)moc_ {

@@ -9,8 +9,15 @@
 #import "SVMapboxViewController.h"
 #import "Mapbox.h"
 #import "NVSlideMenuController.h"
+#import "ArtInstallationDataModel.h"
 
 @interface SVMapboxViewController ()
+{
+    NSManagedObjectContext *context;
+    NSArray *allInstallations;
+    
+}
+-(ArtInstallationDataModel *) shareInstallation;
 
 @end
 
@@ -30,6 +37,26 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
+    //Fetch data from datamodel
+    context = [[self shareInstallation ] mainContext];
+    
+    if(context){
+        NSLog(@"Context is ready to use");
+        allInstallations = [[self shareInstallation] loadAllArtInstallations];
+        if (allInstallations.count == 0) {
+            
+            NSLog(@"No data, allInstallations is nil");
+            [[self shareInstallation] createArtInstallations];
+            NSLog(@"Inserted installations");
+            allInstallations = [[self shareInstallation] loadAllArtInstallations];
+            NSLog(@"allInstalltion = %d", allInstallations.count);
+        }
+        
+    }else{
+        NSLog(@"Context == nil");
+    }
+    
+    
     self.navigationItem.leftBarButtonItem = [self slideOutBarButton];
     RMMapBoxSource *tileSource = [[RMMapBoxSource alloc] initWithMapID:@"bshaker.map-xahr0dzz"];
     CLLocationCoordinate2D initialLocation = CLLocationCoordinate2DMake(51.215499999999984, 0.8911000000000154);
@@ -47,6 +74,12 @@
 
     [self.view addSubview:mapView];
 }
+
+-(ArtInstallationDataModel *) shareInstallation
+{
+    return [ArtInstallationDataModel sharedDataModel];
+}
+
 
 - (void)didReceiveMemoryWarning
 {

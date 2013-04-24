@@ -30,12 +30,6 @@
 - (NSString *)storeFilename;
 - (NSString *)pathToLocalStore;
 
-- (NSArray *)arrayForNames;
-- (NSArray *)arrayForStartDates;
-- (NSArray *)arrayForEndDates;
-- (NSArray *)arrayForDetails;
-- (NSArray *)arrayForImages;
-- (NSArray *)arrayForCount;
 
 
 @end
