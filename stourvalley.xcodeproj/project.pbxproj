@@ -423,18 +423,18 @@
 		BAA1FD3F172604FF00E166B6 /* about-customCell */ = {
 			isa = PBXGroup;
 			children = (
-				BAD56D751728AB90002F5757 /* socailMenuCell.h */,
-				BAD56D761728AB90002F5757 /* socailMenuCell.m */,
-				BAD56D701728AB2C002F5757 /* DetailCell.h */,
-				BAD56D711728AB2C002F5757 /* DetailCell.m */,
-				BAD56D721728AB2C002F5757 /* DetailCell.xib */,
 				BAD56D6D1728A928002F5757 /* AboutLayout.h */,
 				BAD56D6E1728A928002F5757 /* AboutLayout.m */,
 				BAD56D6A1728A79A002F5757 /* AboutCollectionCell.h */,
 				BAD56D6B1728A79A002F5757 /* AboutCollectionCell.m */,
+				BAD56D701728AB2C002F5757 /* DetailCell.h */,
+				BAD56D711728AB2C002F5757 /* DetailCell.m */,
+				BAD56D721728AB2C002F5757 /* DetailCell.xib */,
 				BAD56D781728ADAE002F5757 /* AboutMenuCell.xib */,
 				BAD56D7A1728ADF5002F5757 /* AboutMenuCell.h */,
 				BAD56D7B1728ADF5002F5757 /* AboutMenuCell.m */,
+				BAD56D751728AB90002F5757 /* socailMenuCell.h */,
+				BAD56D761728AB90002F5757 /* socailMenuCell.m */,
 			);
 			name = "about-customCell";
 			sourceTree = "<group>";

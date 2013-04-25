@@ -64,7 +64,7 @@ static NSString * const AboutCellKind = @"AboutCell";
     self.block0 = CGSizeMake(self.collectionView.bounds.size.width, 191.0f);
     self.block1 = CGSizeMake(self.collectionView.bounds.size.width, 180.0f);
     self.block2 = CGSizeMake(self.collectionView.bounds.size.width, 66.0f);
-    self.block3 = CGSizeMake(self.collectionView.bounds.size.width/3, 66.0f);
+    self.block3 = CGSizeMake(floorf(self.collectionView.bounds.size.width/3), 66.0f);
     self.interItemSpacingY = 0.5f;
 
     NSMutableDictionary *newLayoutInfo = [NSMutableDictionary dictionary];
@@ -105,7 +105,7 @@ static NSString * const AboutCellKind = @"AboutCell";
 - (CGRect)frameForAlbumPhotoAtIndexPath:(NSIndexPath *)indexPath
 {  
     NSInteger row = indexPath.section / self.numberOfColumns;
-    NSInteger column = indexPath.section % self.numberOfColumns;
+    //NSInteger column = indexPath.section % self.numberOfColumns;
     NSInteger item = indexPath.item;
     CGFloat spacingX = self.collectionView.bounds.size.width -
     self.itemInsets.left -
@@ -117,24 +117,20 @@ static NSString * const AboutCellKind = @"AboutCell";
     CGFloat originX ;
     switch (item) {
         case 0:{
-            originX = floorf(self.itemInsets.left + (self.itemSize.width + spacingX) * column);
+            originX = 0.0f;
             break;
         }
         case 1:
         {
-            originX = floorf(self.itemInsets.left + (self.itemSize.width + spacingX) * column) + (self.itemSize.width + 0.5f);
+            originX = (self.itemInsets.left + self.itemSize.width + 1.0f);
             break;
         }
         case 2:
         {
-            originX = floorf(self.itemInsets.left + (self.itemSize.width + spacingX) * column) + ((self.itemSize.width *2) + 1.0f);
+            originX = (self.itemInsets.left + (self.itemSize.width *2) + 2.0f);
             break;
         }
-        default:
-        {
-            originX = floorf(self.itemInsets.left + (self.itemSize.width + spacingX) * column);
-            break;
-        }
+        
     }
    
     CGFloat originY;
@@ -143,26 +139,29 @@ static NSString * const AboutCellKind = @"AboutCell";
         case 0:
         {
             self.itemSize = self.block0;
-            originY = floor(self.itemInsets.top +
-                                    (self.itemSize.height + self.interItemSpacingY) * row);
+            //originY = floor(self.itemInsets.top + (self.itemSize.height + self.interItemSpacingY) * row);
+            originY = 0.0f;
             break;
         }
         case 1:
         {
             self.itemSize = self.block1;
             originY = floor(self.itemInsets.top + (self.block0.height + self.interItemSpacingY) * row) ;
+            NSLog(@"Origin y1 %f", originY);
             break;
         }
         case 2:
         {
             self.itemSize = self.block2;
             originY = (self.itemInsets.top + self.block0.height + self.block1.height + (self.interItemSpacingY));
+             NSLog(@"Origin y2 %f", originY);
             break;
         }
         case 3:
         {
             self.itemSize = self.block3;
-            originY = (self.itemInsets.top + self.block0.height + self.block1.height + self.block2.height + (self.interItemSpacingY*3));
+            originY = (self.itemInsets.top + self.block0.height + self.block1.height + self.block2.height + (self.interItemSpacingY*2));
+            NSLog(@"Origin y3 %f", originY);
             break;
         }
         
@@ -199,10 +198,9 @@ static NSString * const AboutCellKind = @"AboutCell";
 - (CGSize)collectionViewContentSize
 {
     NSInteger rowCount = [self.collectionView numberOfSections] / self.numberOfColumns;
-    // make sure we count another row if one is only partially filled
+    
     if ([self.collectionView numberOfSections] % self.numberOfColumns) rowCount++;
     
-   // CGFloat height = self.itemInsets.top + rowCount * self.itemSize.height + (rowCount - 1) * self.interItemSpacingY +
     CGFloat height = self.itemInsets.top + self.block0.height + self.block1.height + self.block2.height + self.block3.height
     + (self.interItemSpacingY *3)+ self.itemInsets.bottom;
     

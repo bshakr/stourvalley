@@ -1,13 +1,13 @@
 //
 //  imagesLayout.m
-//  CustomTableView
+//  
 //
 //  Created by Treechot Shompoonut on 20/04/2013.
 //  Copyright (c) 2013 Treechot Shompoonut. All rights reserved.
 //
 
 #import "imagesLayout.h"
-//#import "imagesAttrbutes.h"
+
 @implementation imagesLayout
 
 
@@ -23,9 +23,7 @@
         self.itemSize = (CGSize){180, 120}; //w,h
         self.sectionInset = UIEdgeInsetsMake(10, 35, 10, 10); //Top,left,bottom,right -> left,top,right, bottom
         self.minimumLineSpacing = 35.0;
-       // self.minimumInteritemSpacing = 200;
-        //self.headerReferenceSize = (CGSize){50, 50}; //for section header
-        
+       
     }
     return self;
 }

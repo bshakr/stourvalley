@@ -173,6 +173,12 @@ static NSString * const AboutCellIdentifier4 = @"socailMenuCell";
     
 }
 
+#pragma mark - UICollectionViewDelegate
+- (BOOL)collectionView:(UICollectionView *)collectionView shouldHighlightItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    return YES;
+}
+
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
     // TODO: Select Item
