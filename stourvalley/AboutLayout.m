@@ -82,7 +82,7 @@ static NSString * const AboutCellKind = @"AboutCell";
             UICollectionViewLayoutAttributes *itemAttributes =
             [UICollectionViewLayoutAttributes layoutAttributesForCellWithIndexPath:indexPath];
               
-            itemAttributes.frame = [self frameForAlbumPhotoAtIndexPath:indexPath];  //FrameSet for item /insection at indexPath
+            itemAttributes.frame = [self frameForItemAtIndexPath:indexPath];  //FrameSet for item /insection at indexPath
             
             cellLayoutInfo[indexPath] = itemAttributes;
            
@@ -102,7 +102,7 @@ static NSString * const AboutCellKind = @"AboutCell";
 
 #pragma mark - Private
 
-- (CGRect)frameForAlbumPhotoAtIndexPath:(NSIndexPath *)indexPath
+- (CGRect)frameForItemAtIndexPath:(NSIndexPath *)indexPath
 {  
     NSInteger row = indexPath.section / self.numberOfColumns;
     NSInteger item = indexPath.item;
