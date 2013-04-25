@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 @class AboutLayout;
+@class SVAWebView;
 
 
 @interface SVAboutViewController : UIViewController <UICollectionViewDelegate, UICollectionViewDataSource>
@@ -16,5 +17,6 @@
 //@property (nonatomic, strong) NSOperationQueue *thumbnailQueue;
 @property (strong, nonatomic) IBOutlet UICollectionView *collectionView;
 @property (nonatomic, weak) IBOutlet AboutLayout *aboutPageLayout;
+@property (strong, nonatomic) SVAWebView *webView;
 
 @end

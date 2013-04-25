@@ -78,6 +78,8 @@
 		BAD56D771728AB90002F5757 /* socailMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BAD56D761728AB90002F5757 /* socailMenuCell.m */; };
 		BAD56D791728ADAE002F5757 /* AboutMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAD56D781728ADAE002F5757 /* AboutMenuCell.xib */; };
 		BAD56D7C1728ADF6002F5757 /* AboutMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BAD56D7B1728ADF5002F5757 /* AboutMenuCell.m */; };
+		BAD56D851728CBB2002F5757 /* SVAWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = BAD56D831728CBB1002F5757 /* SVAWebView.m */; };
+		BAD56D861728CBB2002F5757 /* SVAWebView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAD56D841728CBB1002F5757 /* SVAWebView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -177,6 +179,9 @@
 		BAD56D781728ADAE002F5757 /* AboutMenuCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutMenuCell.xib; sourceTree = "<group>"; };
 		BAD56D7A1728ADF5002F5757 /* AboutMenuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutMenuCell.h; sourceTree = "<group>"; };
 		BAD56D7B1728ADF5002F5757 /* AboutMenuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutMenuCell.m; sourceTree = "<group>"; };
+		BAD56D821728CBB1002F5757 /* SVAWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVAWebView.h; sourceTree = "<group>"; };
+		BAD56D831728CBB1002F5757 /* SVAWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVAWebView.m; sourceTree = "<group>"; };
+		BAD56D841728CBB1002F5757 /* SVAWebView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SVAWebView.xib; sourceTree = "<group>"; };
 		FD017F1215EF4B949E75B2F9 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		FDFB84CA4F32455DA4A4A79D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -292,6 +297,9 @@
 				7F1F62FB16EF668300018974 /* SVAboutViewController.h */,
 				7F1F62FC16EF668300018974 /* SVAboutViewController.m */,
 				7F1F62FD16EF668300018974 /* SVAboutViewController.xib */,
+				BAD56D821728CBB1002F5757 /* SVAWebView.h */,
+				BAD56D831728CBB1002F5757 /* SVAWebView.m */,
+				BAD56D841728CBB1002F5757 /* SVAWebView.xib */,
 			);
 			name = About;
 			sourceTree = "<group>";
@@ -531,6 +539,7 @@
 				BAA1FD591726076900E166B6 /* phoneIcon@2x.png in Resources */,
 				BAD56D741728AB2C002F5757 /* DetailCell.xib in Resources */,
 				BAD56D791728ADAE002F5757 /* AboutMenuCell.xib in Resources */,
+				BAD56D861728CBB2002F5757 /* SVAWebView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -583,6 +592,7 @@
 				BAD56D731728AB2C002F5757 /* DetailCell.m in Sources */,
 				BAD56D771728AB90002F5757 /* socailMenuCell.m in Sources */,
 				BAD56D7C1728ADF6002F5757 /* AboutMenuCell.m in Sources */,
+				BAD56D851728CBB2002F5757 /* SVAWebView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

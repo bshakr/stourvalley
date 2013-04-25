@@ -14,6 +14,7 @@
 #import "socailMenuCell.h"
 #import "DetailCell.h"
 #import "AboutMenuCell.h"
+#import "SVAWebView.h"
 
 static NSString * const AboutCellIdentifier = @"AboutCell";
 static NSString * const AboutCellIdentifier2 = @"DetailCell";
@@ -33,6 +34,7 @@ static NSString * const AboutCellIdentifier4 = @"socailMenuCell";
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
+         self.title = NSLocalizedString(@"About SVA", @"About SVA");
     }
     return self;
 }
@@ -161,24 +163,74 @@ static NSString * const AboutCellIdentifier4 = @"socailMenuCell";
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
     // TODO: Select Item
+    
     switch (indexPath.section) {
         case 2:
-            NSLog(@"Click to phone");
+        {
+            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"tel://01233664987 "]];
             break;
+        }
         case 3:
             switch (indexPath.item) {
                 case 0:
+                {
                     NSLog(@"Click to facebook");
+                    
+                    NSURL *urlApp = [NSURL URLWithString: [NSString stringWithFormat:@"%@", @"fb://profile/100000745144271"]];
+                    if ([[UIApplication sharedApplication] canOpenURL:urlApp]){
+                        [[UIApplication sharedApplication] openURL:urlApp];
+                    }else{
+                        UIAlertView *noappAlert = [[UIAlertView alloc] initWithTitle:@"Facebook App Not Installed!" message:@"Please install the App on your iPhone." delegate:nil cancelButtonTitle:nil otherButtonTitles:@"Ok",nil];
+                        [noappAlert show];
+                        
+                        if (!self.webView) {
+                            self.webView = [[SVAWebView alloc] initWithNibName:@"SVAWebView" bundle:nil];
+                            
+                        }
+                        
+                        self.webView.address = @"https://www.facebook.com/stour.arts";
+                        self.webView.pagetitle = @"SVA Facebook";
+                        [self.navigationController pushViewController:self.webView animated:YES];
+                    }
                     break;
+                }
+                    
                 case 1:
-                    NSLog(@"Click to vemio");
-                    break;
+                    {   
+                        if (!self.webView) {
+                            self.webView = [[SVAWebView alloc] initWithNibName:@"SVAWebView" bundle:nil];
+                            
+                        }
+                        
+                        self.webView.address =  @"http://vimeo.com/user3494787";
+                        self.webView.pagetitle = @"SVA Vimeo";
+                        [self.navigationController pushViewController:self.webView animated:YES];
+                        
+                        
+                        break;
+                        
+                    }
                 case 2:
-                    NSLog(@"Click to soundclound");
-                    break;
+                    {
+                        NSLog(@"Click to soundclound");
+                        
+                        
+                        if (!self.webView) {
+                            self.webView = [[SVAWebView alloc] initWithNibName:@"WebViewViewController" bundle:nil];
+                            
+                        }
+                        
+                        self.webView.address =  @"https://soundcloud.com/sva";
+                        self.webView.pagetitle = @"SVA SoundCloud";
+                        [self.navigationController pushViewController:self.webView animated:YES];
+                        
+                        break;
+                    }
             }
             break;
     }
+    
+    
     
 }
 

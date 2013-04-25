@@ -65,11 +65,11 @@ enum {
             break;
 
         case MenuEventRow:
-            cell.label.text = @"Event";
+            cell.label.text = @"Events";
             break;
     
         case MenuAboutRow:
-            cell.label.text = @"About";
+            cell.label.text = @"About SVA";
             break;
             
         default:
