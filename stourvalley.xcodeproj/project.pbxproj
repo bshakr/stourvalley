@@ -36,6 +36,8 @@
 		7F9C510E16F7275D00BAD5F7 /* SVMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F9C510D16F7275D00BAD5F7 /* SVMenuCell.m */; };
 		7F9C511016F74B6D00BAD5F7 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F9C510F16F74B6D00BAD5F7 /* MapKit.framework */; };
 		7F9C511216F7679B00BAD5F7 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F9C511116F7679B00BAD5F7 /* CoreLocation.framework */; };
+		BA641F1117295AAD007F7E3A /* Artist.m in Sources */ = {isa = PBXBuildFile; fileRef = BA641F1017295AAD007F7E3A /* Artist.m */; };
+		BA641F1417295AF7007F7E3A /* ArtistDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BA641F1317295AF7007F7E3A /* ArtistDataModel.m */; };
 		BAA1FC501724B25800E166B6 /* EventDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA1FC4F1724B25800E166B6 /* EventDataModel.m */; };
 		BAA1FC531724BCA400E166B6 /* SVEventsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA1FC521724BCA400E166B6 /* SVEventsViewController.m */; };
 		BAA1FCAC1725D36E00E166B6 /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA1FCAB1725D36E00E166B6 /* Event.m */; };
@@ -121,6 +123,10 @@
 		7F9C510D16F7275D00BAD5F7 /* SVMenuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVMenuCell.m; sourceTree = "<group>"; };
 		7F9C510F16F74B6D00BAD5F7 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		7F9C511116F7679B00BAD5F7 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		BA641F0F17295AAD007F7E3A /* Artist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Artist.h; sourceTree = "<group>"; };
+		BA641F1017295AAD007F7E3A /* Artist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Artist.m; sourceTree = "<group>"; };
+		BA641F1217295AF7007F7E3A /* ArtistDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArtistDataModel.h; sourceTree = "<group>"; };
+		BA641F1317295AF7007F7E3A /* ArtistDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArtistDataModel.m; sourceTree = "<group>"; };
 		BAA1FC4E1724B25800E166B6 /* EventDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventDataModel.h; sourceTree = "<group>"; };
 		BAA1FC4F1724B25800E166B6 /* EventDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventDataModel.m; sourceTree = "<group>"; };
 		BAA1FC511724BCA400E166B6 /* SVEventsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVEventsViewController.h; sourceTree = "<group>"; };
@@ -213,6 +219,10 @@
 			children = (
 				7F109E461700BFE7008C0048 /* SVArtist.h */,
 				7F109E471700BFE7008C0048 /* SVArtist.m */,
+				BA641F0F17295AAD007F7E3A /* Artist.h */,
+				BA641F1017295AAD007F7E3A /* Artist.m */,
+				BA641F1217295AF7007F7E3A /* ArtistDataModel.h */,
+				BA641F1317295AF7007F7E3A /* ArtistDataModel.m */,
 				BAA1FCAA1725D36E00E166B6 /* Event.h */,
 				BAA1FCAB1725D36E00E166B6 /* Event.m */,
 				BAD56CB617273EC8002F5757 /* ArtInstallation.h */,
@@ -593,6 +603,8 @@
 				BAD56D771728AB90002F5757 /* socailMenuCell.m in Sources */,
 				BAD56D7C1728ADF6002F5757 /* AboutMenuCell.m in Sources */,
 				BAD56D851728CBB2002F5757 /* SVAWebView.m in Sources */,
+				BA641F1117295AAD007F7E3A /* Artist.m in Sources */,
+				BA641F1417295AF7007F7E3A /* ArtistDataModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

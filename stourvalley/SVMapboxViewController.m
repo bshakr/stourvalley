@@ -10,14 +10,18 @@
 #import "Mapbox.h"
 #import "NVSlideMenuController.h"
 #import "ArtInstallationDataModel.h"
+#import "ArtistDataModel.h"
 
 @interface SVMapboxViewController ()
 {
     NSManagedObjectContext *context;
+    NSManagedObjectContext *artistContext;
     NSArray *allInstallations;
+    NSArray *allArtists;
     
 }
 -(ArtInstallationDataModel *) shareInstallation;
+-(ArtistDataModel *) shareArtist;
 
 @end
 
@@ -39,10 +43,13 @@
     
     //Fetch data from datamodel
     context = [[self shareInstallation ] mainContext];
+    artistContext = [[self shareArtist] mainContext];
     
-    if(context){
+    if(context && artistContext){
         NSLog(@"Context is ready to use");
         allInstallations = [[self shareInstallation] loadAllArtInstallations];
+        allArtists = [[self shareArtist] loadAllArtists];
+        
         if (allInstallations.count == 0) {
             
             NSLog(@"No data, allInstallations is nil");
@@ -52,8 +59,16 @@
             NSLog(@"allInstalltion = %d", allInstallations.count);
         }
         
+        if (allArtists.count == 0){
+            NSLog(@"No data, allArtists is nil");
+            [[self shareArtist] creatArtists];
+            NSLog(@"Inserted artists");
+            allArtists = [[self shareArtist] loadAllArtists];
+            NSLog(@"allArtist = %d", allArtists.count);
+        }
+        
     }else{
-        NSLog(@"Context == nil");
+        NSLog(@"Load context failed");
     }
     
     
@@ -78,6 +93,11 @@
 -(ArtInstallationDataModel *) shareInstallation
 {
     return [ArtInstallationDataModel sharedDataModel];
+}
+
+-(ArtistDataModel *) shareArtist
+{
+    return [ArtistDataModel sharedDataModel];
 }
 
 
