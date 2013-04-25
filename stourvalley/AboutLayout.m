@@ -10,14 +10,10 @@
 #import "AboutCollectionCell.h"
 
 static NSString * const AboutCellKind = @"AboutCell";
-/*static NSUInteger const RotationCount = 32;
-static NSUInteger const RotationStride = 3;
-static NSUInteger const PhotoCellBaseZIndex = 100;*/
 
 @interface AboutLayout()
 
 @property (nonatomic, strong) NSDictionary *layoutInfo;
-//@property (nonatomic, strong) NSArray *rotations;
 @property (nonatomic) CGSize itemSize;
 @property (nonatomic) CGSize block0;
 @property (nonatomic) CGSize block1;
@@ -57,13 +53,6 @@ static NSUInteger const PhotoCellBaseZIndex = 100;*/
 - (void)setup
 {
     self.itemInsets = UIEdgeInsetsMake(0.0f, 0.0f, 0.0f, 0.0f);
-    
-    self.block0 = CGSizeMake(320.0f, 191.0f);
-    self.block1 = CGSizeMake(320.0f, 180.0f);
-    self.block2 = CGSizeMake(320.0f, 66.0f);
-    self.block3 = CGSizeMake(106.6f, 66.0f);
-    self.interItemSpacingY = 0.5f;
-    
     self.numberOfColumns = 1;
     
 }
@@ -72,6 +61,12 @@ static NSUInteger const PhotoCellBaseZIndex = 100;*/
 
 - (void)prepareLayout
 {
+    self.block0 = CGSizeMake(self.collectionView.bounds.size.width, 191.0f);
+    self.block1 = CGSizeMake(self.collectionView.bounds.size.width, 180.0f);
+    self.block2 = CGSizeMake(self.collectionView.bounds.size.width, 66.0f);
+    self.block3 = CGSizeMake(self.collectionView.bounds.size.width/3, 66.0f);
+    self.interItemSpacingY = 0.5f;
+
     NSMutableDictionary *newLayoutInfo = [NSMutableDictionary dictionary];
     NSMutableDictionary *cellLayoutInfo = [NSMutableDictionary dictionary];
     
@@ -99,6 +94,11 @@ static NSUInteger const PhotoCellBaseZIndex = 100;*/
     
 }
 
+- (BOOL)shouldInvalidateLayoutForBoundsChange:(CGRect)newBounds
+{
+    return YES;
+}
+
 
 #pragma mark - Private
 
@@ -122,7 +122,6 @@ static NSUInteger const PhotoCellBaseZIndex = 100;*/
         }
         case 1:
         {
-            //int x = (self.collectionView.bounds.size.width - ((self.itemSize.width *2) + self.itemInsets.left + self.itemInsets.right));
             originX = floorf(self.itemInsets.left + (self.itemSize.width + spacingX) * column) + (self.itemSize.width + 0.5f);
             break;
         }
@@ -250,12 +249,5 @@ static NSUInteger const PhotoCellBaseZIndex = 100;*/
     
 }
 
-
-/*- (CATransform3D)transformForAlbumPhotoAtIndex:(NSIndexPath *)indexPath
-{
-    
-    NSInteger offset = (indexPath.section * RotationStride + indexPath.item);
-    return [self.rotations[offset % RotationCount] CATransform3DValue];
-}*/
 
 @end

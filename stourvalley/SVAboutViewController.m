@@ -99,7 +99,16 @@ static NSString * const AboutCellIdentifier4 = @"socailMenuCell";
             AboutCollectionCell *aboutCell =
             [collectionView dequeueReusableCellWithReuseIdentifier:AboutCellIdentifier
                                                       forIndexPath:indexPath];
-            aboutCell.imageView.image = [UIImage imageNamed:@"about_view"];
+            //aboutCell.imageView.image = [UIImage imageNamed:@"about_view"];
+            UIImageView *imv = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, 191.0f)];
+            imv.backgroundColor = [UIColor clearColor];
+            imv.opaque = NO;
+            imv.contentMode = UIViewContentModeScaleToFill;
+            imv.image = [UIImage imageNamed:@"about_view"];
+            aboutCell.backgroundView = imv;
+            return aboutCell;
+            break;
+    
             return aboutCell;
             break;
             
@@ -137,15 +146,19 @@ static NSString * const AboutCellIdentifier4 = @"socailMenuCell";
             
             switch (indexPath.item) {
                 case 0:
+                {    aboutCell.imageView.center = aboutCell.contentView.center;
                     [aboutCell.imageView setImage:[UIImage imageNamed:@"facebookIcon"]];
+                }
                     break;
                 case 1:
+                {    aboutCell.imageView.center = aboutCell.contentView.center;
                     [aboutCell.imageView setImage:[UIImage imageNamed:@"vimeoIcon"]];
-                    
+                }
                     break;
                 case 2:
+                {   aboutCell.imageView.center = aboutCell.contentView.center;
                     [aboutCell.imageView setImage:[UIImage imageNamed:@"soundIcon"]];
-                    
+                }
                     break;
             }
             
@@ -234,7 +247,18 @@ static NSString * const AboutCellIdentifier4 = @"socailMenuCell";
     
 }
 
+#pragma mark - View Rotation
 
+- (void)willRotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration
+{
+    [super willRotateToInterfaceOrientation:toInterfaceOrientation duration:duration];
+    [self.collectionView.collectionViewLayout invalidateLayout];
+    
+    if (UIInterfaceOrientationIsLandscape(toInterfaceOrientation)) {
+        
+    }
+    [self.collectionView reloadData];
+}
 
 #pragma mark - Event handlers
 
