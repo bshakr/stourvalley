@@ -7,8 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+@class AboutLayout;
 
-@interface SVAboutViewController : UIViewController  <UITableViewDataSource, UITableViewDelegate>
 
-@property (strong, nonatomic) IBOutlet UITableView *aboutTableView;
+@interface SVAboutViewController : UIViewController <UICollectionViewDelegate, UICollectionViewDataSource>
+
+
+//@property (nonatomic, strong) NSOperationQueue *thumbnailQueue;
+@property (strong, nonatomic) IBOutlet UICollectionView *collectionView;
+@property (nonatomic, weak) IBOutlet AboutLayout *aboutPageLayout;
+
 @end

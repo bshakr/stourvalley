@@ -8,9 +8,19 @@
 
 #import "SVAboutViewController.h"
 #import "NVSlideMenuController.h"
-#import "socialCell.h"
-#import "EventMenuCell.h"
-#import "aboutCell.h"
+
+#import "AboutCollectionCell.h"
+#import "AboutLayout.h"
+#import "socailMenuCell.h"
+#import "DetailCell.h"
+#import "AboutMenuCell.h"
+
+static NSString * const AboutCellIdentifier = @"AboutCell";
+static NSString * const AboutCellIdentifier2 = @"DetailCell";
+static NSString * const AboutCellIdentifier3 = @"AboutMenuCell";
+static NSString * const AboutCellIdentifier4 = @"socailMenuCell";
+
+
 @interface SVAboutViewController ()
 
 
@@ -37,151 +47,148 @@
                                            action:@selector(slideOut:)];
 }
 
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     self.navigationItem.leftBarButtonItem = [self slideOutBarButton];
     
-    [self.aboutTableView registerNib:[self aboutCellNib] forCellReuseIdentifier:@"AboutCELL"];
-    [self.aboutTableView registerNib:[self eventMenuCellNib] forCellReuseIdentifier:@"MenuCell"];
-    [self.aboutTableView registerNib:[self socialCellNib] forCellReuseIdentifier:@"SCCELL"];
+    self.collectionView.backgroundColor = [UIColor colorWithWhite:0.90f alpha:1.0f];
     
-    self.aboutTableView.delegate = self;
-    [self.aboutTableView reloadData];
+    self.navigationItem.leftBarButtonItem = [self slideOutBarButton];
+    [self.collectionView setDelegate:self];
+    [self.collectionView registerClass:[AboutCollectionCell class] forCellWithReuseIdentifier:AboutCellIdentifier];
+    [self.collectionView registerNib:[UINib nibWithNibName:@"DetailCell" bundle:nil] forCellWithReuseIdentifier:AboutCellIdentifier2];
+    [self.collectionView registerNib:[UINib nibWithNibName:@"AboutMenuCell" bundle:nil] forCellWithReuseIdentifier:AboutCellIdentifier3];
+    [self.collectionView registerClass:[socailMenuCell class] forCellWithReuseIdentifier:AboutCellIdentifier4];
+    
+    
 }
 
-- (UINib *)socialCellNib {
-    return [UINib nibWithNibName:@"socialCell" bundle:nil];
-}
-- (UINib *)eventMenuCellNib {
-    return [UINib nibWithNibName:@"EventMenuCell" bundle:nil];
-}
-- (UINib *)aboutCellNib {
-    return [UINib nibWithNibName:@"aboutCell" bundle:nil];
-}
+#pragma mark - UICollectionViewDataSource
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-#pragma mark - Table View
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
 {
     return 4;
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+
+- (NSInteger)collectionView:(UICollectionView *)collectionView
+     numberOfItemsInSection:(NSInteger)section
 {
-    return 1;
+    switch (section) {
+        case 3:
+            return 3;
+            break;
+        default:
+            return 1;
+            break;
+    }
+    
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView
+                  cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Cell";
-    static NSString *CellIdentifier1 = @"AboutCELL";
-    static NSString *CellIdentifier2 = @"MenuCell";
-    static NSString *CellIdentifier3 = @"SCCELL";
-    
-    
-    //NSLog(@"Event name : %@, at index %d,%d", [nameArray objectAtIndex:indexPath.section], indexPath.section, indexPath.row);
-    
-    switch (indexPath.section)
-    {
+  
+    switch (indexPath.section) {
         case 0:
         {
-            UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-            if (cell == nil) {
-                cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
-                
-            }
-            UIImageView *imv = [[UIImageView alloc] initWithFrame:CGRectMake(10, 10, 180, 120)];
-            imv.backgroundColor = [UIColor clearColor];
-            imv.opaque = NO;
-            imv.image = [UIImage imageNamed:@"about_view"];
-            cell.backgroundView = imv;
-            cell.userInteractionEnabled = NO;
-            
-            return cell;
+            AboutCollectionCell *aboutCell =
+            [collectionView dequeueReusableCellWithReuseIdentifier:AboutCellIdentifier
+                                                      forIndexPath:indexPath];
+            aboutCell.imageView.image = [UIImage imageNamed:@"about_view"];
+            return aboutCell;
+            break;
             
         }
         case 1:
         {
-            aboutCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier1 forIndexPath:indexPath];
-            if (cell == nil) {
-                cell = [[aboutCell alloc] initWithStyle:UITableViewCellStyleDefault
-                                        reuseIdentifier:CellIdentifier1];
-            }
-            cell.infoTextLabel.text = [NSString stringWithFormat:@"..a unique project which aims to increase public awareness of contemporary art while encouraging greater interest in the environment."];
-            cell.addressTextLabel.text = [NSString stringWithFormat:@"Stour Valley Arts Limited is a registered charity in England,  office: King's Wood Forest Office, Buck Street, Challock, Kent TN25 4AR."];
-            [cell.timeTextLabel1 setText:@"Open hours during exhibitions"];
-            [cell.timeTextLabel2 setText:@"11am-4pm, Wednesday-Saturday"];
-            cell.userInteractionEnabled = NO;
-            return cell;
+            DetailCell *detailCell =
+            [collectionView dequeueReusableCellWithReuseIdentifier:AboutCellIdentifier2
+                                                      forIndexPath:indexPath];
+            detailCell.infoTextLabel.text = [NSString stringWithFormat:@"..a unique project which aims to increase public awareness of contemporary art while encouraging greater interest in the environment."];
+            detailCell.addressTextLabel.text = [NSString stringWithFormat:@"Stour Valley Arts Limited is a registered charity in England,  office: King's Wood Forest Office, Buck Street, Challock, Kent TN25 4AR."];
+            [detailCell.timeTextLabel1 setText:@"Open hours during exhibitions"];
+            [detailCell.timeTextLabel2 setText:@"11am-4pm, Wednesday-Saturday"];
+            detailCell.userInteractionEnabled = NO;
+            return detailCell;
             break;
         }
         case 2:
         {
-            EventMenuCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier2 forIndexPath:indexPath];
+            AboutMenuCell *cell =
+            [collectionView dequeueReusableCellWithReuseIdentifier:AboutCellIdentifier3
+                                                      forIndexPath:indexPath];
+            [cell.menuIconImage setImage:[UIImage imageNamed:@"phoneIcon"]];
+            [cell.menuLabel setText:@"Call for appointment"];
             
-            if (cell == nil) {
-                cell = [[EventMenuCell alloc] initWithStyle:UITableViewCellStyleDefault
-                                            reuseIdentifier:CellIdentifier2];
-            }
-            [cell.mcellImage setImage:[UIImage imageNamed:@"phoneIcon"]];
-            cell.mcellName.text = [NSString stringWithFormat:@"Call for appointment"];
             return cell;
             break;
         }
         case 3:
         {
-            socialCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier3 forIndexPath:indexPath];
+            socailMenuCell *aboutCell =
+            [collectionView dequeueReusableCellWithReuseIdentifier:AboutCellIdentifier4
+                                                      forIndexPath:indexPath];
             
-            if (cell == nil) {
-                cell = [[socialCell alloc] initWithStyle:UITableViewCellStyleDefault
-                                         reuseIdentifier:CellIdentifier3];
+            
+            switch (indexPath.item) {
+                case 0:
+                    [aboutCell.imageView setImage:[UIImage imageNamed:@"facebookIcon"]];
+                    break;
+                case 1:
+                    [aboutCell.imageView setImage:[UIImage imageNamed:@"vimeoIcon"]];
+                    
+                    break;
+                case 2:
+                    [aboutCell.imageView setImage:[UIImage imageNamed:@"soundIcon"]];
+                    
+                    break;
             }
-            [cell.scImageView1 setImage:[UIImage imageNamed:@"facebookIcon"]];
-            [cell.scImageView2 setImage:[UIImage imageNamed:@"vimeoIcon"]];
-            [cell.scImageView3 setImage:[UIImage imageNamed:@"soundIcon"]];
-            return cell;
+            
+            
+            return aboutCell;
             break;
         }
-            
     }
-    
-    //  UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    // if (cell == nil) {
-    //   cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
-    
-    // }
     
     return nil;
+
     
 }
 
-#pragma mark - UITableViewDelegate Methods
-
--(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    switch (indexPath.section)
-    {
-        case 0:
-            return 180;
+    // TODO: Select Item
+    switch (indexPath.section) {
+        case 2:
+            NSLog(@"Click to phone");
             break;
-        case 1:
-            return 180;
+        case 3:
+            switch (indexPath.item) {
+                case 0:
+                    NSLog(@"Click to facebook");
+                    break;
+                case 1:
+                    NSLog(@"Click to vemio");
+                    break;
+                case 2:
+                    NSLog(@"Click to soundclound");
+                    break;
+            }
             break;
     }
-    return 66;
+    
 }
+
+
 
 #pragma mark - Event handlers
 
 - (void)slideOut:(id)sender {
     [self.slideMenuController toggleMenuAnimated:self];
 }
+
 
 @end
