@@ -15,7 +15,6 @@
 		7F0C3E601720BDF000C28B59 /* SVMapboxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F0C3E5F1720BDF000C28B59 /* SVMapboxViewController.m */; };
 		7F109E411700B6A6008C0048 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F109E401700B6A6008C0048 /* CoreData.framework */; };
 		7F109E441700B716008C0048 /* Stourvalley.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7F109E421700B716008C0048 /* Stourvalley.xcdatamodeld */; };
-		7F109E481700BFE7008C0048 /* SVArtist.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F109E471700BFE7008C0048 /* SVArtist.m */; };
 		7F1F629A16EE4DBA00018974 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F1F629916EE4DBA00018974 /* UIKit.framework */; };
 		7F1F629E16EE4DBA00018974 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F1F629D16EE4DBA00018974 /* CoreGraphics.framework */; };
 		7F1F62A416EE4DBA00018974 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7F1F62A216EE4DBA00018974 /* InfoPlist.strings */; };
@@ -92,8 +91,6 @@
 		7F0C3E5F1720BDF000C28B59 /* SVMapboxViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVMapboxViewController.m; sourceTree = "<group>"; };
 		7F109E401700B6A6008C0048 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		7F109E431700B716008C0048 /* Stourvalley.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Stourvalley.xcdatamodel; sourceTree = "<group>"; };
-		7F109E461700BFE7008C0048 /* SVArtist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVArtist.h; sourceTree = "<group>"; };
-		7F109E471700BFE7008C0048 /* SVArtist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVArtist.m; sourceTree = "<group>"; };
 		7F1F629616EE4DBA00018974 /* stourvalley.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = stourvalley.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F1F629916EE4DBA00018974 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		7F1F629B16EE4DBA00018974 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -217,8 +214,6 @@
 		7F109E451700BFBB008C0048 /* Model Class */ = {
 			isa = PBXGroup;
 			children = (
-				7F109E461700BFE7008C0048 /* SVArtist.h */,
-				7F109E471700BFE7008C0048 /* SVArtist.m */,
 				BA641F0F17295AAD007F7E3A /* Artist.h */,
 				BA641F1017295AAD007F7E3A /* Artist.m */,
 				BA641F1217295AF7007F7E3A /* ArtistDataModel.h */,
@@ -584,7 +579,6 @@
 				7F9C50FD16F7210500BAD5F7 /* SVMenuViewController.m in Sources */,
 				7F9C510E16F7275D00BAD5F7 /* SVMenuCell.m in Sources */,
 				7F109E441700B716008C0048 /* Stourvalley.xcdatamodeld in Sources */,
-				7F109E481700BFE7008C0048 /* SVArtist.m in Sources */,
 				7F0C3E601720BDF000C28B59 /* SVMapboxViewController.m in Sources */,
 				BAA1FC501724B25800E166B6 /* EventDataModel.m in Sources */,
 				BAA1FC531724BCA400E166B6 /* SVEventsViewController.m in Sources */,
