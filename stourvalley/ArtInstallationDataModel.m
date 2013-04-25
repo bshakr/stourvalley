@@ -216,11 +216,15 @@
 {
     NSArray *obj2 = [NSArray arrayWithObjects:@"Untitled", @"Richard Harris", @"1994", @"51.216000", @"0.897000", @"Richard Harris searched hard to find the configuration of coppiced chestnuts that he wanted. He bent and tied their branches, using hedge-laying techniques to create a semicircular archway. The sculpture has slowly matured and Harris returns each winter to trim and tie the annual growth.",  nil];
     
-    NSArray *obj4 = [NSArray arrayWithObjects:@"Ring", @"Rosie Leventon", @"2003", @"51.221333", @"0.909167", @"An earthwork inspired by the pre-historic barrows,or ancient burial mounds, which are found in King's Wood and nearby.The circular sides with earth on the side of a hill adjacent to one of the main rides. The deep centre was dug out with the aid of a JCB at 360 degrees.",  nil];
+    NSArray *obj4 = [NSArray arrayWithObjects:@"Ring", @"Rosie Leventon", @"2003", @"51.221500", @"0.909167", @"An earthwork inspired by the pre-historic barrows,or ancient burial mounds, which are found in King's Wood and nearby.The circular sides with earth on the side of a hill adjacent to one of the main rides. The deep centre was dug out with the aid of a JCB at 360 degrees.",  nil];
     
     NSArray *obj6 = [NSArray arrayWithObjects:@"Via Lucem Continens", @"Lukasz Skapski", @"2000", @"51.221001", @"0.914667", @"A 140-metre avenue of 200 yew trees planted by local people. The artwork is a device for viewing the setting sun: it framed the sunset on midsummer’s day 2000 and will act as a battery of energy over the next millennium-during which time the yew trees will slowly mature.",  nil];
     
-    NSArray *obj8 = [NSArray arrayWithObjects:@"B52", @"Rosie Leventon", @"2003", @"51.213333", @"0.902333", @"The artist has cleared sweet chestnut trees to carve out a space in the forest which is twice that of a B52 bomber. She wanted to subvert this aircraft’s aggressive power into something positive. Abundant light now falls on the forest floor, bringing new life, regeneration and biodiversity. It can also be seen as future archaeology.",  nil];
+    NSArray *obj8 = [NSArray arrayWithObjects:@"B52", @"Rosie Leventon", @"2003", @"51.214048",@"0.901866", @"The artist has cleared sweet chestnut trees to carve out a space in the forest which is twice that of a B52 bomber. She wanted to subvert this aircraft’s aggressive power into something positive. Abundant light now falls on the forest floor, bringing new life, regeneration and biodiversity. It can also be seen as future archaeology.",  nil];
+    
+    NSArray *obj9 = [NSArray arrayWithObjects:@"Hill Seat", @"Tim norris", @"1995", @"51.209572", @"0.920877", @"Tim Norris has made two seats, one dug into the chalk, the other nestled within a coppiced chestnut. Unusual and unexpected, they nevertheless integrate with the existing landscape and provide welcome rest on the long North Downs Way.",  nil];
+    
+    NSArray *obj10 = [NSArray arrayWithObjects:@"Coppice Seat", @"Tim norris", @"1994", @"51.219841",@"0.931606", @"Tim Norris has made two seats, one dug into the chalk, the other nestled within a coppiced chestnut. Unusual and unexpected, they nevertheless integrate with the existing landscape and provide welcome rest on the long North Downs Way.",  nil];
     
     NSArray *obj11 = [NSArray arrayWithObjects:@"The Last Eleven Years", @"Peter Fillingham", @"2004 - 2005", @"51.217999", @"0.903167", @"As a fence it keeps nothing in or out but disappears into the trees its end unseen.Made by a local fencer in softwood it sits lightly in its forest surroundings drawing a line through the forest and raising the question, Is it an artwork or is it a Forestry construction?",  nil];
     
@@ -229,7 +233,11 @@
   
     NSArray *obj13 = [NSArray arrayWithObjects:@"Super Kingdom", @"London Fieldworks", @"2008", @"51.224834", @"0.908333", @"Super Kingdom is a development of new animal habitats within King’s Wood. These luxury homes are modelled on the imperious palaces of Stalin, Ceauscescu and Mussolini and offer nesting and over-winter sites to native and migrant species.",  nil];
     
-    NSArray *all = [NSArray arrayWithObjects:obj2, obj4, obj6, obj8, obj11, obj12, obj13, nil];
+    NSArray *obj14 = [NSArray arrayWithObjects:@"Miracle of the Legs", @"Gregory Pryor", @"2009", @"51.222079", @"0.911522", @"Modelled on the legs of forest walkers, 3 wooden limbs appear high in the canopy of beech trees. This unexpected grafting echoes the iconography associated with Sts. Cosmas and Damian, patron saints of Challock’s parish church.",  nil];
+    
+    //obj2, obj4, obj6, obj8, obj11, obj12, obj13 from site survey
+    //obj9, obj10, obj14 from SVA-google map
+    NSArray *all = [NSArray arrayWithObjects:obj2, obj4, obj6, obj8, obj9, obj10, obj11, obj12, obj13, obj14, nil];
    
     return [NSArray arrayWithArray:all] ;
 }

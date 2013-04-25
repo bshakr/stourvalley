@@ -211,14 +211,14 @@
 		7F109E451700BFBB008C0048 /* Model Class */ = {
 			isa = PBXGroup;
 			children = (
-				BAD56CBC172742AC002F5757 /* ArtInstallationDataModel.h */,
-				BAD56CBD172742AC002F5757 /* ArtInstallationDataModel.m */,
 				7F109E461700BFE7008C0048 /* SVArtist.h */,
 				7F109E471700BFE7008C0048 /* SVArtist.m */,
 				BAA1FCAA1725D36E00E166B6 /* Event.h */,
 				BAA1FCAB1725D36E00E166B6 /* Event.m */,
 				BAD56CB617273EC8002F5757 /* ArtInstallation.h */,
 				BAD56CB717273EC8002F5757 /* ArtInstallation.m */,
+				BAD56CBC172742AC002F5757 /* ArtInstallationDataModel.h */,
+				BAD56CBD172742AC002F5757 /* ArtInstallationDataModel.m */,
 			);
 			name = "Model Class";
 			sourceTree = "<group>";
