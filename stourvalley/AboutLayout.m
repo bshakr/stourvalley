@@ -105,14 +105,7 @@ static NSString * const AboutCellKind = @"AboutCell";
 - (CGRect)frameForAlbumPhotoAtIndexPath:(NSIndexPath *)indexPath
 {  
     NSInteger row = indexPath.section / self.numberOfColumns;
-    //NSInteger column = indexPath.section % self.numberOfColumns;
     NSInteger item = indexPath.item;
-    CGFloat spacingX = self.collectionView.bounds.size.width -
-    self.itemInsets.left -
-    self.itemInsets.right -
-    (self.numberOfColumns * self.itemSize.width);
-    
-    if (self.numberOfColumns > 1) {spacingX = spacingX / (self.numberOfColumns - 1);}
     
     CGFloat originX ;
     switch (item) {
@@ -147,21 +140,18 @@ static NSString * const AboutCellKind = @"AboutCell";
         {
             self.itemSize = self.block1;
             originY = floor(self.itemInsets.top + (self.block0.height + self.interItemSpacingY) * row) ;
-            NSLog(@"Origin y1 %f", originY);
             break;
         }
         case 2:
         {
             self.itemSize = self.block2;
             originY = (self.itemInsets.top + self.block0.height + self.block1.height + (self.interItemSpacingY));
-             NSLog(@"Origin y2 %f", originY);
             break;
         }
         case 3:
         {
             self.itemSize = self.block3;
             originY = (self.itemInsets.top + self.block0.height + self.block1.height + self.block2.height + (self.interItemSpacingY*2));
-            NSLog(@"Origin y3 %f", originY);
             break;
         }
         
