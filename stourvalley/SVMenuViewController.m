@@ -10,7 +10,7 @@
 #import "SVMenuCell.h"
 #import "NVSlideMenuController.h"
 #import "SVAboutViewController.h"
-#import "SVMapViewController.h"
+#import "SVMapboxViewController.h"
 
 enum {
     MenuMapRow = 0,
@@ -104,14 +104,12 @@ enum {
     } else {
         id mainVC = [[class alloc] init];
         UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:mainVC];
-        [self.slideMenuController setContentViewController:nav
-                                                  animated:YES
-                                                completion:nil];
+        [self.slideMenuController setContentViewController:nav animated:YES completion:nil];
     }
 }
 
 - (void)showMapController {
-    [self showControllerClass:[SVMapViewController class]];
+    [self showControllerClass:[SVMapboxViewController class]];
 }
 
 - (void)showAboutController {

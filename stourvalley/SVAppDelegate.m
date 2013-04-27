@@ -8,7 +8,7 @@
 
 #import "SVAppDelegate.h"
 
-#import "SVMapViewController.h"
+#import "SVMapboxViewController.h"
 #import "SVMenuViewController.h"
 #import "NVSlideMenuController.h"
 @implementation SVAppDelegate
@@ -18,7 +18,7 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     
-    self.viewController = [[SVMapViewController alloc] initWithNibName:@"SVMapViewController" bundle:nil];
+    self.viewController = [[SVMapboxViewController alloc] init];
     UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:self.viewController];
     SVMenuViewController *menuController = [[SVMenuViewController alloc]init];
     NVSlideMenuController *slideController = [[NVSlideMenuController alloc] initWithMenuViewController:menuController andContentViewController:navController];

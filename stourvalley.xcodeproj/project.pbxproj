@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		25EAD3C28D1E40998AEB958C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FDFB84CA4F32455DA4A4A79D /* libPods.a */; };
+		7F0C3E4B1720BC5100C28B59 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F0C3E4A1720BC5100C28B59 /* libsqlite3.dylib */; };
+		7F0C3E4D1720BC5900C28B59 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F0C3E4C1720BC5900C28B59 /* libz.dylib */; };
+		7F0C3E501720BCA100C28B59 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F1F629B16EE4DBA00018974 /* Foundation.framework */; };
+		7F0C3E5D1720BDC600C28B59 /* libProj4.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F0C3E5C1720BDC600C28B59 /* libProj4.a */; };
+		7F0C3E601720BDF000C28B59 /* SVMapboxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F0C3E5F1720BDF000C28B59 /* SVMapboxViewController.m */; };
 		7F109E411700B6A6008C0048 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F109E401700B6A6008C0048 /* CoreData.framework */; };
 		7F109E441700B716008C0048 /* Stourvalley.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7F109E421700B716008C0048 /* Stourvalley.xcdatamodeld */; };
 		7F109E481700BFE7008C0048 /* SVArtist.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F109E471700BFE7008C0048 /* SVArtist.m */; };
 		7F109E4B1700C0B1008C0048 /* SVArtInstallation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F109E4A1700C0B1008C0048 /* SVArtInstallation.m */; };
 		7F1F629A16EE4DBA00018974 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F1F629916EE4DBA00018974 /* UIKit.framework */; };
-		7F1F629C16EE4DBA00018974 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F1F629B16EE4DBA00018974 /* Foundation.framework */; };
 		7F1F629E16EE4DBA00018974 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F1F629D16EE4DBA00018974 /* CoreGraphics.framework */; };
 		7F1F62A416EE4DBA00018974 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7F1F62A216EE4DBA00018974 /* InfoPlist.strings */; };
 		7F1F62A616EE4DBA00018974 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F1F62A516EE4DBA00018974 /* main.m */; };
@@ -37,6 +41,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7F0C3E4A1720BC5100C28B59 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		7F0C3E4C1720BC5900C28B59 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		7F0C3E5C1720BDC600C28B59 /* libProj4.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libProj4.a; path = Pods/MapBox/Proj4/libProj4.a; sourceTree = "<group>"; };
+		7F0C3E5E1720BDF000C28B59 /* SVMapboxViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVMapboxViewController.h; sourceTree = "<group>"; };
+		7F0C3E5F1720BDF000C28B59 /* SVMapboxViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVMapboxViewController.m; sourceTree = "<group>"; };
 		7F109E401700B6A6008C0048 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		7F109E431700B716008C0048 /* Stourvalley.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Stourvalley.xcdatamodel; sourceTree = "<group>"; };
 		7F109E461700BFE7008C0048 /* SVArtist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVArtist.h; sourceTree = "<group>"; };
@@ -83,11 +92,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F0C3E5D1720BDC600C28B59 /* libProj4.a in Frameworks */,
+				7F0C3E501720BCA100C28B59 /* Foundation.framework in Frameworks */,
+				7F0C3E4D1720BC5900C28B59 /* libz.dylib in Frameworks */,
+				7F0C3E4B1720BC5100C28B59 /* libsqlite3.dylib in Frameworks */,
 				7F109E411700B6A6008C0048 /* CoreData.framework in Frameworks */,
 				7F9C511216F7679B00BAD5F7 /* CoreLocation.framework in Frameworks */,
 				7F9C511016F74B6D00BAD5F7 /* MapKit.framework in Frameworks */,
 				7F1F629A16EE4DBA00018974 /* UIKit.framework in Frameworks */,
-				7F1F629C16EE4DBA00018974 /* Foundation.framework in Frameworks */,
 				7F1F629E16EE4DBA00018974 /* CoreGraphics.framework in Frameworks */,
 				25EAD3C28D1E40998AEB958C /* libPods.a in Frameworks */,
 			);
@@ -110,7 +122,9 @@
 		7F1F628D16EE4DBA00018974 = {
 			isa = PBXGroup;
 			children = (
-				7F109E401700B6A6008C0048 /* CoreData.framework */,
+				7F0C3E5C1720BDC600C28B59 /* libProj4.a */,
+				7F0C3E4C1720BC5900C28B59 /* libz.dylib */,
+				7F0C3E4A1720BC5100C28B59 /* libsqlite3.dylib */,
 				7F1F629F16EE4DBA00018974 /* stourvalley */,
 				7F1F629816EE4DBA00018974 /* Frameworks */,
 				7F1F629716EE4DBA00018974 /* Products */,
@@ -129,6 +143,7 @@
 		7F1F629816EE4DBA00018974 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7F109E401700B6A6008C0048 /* CoreData.framework */,
 				7F9C511116F7679B00BAD5F7 /* CoreLocation.framework */,
 				7F9C510F16F74B6D00BAD5F7 /* MapKit.framework */,
 				7F1F629916EE4DBA00018974 /* UIKit.framework */,
@@ -196,6 +211,8 @@
 				7F1F630216EF66BF00018974 /* SVMapViewController.h */,
 				7F1F630316EF66BF00018974 /* SVMapViewController.m */,
 				7F1F630416EF66BF00018974 /* SVMapViewController.xib */,
+				7F0C3E5E1720BDF000C28B59 /* SVMapboxViewController.h */,
+				7F0C3E5F1720BDF000C28B59 /* SVMapboxViewController.m */,
 			);
 			name = Map;
 			sourceTree = "<group>";
@@ -329,6 +346,7 @@
 				7F109E441700B716008C0048 /* Stourvalley.xcdatamodeld in Sources */,
 				7F109E481700BFE7008C0048 /* SVArtist.m in Sources */,
 				7F109E4B1700C0B1008C0048 /* SVArtInstallation.m in Sources */,
+				7F0C3E601720BDF000C28B59 /* SVMapboxViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -406,9 +424,14 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FD017F1215EF4B949E75B2F9 /* Pods.xcconfig */;
 			buildSettings = {
+				ARCHS = armv7;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "stourvalley/stourvalley-Prefix.pch";
 				INFOPLIST_FILE = "stourvalley/stourvalley-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Pods/MapBox/Proj4\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -418,9 +441,14 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FD017F1215EF4B949E75B2F9 /* Pods.xcconfig */;
 			buildSettings = {
+				ARCHS = armv7;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "stourvalley/stourvalley-Prefix.pch";
 				INFOPLIST_FILE = "stourvalley/stourvalley-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Pods/MapBox/Proj4\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
