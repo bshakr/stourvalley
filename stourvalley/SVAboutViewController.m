@@ -63,7 +63,7 @@ static NSString * const AboutCellIdentifier4 = @"socailMenuCell";
     [self.collectionView registerNib:[UINib nibWithNibName:@"DetailCell" bundle:nil] forCellWithReuseIdentifier:AboutCellIdentifier2];
     [self.collectionView registerNib:[UINib nibWithNibName:@"AboutMenuCell" bundle:nil] forCellWithReuseIdentifier:AboutCellIdentifier3];
     [self.collectionView registerClass:[socailMenuCell class] forCellWithReuseIdentifier:AboutCellIdentifier4];
-    
+    [self.collectionView reloadData];
     
 }
 
