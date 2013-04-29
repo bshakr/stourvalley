@@ -11,9 +11,11 @@
 #import "NVSlideMenuController.h"
 #import "SVAboutViewController.h"
 #import "SVMapboxViewController.h"
+#import "SVEventsViewController.h"
 
 enum {
     MenuMapRow = 0,
+    MenuEventRow,
     MenuAboutRow,
     MenuRowCount
 };
@@ -61,9 +63,13 @@ enum {
         case MenuMapRow:
             cell.label.text = @"Map";
             break;
-            
+
+        case MenuEventRow:
+            cell.label.text = @"Events";
+            break;
+    
         case MenuAboutRow:
-            cell.label.text = @"About";
+            cell.label.text = @"About SVA";
             break;
             
         default:
@@ -112,6 +118,10 @@ enum {
     [self showControllerClass:[SVMapboxViewController class]];
 }
 
+- (void)showEventController {
+    [self showControllerClass:[SVEventsViewController class]];
+}
+
 - (void)showAboutController {
     [self showControllerClass:[SVAboutViewController class]];
 }
@@ -120,6 +130,10 @@ enum {
     switch (indexPath.row) {
         case MenuMapRow:
             [self showMapController];
+            break;
+            
+        case MenuEventRow:
+            [self showEventController];
             break;
             
         case MenuAboutRow:
