@@ -186,9 +186,19 @@
     self.eventDetailView.dateLabel =  [NSString stringWithFormat:@"%@ - %@", start, end];
     self.eventDetailView.cellCount = [[self.inumArray objectAtIndex:indexPath.item] integerValue];
     self.eventDetailView.imageTag = [self.imgNameArray objectAtIndex:indexPath.item];
-    [self.navigationController pushViewController:self.eventDetailView animated:YES];
-
+    
+    
+    
+    CATransition *transition = [CATransition animation];
+    transition.duration = 0.3f;
+    transition.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+    transition.type = kCATransitionReveal;
+    transition.subtype = kCATransitionFromBottom;
+    [self.navigationController.view.layer addAnimation:transition forKey:nil];
+    [self.navigationController pushViewController:self.eventDetailView animated:NO];
+    
 }
+
 
 
 
