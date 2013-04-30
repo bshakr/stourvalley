@@ -35,6 +35,7 @@ static NSString * const AboutCellIdentifier4 = @"socailMenuCell";
     if (self) {
         // Custom initialization
          self.title = NSLocalizedString(@"About SVA", @"About SVA");
+
     }
     return self;
 }
@@ -43,18 +44,22 @@ static NSString * const AboutCellIdentifier4 = @"socailMenuCell";
 }
 
 - (UIBarButtonItem *)slideOutBarButton {
-    return [[UIBarButtonItem alloc] initWithImage:[self listImage]
-                                            style:UIBarButtonItemStyleBordered
-                                           target:self
-                                           action:@selector(slideOut:)];
+    UIBarButtonItem *button = [[UIBarButtonItem alloc] initWithImage:[self listImage]
+                                                               style:UIBarButtonItemStyleBordered
+                                                              target:self
+                                                              action:@selector(slideOut:)];
+    [button setTintColor:[UIColor colorWithRed:187/255.0 green:83/255.0 blue:88/255.0 alpha:0.5]];
+    return button;
 }
 
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.navigationItem.leftBarButtonItem = [self slideOutBarButton];
+    UIImage *navBG = [UIImage imageNamed:@"navbar.jpg"];
+    [self.navigationController.navigationBar setBackgroundImage:navBG forBarMetrics:UIBarMetricsDefault];
     
+
     self.collectionView.backgroundColor = [UIColor colorWithWhite:0.90f alpha:1.0f];
     
     self.navigationItem.leftBarButtonItem = [self slideOutBarButton];

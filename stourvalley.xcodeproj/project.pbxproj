@@ -28,6 +28,8 @@
 		7F1F630516EF66BF00018974 /* SVMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F1F630316EF66BF00018974 /* SVMapViewController.m */; };
 		7F1F630616EF66BF00018974 /* SVMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F1F630416EF66BF00018974 /* SVMapViewController.xib */; };
 		7F1F630B16EF66CB00018974 /* SVEventsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F1F630916EF66CB00018974 /* SVEventsViewController.xib */; };
+		7F3C5B1A1730182A00793A2D /* navbar.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7F3C5B181730182A00793A2D /* navbar.jpg */; };
+		7F3C5B1B1730182A00793A2D /* navbar@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7F3C5B191730182A00793A2D /* navbar@2x.jpg */; };
 		7F9C50FD16F7210500BAD5F7 /* SVMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F9C50FB16F7210500BAD5F7 /* SVMenuViewController.m */; };
 		7F9C510716F725B800BAD5F7 /* list.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F9C510516F725B800BAD5F7 /* list.png */; };
 		7F9C510816F725B800BAD5F7 /* list@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F9C510616F725B800BAD5F7 /* list@2x.png */; };
@@ -117,6 +119,8 @@
 		7F1F630316EF66BF00018974 /* SVMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVMapViewController.m; sourceTree = "<group>"; };
 		7F1F630416EF66BF00018974 /* SVMapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SVMapViewController.xib; sourceTree = "<group>"; };
 		7F1F630916EF66CB00018974 /* SVEventsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SVEventsViewController.xib; sourceTree = "<group>"; };
+		7F3C5B181730182A00793A2D /* navbar.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = navbar.jpg; sourceTree = "<group>"; };
+		7F3C5B191730182A00793A2D /* navbar@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "navbar@2x.jpg"; sourceTree = "<group>"; };
 		7F9C50FA16F7210500BAD5F7 /* SVMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVMenuViewController.h; sourceTree = "<group>"; };
 		7F9C50FB16F7210500BAD5F7 /* SVMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVMenuViewController.m; sourceTree = "<group>"; };
 		7F9C510516F725B800BAD5F7 /* list.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = list.png; sourceTree = "<group>"; };
@@ -365,6 +369,8 @@
 		7F9C510416F725AD00BAD5F7 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				7F3C5B181730182A00793A2D /* navbar.jpg */,
+				7F3C5B191730182A00793A2D /* navbar@2x.jpg */,
 				BAA1FD451726071500E166B6 /* about-images */,
 				BAA1FCE41725E2D100E166B6 /* event-images */,
 				7F9C510616F725B800BAD5F7 /* list@2x.png */,
@@ -580,6 +586,8 @@
 				BAFAE151172DB71F00E09C35 /* SVAEventDetailViewController.xib in Resources */,
 				BAFAE157172DBED400E09C35 /* EventCell.xib in Resources */,
 				BAFAE15C172DE0BD00E09C35 /* event2-0.jpg in Resources */,
+				7F3C5B1A1730182A00793A2D /* navbar.jpg in Resources */,
+				7F3C5B1B1730182A00793A2D /* navbar@2x.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

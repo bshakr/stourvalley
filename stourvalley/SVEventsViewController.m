@@ -42,14 +42,20 @@
 }
 
 - (UIBarButtonItem *)slideOutBarButton {
-    return [[UIBarButtonItem alloc] initWithImage:[self listImage]
-                                            style:UIBarButtonItemStyleBordered
-                                           target:self
-                                           action:@selector(slideOut:)];
+    UIBarButtonItem *button = [[UIBarButtonItem alloc] initWithImage:[self listImage]
+                                                               style:UIBarButtonItemStyleBordered
+                                                              target:self
+                                                              action:@selector(slideOut:)];
+    [button setTintColor:[UIColor colorWithRed:187/255.0 green:83/255.0 blue:88/255.0 alpha:0.5]];
+    return button;
 }
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    UIImage *navBG = [UIImage imageNamed:@"navbar.jpg"];
+    [self.navigationController.navigationBar setBackgroundImage:navBG forBarMetrics:UIBarMetricsDefault];
+    
+
     self.navigationItem.leftBarButtonItem = [self slideOutBarButton];
 	// Do any additional setup after loading the view.
     df = [[NSDateFormatter alloc] init];

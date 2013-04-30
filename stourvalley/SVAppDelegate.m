@@ -19,7 +19,9 @@
     // Override point for customization after application launch.
     
     self.viewController = [[SVMapboxViewController alloc] init];
+
     UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:self.viewController];
+
     SVMenuViewController *menuController = [[SVMenuViewController alloc]init];
     NVSlideMenuController *slideController = [[NVSlideMenuController alloc] initWithMenuViewController:menuController andContentViewController:navController];
     self.window.rootViewController = slideController;

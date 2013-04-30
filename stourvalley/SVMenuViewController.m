@@ -30,7 +30,7 @@ enum {
     [super viewDidLoad];
     self.tableView.backgroundColor = [UIColor colorWithWhite:0.173 alpha:1.000];
     self.tableView.separatorColor = [UIColor blackColor];
-    
+
     [self.tableView registerNib:[self menuCellNib] forCellReuseIdentifier:@"SVMenuCell"];
 }
 - (UINib *)menuCellNib {

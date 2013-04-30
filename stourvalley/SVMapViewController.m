@@ -33,7 +33,7 @@
     [super viewDidLoad];
     [worldView setShowsUserLocation:YES];
     self.navigationItem.leftBarButtonItem = [self slideOutBarButton];
-    
+
 }
 
 

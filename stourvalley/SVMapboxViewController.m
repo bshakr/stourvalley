@@ -42,6 +42,9 @@
 	// Do any additional setup after loading the view.
     
     //Fetch data from datamodel
+    UIImage *navBG = [UIImage imageNamed:@"navbar.jpg"];
+    [self.navigationController.navigationBar setBackgroundImage:navBG forBarMetrics:UIBarMetricsDefault];
+
     context = [[self shareInstallation ] mainContext];
     artistContext = [[self shareArtist] mainContext];
     
@@ -112,10 +115,12 @@
 }
 
 - (UIBarButtonItem *)slideOutBarButton {
-    return [[UIBarButtonItem alloc] initWithImage:[self listImage]
-                                            style:UIBarButtonItemStyleBordered
-                                           target:self
-                                           action:@selector(slideOut:)];
+    UIBarButtonItem *button = [[UIBarButtonItem alloc] initWithImage:[self listImage]
+                                                               style:UIBarButtonItemStyleBordered
+                                                              target:self
+                                                              action:@selector(slideOut:)];
+    [button setTintColor:[UIColor colorWithRed:187/255.0 green:83/255.0 blue:88/255.0 alpha:0.5]];
+    return button;
 }
 
 #pragma mark - Event handlers
