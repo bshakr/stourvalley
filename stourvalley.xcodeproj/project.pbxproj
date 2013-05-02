@@ -38,6 +38,12 @@
 		7F9C511016F74B6D00BAD5F7 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F9C510F16F74B6D00BAD5F7 /* MapKit.framework */; };
 		7F9C511216F7679B00BAD5F7 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F9C511116F7679B00BAD5F7 /* CoreLocation.framework */; };
 		7FCD9B3E1732C8C40088A654 /* stourvalley3.mbtiles in Resources */ = {isa = PBXBuildFile; fileRef = 7FCD9B3D1732C8C40088A654 /* stourvalley3.mbtiles */; };
+		BA05A951173311A300927C4F /* event1-3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BA05A950173311A300927C4F /* event1-3.jpg */; };
+		BA05A953173311AA00927C4F /* event1-4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BA05A952173311AA00927C4F /* event1-4.jpg */; };
+		BA05A9551733133800927C4F /* event2-3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BA05A9541733133800927C4F /* event2-3.jpg */; };
+		BA05A9571733134600927C4F /* event2-2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BA05A9561733134600927C4F /* event2-2.jpg */; };
+		BA05A9591733134F00927C4F /* event2-4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BA05A9581733134F00927C4F /* event2-4.jpg */; };
+		BA05A95B1733137400927C4F /* event2-0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BA05A95A1733137400927C4F /* event2-0.jpg */; };
 		BA641F1117295AAD007F7E3A /* Artist.m in Sources */ = {isa = PBXBuildFile; fileRef = BA641F1017295AAD007F7E3A /* Artist.m */; };
 		BA641F1417295AF7007F7E3A /* ArtistDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BA641F1317295AF7007F7E3A /* ArtistDataModel.m */; };
 		BAA1FC501724B25800E166B6 /* EventDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA1FC4F1724B25800E166B6 /* EventDataModel.m */; };
@@ -89,7 +95,7 @@
 		BAFAE155172DBE6E00E09C35 /* EventCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BAFAE154172DBE6E00E09C35 /* EventCell.m */; };
 		BAFAE157172DBED400E09C35 /* EventCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAFAE156172DBED400E09C35 /* EventCell.xib */; };
 		BAFAE15A172DBFAF00E09C35 /* EventLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = BAFAE159172DBFAF00E09C35 /* EventLayout.m */; };
-		BAFAE15C172DE0BD00E09C35 /* event2-0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BAFAE15B172DE0BD00E09C35 /* event2-0.jpg */; };
+		BAFAE15C172DE0BD00E09C35 /* event2-1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BAFAE15B172DE0BD00E09C35 /* event2-1.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -132,6 +138,12 @@
 		7F9C510F16F74B6D00BAD5F7 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		7F9C511116F7679B00BAD5F7 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		7FCD9B3D1732C8C40088A654 /* stourvalley3.mbtiles */ = {isa = PBXFileReference; lastKnownFileType = file; path = stourvalley3.mbtiles; sourceTree = "<group>"; };
+		BA05A950173311A300927C4F /* event1-3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "event1-3.jpg"; sourceTree = "<group>"; };
+		BA05A952173311AA00927C4F /* event1-4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "event1-4.jpg"; sourceTree = "<group>"; };
+		BA05A9541733133800927C4F /* event2-3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "event2-3.jpg"; sourceTree = "<group>"; };
+		BA05A9561733134600927C4F /* event2-2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "event2-2.jpg"; sourceTree = "<group>"; };
+		BA05A9581733134F00927C4F /* event2-4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "event2-4.jpg"; sourceTree = "<group>"; };
+		BA05A95A1733137400927C4F /* event2-0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "event2-0.jpg"; sourceTree = "<group>"; };
 		BA641F0F17295AAD007F7E3A /* Artist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Artist.h; sourceTree = "<group>"; };
 		BA641F1017295AAD007F7E3A /* Artist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Artist.m; sourceTree = "<group>"; };
 		BA641F1217295AF7007F7E3A /* ArtistDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArtistDataModel.h; sourceTree = "<group>"; };
@@ -205,7 +217,7 @@
 		BAFAE156172DBED400E09C35 /* EventCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventCell.xib; sourceTree = "<group>"; };
 		BAFAE158172DBFAF00E09C35 /* EventLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventLayout.h; sourceTree = "<group>"; };
 		BAFAE159172DBFAF00E09C35 /* EventLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventLayout.m; sourceTree = "<group>"; };
-		BAFAE15B172DE0BD00E09C35 /* event2-0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "event2-0.jpg"; sourceTree = "<group>"; };
+		BAFAE15B172DE0BD00E09C35 /* event2-1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "event2-1.jpg"; sourceTree = "<group>"; };
 		FD017F1215EF4B949E75B2F9 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		FDFB84CA4F32455DA4A4A79D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -442,7 +454,13 @@
 				BAA1FCD51725E22100E166B6 /* event1-0.jpg */,
 				BAA1FCD61725E22100E166B6 /* event1-1.jpg */,
 				BAA1FCD71725E22100E166B6 /* event1-2.jpg */,
-				BAFAE15B172DE0BD00E09C35 /* event2-0.jpg */,
+				BA05A950173311A300927C4F /* event1-3.jpg */,
+				BA05A952173311AA00927C4F /* event1-4.jpg */,
+				BA05A95A1733137400927C4F /* event2-0.jpg */,
+				BAFAE15B172DE0BD00E09C35 /* event2-1.jpg */,
+				BA05A9561733134600927C4F /* event2-2.jpg */,
+				BA05A9541733133800927C4F /* event2-3.jpg */,
+				BA05A9581733134F00927C4F /* event2-4.jpg */,
 				BAA1FCE01725E28600E166B6 /* svaavatar.png */,
 				BAA1FCE11725E28600E166B6 /* svaavatar@2x.png */,
 			);
@@ -588,10 +606,16 @@
 				BAD56D861728CBB2002F5757 /* SVAWebView.xib in Resources */,
 				BAFAE151172DB71F00E09C35 /* SVAEventDetailViewController.xib in Resources */,
 				BAFAE157172DBED400E09C35 /* EventCell.xib in Resources */,
-				BAFAE15C172DE0BD00E09C35 /* event2-0.jpg in Resources */,
+				BAFAE15C172DE0BD00E09C35 /* event2-1.jpg in Resources */,
 				7F3C5B1A1730182A00793A2D /* navbar.jpg in Resources */,
 				7F3C5B1B1730182A00793A2D /* navbar@2x.jpg in Resources */,
 				7FCD9B3E1732C8C40088A654 /* stourvalley3.mbtiles in Resources */,
+				BA05A951173311A300927C4F /* event1-3.jpg in Resources */,
+				BA05A953173311AA00927C4F /* event1-4.jpg in Resources */,
+				BA05A9551733133800927C4F /* event2-3.jpg in Resources */,
+				BA05A9571733134600927C4F /* event2-2.jpg in Resources */,
+				BA05A9591733134F00927C4F /* event2-4.jpg in Resources */,
+				BA05A95B1733137400927C4F /* event2-0.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

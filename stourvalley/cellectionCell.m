@@ -18,7 +18,7 @@
     if (self) {
         // Initialization code
          [self setClearsContextBeforeDrawing:YES];
-      
+            
     }
     return self;
 }

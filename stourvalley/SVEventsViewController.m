@@ -63,7 +63,7 @@
 
     [self loadData];
        
-    [self.collectionView setBackgroundColor:[UIColor whiteColor]];
+    [self.collectionView setBackgroundColor:[UIColor colorWithRed:247/255.0 green:242/255.0 blue:236/255.0 alpha:1.0]];
    
     [self.collectionView registerNib:[UINib nibWithNibName:@"EventCell" bundle:nil] forCellWithReuseIdentifier:@"EventCell"];
     [self.collectionView setDelegate:self];
@@ -141,9 +141,11 @@
 {
     EventCell *cell = [self.collectionView dequeueReusableCellWithReuseIdentifier:@"EventCell" forIndexPath:indexPath];
     //[cell setNeedsDisplay];
-    cell.backgroundColor = [UIColor whiteColor];
+    cell.backgroundColor = [UIColor colorWithRed:242/255.0 green:242/255.0 blue:242/255.0 alpha:1.0];
+   
     cell.layer.masksToBounds = NO;
-    cell.layer.borderColor = [UIColor whiteColor].CGColor;
+    //cell.layer.borderColor = [UIColor whiteColor].CGColor;
+    cell.layer.borderColor = [UIColor colorWithRed:242/255.0 green:242/255.0 blue:242/255.0 alpha:1.0].CGColor;
     cell.layer.borderWidth = 3.0f;
     cell.layer.contentsScale = [UIScreen mainScreen].scale;
     cell.layer.shadowOpacity = 0.3f;

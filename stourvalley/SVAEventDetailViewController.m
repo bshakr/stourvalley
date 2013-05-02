@@ -32,7 +32,7 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
-        self.title = NSLocalizedString(@"SVA Event", @"SVA Event");
+        //self.title = NSLocalizedString(@"SVA Event", @"SVA Event");
     }
     return self;
 }
@@ -49,6 +49,13 @@
     [button setTintColor:[UIColor colorWithRed:187/255.0 green:83/255.0 blue:88/255.0 alpha:0.5]];
     return button;
 }
+- (void) viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    self.title = NSLocalizedString(self.titleLabel, @"SVA");
+    
+}
+
 
 - (void)viewDidLoad
 {
@@ -62,7 +69,9 @@
     [self.eventTableView registerNib:[self menuCellNib] forCellReuseIdentifier:@"MenuCell"];
     //  [self.eventTableView registerClass:[imageTableCell class] forCellReuseIdentifier:CollectionViewCellIdentifier];
     [self.collectionView registerNib:[self imageCollectionCellNib] forCellWithReuseIdentifier:CollectionViewCellIdentifier];
+     
     self.contentOffsetDictionary = [NSMutableDictionary dictionary];
+    [self.eventTableView setBackgroundColor:[UIColor colorWithRed:250/255.0 green:249/255.0 blue:249/255.0 alpha:1.0]];
     
     self.eventTableView.delegate = self;
     [self.eventTableView reloadData];
@@ -155,12 +164,13 @@
                                         reuseIdentifier:CellIdentifier];
             }
             [cell.tbImageView setImage:[UIImage imageNamed:@"svaavatar.png"]];
-            
             cell.tbNameField.text = self.titleLabel;
             cell.tbDescField.text = self.descLabel;
             cell.tbDateField.text = self.dateLabel;
             _index = indexPath.row;
             cell.userInteractionEnabled = NO;
+            
+            
             return cell;
             break;
         }
@@ -177,10 +187,12 @@
     if (indexPath.section ==2 && indexPath.row == 0) {
         cell.mcellName.text = [NSString stringWithFormat:@"Booking"];
         [cell.mcellImage setImage:[UIImage imageNamed:@"bookingIcon"]];
+        cell.selectionStyle = UITableViewCellSelectionStyleGray;
         
     }if (indexPath.section ==2 && indexPath.row == 1) {
         cell.mcellName.text = [NSString stringWithFormat:@"Get direction"];
         [cell.mcellImage setImage:[UIImage imageNamed:@"directionIcon"]];
+        cell.selectionStyle = UITableViewCellSelectionStyleGray;
     }
     
     return cell;
@@ -217,8 +229,7 @@
     
     cellectionCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:CollectionViewCellIdentifier forIndexPath:indexPath];
     
-    
-    UIImageView *imv = [[UIImageView alloc] initWithFrame:CGRectMake(10, 10, 180, 120)];
+    UIImageView *imv = [[UIImageView alloc] initWithFrame:CGRectMake(10, 10, 200, 125)];
     imv.backgroundColor = [UIColor clearColor];
     imv.opaque = NO;
     
@@ -231,6 +242,17 @@
         imv.image = [UIImage imageNamed:@"event-default.jpg"];
     }
     cell.backgroundView = imv;
+    
+    cell.layer.masksToBounds = NO;
+    //cell.layer.borderColor = [UIColor whiteColor].CGColor;
+    //cell.layer.borderWidth = 3.0f;
+    cell.layer.contentsScale = [UIScreen mainScreen].scale;
+    cell.layer.shadowOpacity = 0.3f;
+    cell.layer.shadowRadius = 2.0f;
+    cell.layer.shadowOffset = CGSizeMake(1.0f, 2.0f);
+    cell.layer.shadowPath = [UIBezierPath bezierPathWithRect:cell.bounds].CGPath;
+    cell.layer.rasterizationScale = [UIScreen mainScreen].scale;
+    cell.layer.shouldRasterize = YES;
     
     return cell;
 }

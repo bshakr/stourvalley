@@ -26,7 +26,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
+    [[UIBarButtonItem appearance] setTintColor:[UIColor colorWithRed:187/255.0 green:83/255.0 blue:88/255.0 alpha:0.5]];
     // Do any additional setup after loading the view from its nib.
     
 }
