@@ -37,6 +37,7 @@
 		7F9C510E16F7275D00BAD5F7 /* SVMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F9C510D16F7275D00BAD5F7 /* SVMenuCell.m */; };
 		7F9C511016F74B6D00BAD5F7 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F9C510F16F74B6D00BAD5F7 /* MapKit.framework */; };
 		7F9C511216F7679B00BAD5F7 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F9C511116F7679B00BAD5F7 /* CoreLocation.framework */; };
+		7FCD9B3E1732C8C40088A654 /* stourvalley3.mbtiles in Resources */ = {isa = PBXBuildFile; fileRef = 7FCD9B3D1732C8C40088A654 /* stourvalley3.mbtiles */; };
 		BA641F1117295AAD007F7E3A /* Artist.m in Sources */ = {isa = PBXBuildFile; fileRef = BA641F1017295AAD007F7E3A /* Artist.m */; };
 		BA641F1417295AF7007F7E3A /* ArtistDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BA641F1317295AF7007F7E3A /* ArtistDataModel.m */; };
 		BAA1FC501724B25800E166B6 /* EventDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA1FC4F1724B25800E166B6 /* EventDataModel.m */; };
@@ -130,6 +131,7 @@
 		7F9C510D16F7275D00BAD5F7 /* SVMenuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVMenuCell.m; sourceTree = "<group>"; };
 		7F9C510F16F74B6D00BAD5F7 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		7F9C511116F7679B00BAD5F7 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		7FCD9B3D1732C8C40088A654 /* stourvalley3.mbtiles */ = {isa = PBXFileReference; lastKnownFileType = file; path = stourvalley3.mbtiles; sourceTree = "<group>"; };
 		BA641F0F17295AAD007F7E3A /* Artist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Artist.h; sourceTree = "<group>"; };
 		BA641F1017295AAD007F7E3A /* Artist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Artist.m; sourceTree = "<group>"; };
 		BA641F1217295AF7007F7E3A /* ArtistDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArtistDataModel.h; sourceTree = "<group>"; };
@@ -286,6 +288,7 @@
 		7F1F629F16EE4DBA00018974 /* stourvalley */ = {
 			isa = PBXGroup;
 			children = (
+				7FCD9B3D1732C8C40088A654 /* stourvalley3.mbtiles */,
 				7F109E451700BFBB008C0048 /* Model Class */,
 				7F9C510416F725AD00BAD5F7 /* Images */,
 				7F9C50F916F720E300BAD5F7 /* Menu */,
@@ -588,6 +591,7 @@
 				BAFAE15C172DE0BD00E09C35 /* event2-0.jpg in Resources */,
 				7F3C5B1A1730182A00793A2D /* navbar.jpg in Resources */,
 				7F3C5B1B1730182A00793A2D /* navbar@2x.jpg in Resources */,
+				7FCD9B3E1732C8C40088A654 /* stourvalley3.mbtiles in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

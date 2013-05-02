@@ -76,6 +76,7 @@
     
     
     self.navigationItem.leftBarButtonItem = [self slideOutBarButton];
+    /***
     RMMapBoxSource *tileSource = [[RMMapBoxSource alloc] initWithMapID:@"bshaker.map-xahr0dzz"];
     CLLocationCoordinate2D initialLocation = CLLocationCoordinate2DMake(51.215499999999984, 0.8911000000000154);
     RMMapView *mapView = [[RMMapView alloc] initWithFrame:self.view.bounds andTilesource:tileSource centerCoordinate:initialLocation zoomLevel:14 maxZoomLevel:18 minZoomLevel:2 backgroundImage:nil];
@@ -83,13 +84,22 @@
     mapView.zoom = 14;
     
     [mapView setConstraintsSouthWest:[mapView.tileSource latitudeLongitudeBoundingBox].southWest
-                                northEast:[mapView.tileSource latitudeLongitudeBoundingBox].northEast];
+                            northEast:[mapView.tileSource latitudeLongitudeBoundingBox].northEast];
     RMPointAnnotation *annotation = [[RMPointAnnotation alloc] initWithMapView:mapView
                                                                     coordinate:mapView.centerCoordinate
                                                                       andTitle:@"Car Park"];
     
     [mapView addAnnotation:annotation];
+    ***/
+    
+    RMMBTilesSource *offlineSource = [[RMMBTilesSource alloc] initWithTileSetResource:@"stourvalley3" ofType:@"mbtiles"];
+    CLLocationCoordinate2D initialLocation = CLLocationCoordinate2DMake(51.2133, 0.8963);
 
+    RMMapView *mapView = [[RMMapView alloc] initWithFrame:self.view.bounds andTilesource:offlineSource
+                          centerCoordinate:initialLocation zoomLevel:17 maxZoomLevel:19 minZoomLevel:13 backgroundImage:nil];
+    
+    mapView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
+    mapView.adjustTilesForRetinaDisplay = YES;
     [self.view addSubview:mapView];
 }
 
