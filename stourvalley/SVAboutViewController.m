@@ -236,11 +236,10 @@ static NSString * const AboutCellIdentifier4 = @"socailMenuCell";
                     }
                 case 2:
                     {
-                        NSLog(@"Click to soundclound");
-                        
+                       
                         
                         if (!self.webView) {
-                            self.webView = [[SVAWebView alloc] initWithNibName:@"WebViewViewController" bundle:nil];
+                            self.webView = [[SVAWebView alloc] initWithNibName:@"SVAWebView" bundle:nil];
                             
                         }
                         
