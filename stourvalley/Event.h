@@ -13,9 +13,9 @@
 @interface Event : NSManagedObject
 
 @property (nonatomic, retain) NSString * detail;
-@property (nonatomic, retain) NSDate * endDate;
+@property (nonatomic, retain) NSString * endDate;
 @property (nonatomic, retain) NSString * eventName;
-@property (nonatomic, retain) NSDate * startDate;
+@property (nonatomic, retain) NSString * startDate;
 @property (nonatomic, retain) NSString * imageTag;
 @property (nonatomic, retain) NSNumber * imageCount;
 

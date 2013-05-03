@@ -58,8 +58,7 @@
 
     self.navigationItem.leftBarButtonItem = [self slideOutBarButton];
 	// Do any additional setup after loading the view.
-    df = [[NSDateFormatter alloc] init];
-    [df setDateFormat:@"MMMM dd, yyyy"];
+  
 
     [self loadData];
        
@@ -158,9 +157,10 @@
     cell.titleLabel.text = [self.nameArray objectAtIndex:indexPath.item];
     
    
-    NSString *start = [df stringFromDate:[_stDateArray objectAtIndex:indexPath.item]];
-    NSString *end = [df stringFromDate:[_edDateArray objectAtIndex:indexPath.item]];
-   
+    
+    NSString *start = [_stDateArray objectAtIndex:indexPath.item];
+    NSString *end = [_edDateArray objectAtIndex:indexPath.item];
+    
     cell.dateLabel.text = [NSString stringWithFormat:@"%@ - %@", start, end];
     
     NSString *iname = [NSString stringWithFormat:@"%@-0.jpg",[self.imgNameArray objectAtIndex:indexPath.item]];
@@ -186,8 +186,9 @@
         
     }
     
-    NSString *start = [df stringFromDate:[_stDateArray objectAtIndex:indexPath.item]];
-    NSString *end = [df stringFromDate:[_edDateArray objectAtIndex:indexPath.item]];
+    
+    NSString *start = [_stDateArray objectAtIndex:indexPath.item];
+    NSString *end = [_edDateArray objectAtIndex:indexPath.item];
 
     self.eventDetailView.titleLabel = [self.nameArray objectAtIndex:indexPath.item];
     self.eventDetailView.descLabel = [self.detailArray objectAtIndex:indexPath.item];

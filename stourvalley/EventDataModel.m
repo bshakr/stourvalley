@@ -152,8 +152,10 @@
   
     for (NSDictionary *obj in array) {
         NSString *name = [obj objectForKey:@"eventName"];
-        NSDate *stdate = [df dateFromString:[obj objectForKey:@"startDate"]];
-        NSDate *endate = [df dateFromString:[obj objectForKey:@"endDate"]];
+       // NSDate *stdate = [df dateFromString:[obj objectForKey:@"startDate"]];
+       // NSDate *endate = [df dateFromString:[obj objectForKey:@"endDate"]];
+        NSString *stdate = [obj objectForKey:@"startDate"];
+        NSString *endate = [obj objectForKey:@"endDate"];
         NSString *detail = [obj objectForKey:@"detail"];
         NSString *tag = [obj objectForKey:@"imageTag"];
         NSString *count = [obj objectForKey:@"imageCount"];

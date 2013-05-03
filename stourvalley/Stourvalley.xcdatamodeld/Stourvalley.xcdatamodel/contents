@@ -16,15 +16,15 @@
     </entity>
     <entity name="Event" representedClassName="Event" syncable="YES">
         <attribute name="detail" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="endDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="endDate" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="eventName" attributeType="String" indexed="YES" syncable="YES"/>
         <attribute name="imageCount" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="imageTag" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="startDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="startDate" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
         <element name="ArtInstallation" positionX="-272" positionY="27" width="128" height="133"/>
         <element name="Artist" positionX="-425" positionY="27" width="128" height="103"/>
-        <element name="Event" positionX="-119" positionY="45" width="128" height="133"/>
+        <element name="Event" positionX="-119" positionY="45" width="128" height="135"/>
     </elements>
 </model>
