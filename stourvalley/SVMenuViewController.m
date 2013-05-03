@@ -30,7 +30,7 @@ enum {
     UIImage *menuBG = [UIImage imageNamed:@"menu-bg.png"];
     UIColor *backgroundTile = [UIColor colorWithPatternImage:menuBG];
     self.tableView.backgroundColor = backgroundTile;
-    self.tableView.separatorColor = [UIColor colorWithWhite:1.0 alpha:0.2];
+    self.tableView.separatorColor = [UIColor clearColor];
 
 }
 
