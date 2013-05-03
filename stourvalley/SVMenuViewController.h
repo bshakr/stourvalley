@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "SVMenuCell.h"
 @interface SVMenuViewController : UITableViewController <UITableViewDataSource, UITableViewDelegate>
-
+{
+    
+}
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
+@property (nonatomic, assign) IBOutlet SVMenuCell *menuCell;
 
 @end
