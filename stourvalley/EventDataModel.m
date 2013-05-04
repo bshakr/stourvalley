@@ -23,7 +23,7 @@
 - (NSString *)documentsDirectory;
 - (NSArray *)eventArray;
 - (NSArray *) arrayForKey;
-- (NSArray *) arrayForObject;
+
 
 @end
 
@@ -145,8 +145,8 @@
 
 -(void)creatEvents{
  
-    NSDateFormatter *df = [[NSDateFormatter alloc] init]; //date format - MONTH DD, YYYY
-    [df setDateStyle:NSDateFormatterLongStyle];
+    //NSDateFormatter *df = [[NSDateFormatter alloc] init]; //date format - MONTH DD, YYYY
+    //[df setDateStyle:NSDateFormatterLongStyle];
 
     NSArray *array = [NSArray arrayWithArray:[self eventArray]];
   
@@ -159,6 +159,7 @@
         NSString *detail = [obj objectForKey:@"detail"];
         NSString *tag = [obj objectForKey:@"imageTag"];
         NSString *count = [obj objectForKey:@"imageCount"];
+        NSString *link = [obj objectForKey:@"bookingLink"];
         
         // NSLog(@"This is installation %@ by %@ at %@, %@  - %@ : %@", name, artist, lat, lon, createDate, info);
         event = [NSEntityDescription insertNewObjectForEntityForName:@"Event" inManagedObjectContext:_mainContext];
@@ -169,12 +170,38 @@
         [event setDetail:detail];
         [event setImageTag:tag];
         [event setImageCount:[NSNumber numberWithInt:[count intValue]]];
+        [event setBookingLink:link];
         
         [_mainContext save:nil];
 
     }
     NSLog(@"Created");
     
+    
+}
+
+- (void) clearAllEvents
+{
+    // Define our table/entity to use
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Event" inManagedObjectContext:_mainContext];
+    // Setup the fetch request
+    NSFetchRequest *request = [[NSFetchRequest alloc] init];
+    [request setEntity:entity];
+    
+    NSError *error;
+    NSArray *results = [[_mainContext executeFetchRequest:request error:&error] mutableCopy];
+    
+    //[allCars setIncludesPropertyValues:NO]; //only fetch the managedObjectID
+    
+    //error handling goes here
+    for (NSManagedObject * obj in results) {
+        [_mainContext deleteObject:obj];
+    }
+    
+    [_mainContext save:nil];
+    
+    _allEvents = [[NSMutableArray alloc] initWithArray:results];
+    NSLog(@"Deleted all events, EventDataModel.allEvents : %d", _allEvents.count);
     
 }
 
@@ -189,7 +216,7 @@
 
 - (NSArray *) arrayForKey
 {
-    return [NSArray arrayWithObjects:@"eventName", @"startDate", @"endDate",@"detail", @"imageTag",@"imageCount" , nil];
+    return [NSArray arrayWithObjects:@"eventName", @"startDate", @"endDate",@"detail", @"imageTag",@"imageCount", @"bookingLink" , nil];
 }
 
 - (NSArray *)eventArray
@@ -214,13 +241,15 @@
 
 - (NSArray *) arrayForObject
 {
-    NSArray *event1 = [NSArray arrayWithObjects:@"Make believe : Holy Story", @"April 27, 2013", @"June 01, 2013",@"Launch & forest walk - 11 - 2 Drinks & speeches 12.30 Forest Walk, led by the artist - 2.45. This exhibition brings together the woven objects and selected den photographs, revealing some of the artist’s and the children’s shared impulses to construct in the forest environment.", @"event1",@"5" , nil];
+    NSArray *event0 = [NSArray arrayWithObjects:@"Forest Fun Family Workshops", @"May 11, 2013", @"multiple dates",@"Make a small book with artist Sara Wicks,use forest materials & mud to make mono-print images & drawings in your book.Sessions will run at the Forest Studio.*Cost is £5 per head,suitable for 4 yrs and above - children must be accompanied by an adult.**BOOKING ESSENTIAL.", @"event0",@"5" , @"http://www.eventbrite.co.uk/event/6442645125/eorg", nil];
     
-    NSArray *event2 = [NSArray arrayWithObjects:@"Science Nature & Identity", @"November 10, 2012", @"December 15, 2012",@"This new exhibition marks the end of the four-year Down Time  project during which SVA aimed to address physical and mental wellbeing through a series of training and artist-led activities working with 320 vulnerable young people and those at risk of disengagement.", @"event2",@"4" , nil];
+    NSArray *event1 = [NSArray arrayWithObjects:@"Make believe : Holy Story", @"April 27, 2013", @"June 01, 2013",@"Launch & forest walk - 11 - 2 Drinks & speeches 12.30 Forest Walk, led by the artist - 2.45. This exhibition brings together the woven objects and selected den photographs, revealing some of the artist’s and the children’s shared impulses to construct in the forest environment.", @"event1",@"5" , @"", nil];
+    
+    NSArray *event2 = [NSArray arrayWithObjects:@"Science Nature & Identity", @"November 10, 2012", @"December 15, 2012",@"This new exhibition marks the end of the four-year Down Time  project during which SVA aimed to address physical and mental wellbeing through a series of training and artist-led activities working with 320 vulnerable young people and those at risk of disengagement.", @"event2",@"5" , @"", nil];
     
     
     
-    NSArray *all = [NSArray arrayWithObjects:event1, event2, nil];
+    NSArray *all = [NSArray arrayWithObjects:event0, event1, event2, nil];
     
     return [NSArray arrayWithArray:all] ;
 }

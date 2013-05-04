@@ -3,7 +3,7 @@
 //  stourvalley
 //
 //  Created by Treechot Shompoonut on 28/04/2013.
-//  Copyright (c) 2013 Bassem Shaker. All rights reserved.
+//  Copyright (c) 2013 Treechot Shompoonut. All rights reserved.
 //
 
 #import "SVAEventDetailViewController.h"
@@ -13,6 +13,7 @@
 #import "cellectionCell.h"
 #import "imageTableCell.h"
 #import "imageCollectionView.h"
+#import "SVAWebView.h"
 
 
 
@@ -52,6 +53,7 @@
 - (void) viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
+    [self.eventTableView deselectRowAtIndexPath:[self.eventTableView indexPathForSelectedRow] animated:YES];
     self.title = NSLocalizedString(self.titleLabel, @"SVA");
     
 }
@@ -60,6 +62,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
     UIImage *navBG = [UIImage imageNamed:@"navbar.jpg"];
     [self.navigationController.navigationBar setBackgroundImage:navBG forBarMetrics:UIBarMetricsDefault];
     
@@ -187,12 +190,12 @@
     if (indexPath.section ==2 && indexPath.row == 0) {
         cell.mcellName.text = [NSString stringWithFormat:@"Booking"];
         [cell.mcellImage setImage:[UIImage imageNamed:@"bookingIcon"]];
-        cell.selectionStyle = UITableViewCellSelectionStyleGray;
+        //cell.selectionStyle = UITableViewCellSelectionStyleGray;
         
     }if (indexPath.section ==2 && indexPath.row == 1) {
         cell.mcellName.text = [NSString stringWithFormat:@"Get direction"];
         [cell.mcellImage setImage:[UIImage imageNamed:@"directionIcon"]];
-        cell.selectionStyle = UITableViewCellSelectionStyleGray;
+        //cell.selectionStyle = UITableViewCellSelectionStyleGray;
     }
     
     return cell;
@@ -207,7 +210,7 @@
     switch (indexPath.section)
     {
         case 0:
-            return 180;
+            return 198;
             break;
         case 1:
             return 200;
@@ -215,6 +218,35 @@
     }
     return 66;
 }
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+
+{
+    if (indexPath.section == 2 && indexPath.row == 0) {
+       // NSLog(@"link %@ length =%d", self.bookingLink, self.bookingLink.length);
+        if (self.bookingLink.length != 0 ) {
+            if (!self.webView) {
+                self.webView = [[SVAWebView alloc] initWithNibName:@"SVAWebView" bundle:nil];
+                
+            }
+            
+            self.webView.address =  self.bookingLink;
+            self.webView.pagetitle = @"SVA Events";
+            [self.navigationController pushViewController:self.webView animated:YES];
+            }
+        else
+        {
+            //NSLog(@"Call SVA");
+            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"tel://01233664987 "]];
+           
+        }
+
+    }
+
+
+
+}
+
 
 #pragma mark - UICollectionViewDataSource Methods
 
@@ -266,9 +298,6 @@
  - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
  {
  // TODO: Select Item
- self.index = indexPath.row;
- //NSLog(@"Selecting index = %d", _index);
- 
  }*/
 
 #pragma mark - UIScrollViewDelegate Methods

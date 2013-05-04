@@ -3,7 +3,7 @@
 //  stourvalley
 //
 //  Created by Treechot Shompoonut on 22/04/2013.
-//  Copyright (c) 2013 Bassem Shaker. All rights reserved.
+//  Copyright (c) 2013 Treechot Shompoonut. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
@@ -20,6 +20,7 @@
 @property (nonatomic, retain) NSMutableArray *edDateArray;
 @property (nonatomic, retain) NSMutableArray *imgNameArray;
 @property (nonatomic, retain) NSMutableArray *inumArray;
+@property (nonatomic, retain) NSMutableArray *linkArray;
 @property (nonatomic, retain) NSString *dateLabel;
 
 -(EventDataModel *) shareEvent;

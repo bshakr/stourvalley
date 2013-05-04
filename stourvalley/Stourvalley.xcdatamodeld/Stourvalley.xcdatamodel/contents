@@ -15,6 +15,7 @@
         <attribute name="name" attributeType="String" indexed="YES" syncable="YES"/>
     </entity>
     <entity name="Event" representedClassName="Event" syncable="YES">
+        <attribute name="bookingLink" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="detail" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="endDate" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="eventName" attributeType="String" indexed="YES" syncable="YES"/>
@@ -25,6 +26,6 @@
     <elements>
         <element name="ArtInstallation" positionX="-272" positionY="27" width="128" height="133"/>
         <element name="Artist" positionX="-425" positionY="27" width="128" height="103"/>
-        <element name="Event" positionX="-119" positionY="45" width="128" height="135"/>
+        <element name="Event" positionX="-119" positionY="45" width="128" height="150"/>
     </elements>
 </model>

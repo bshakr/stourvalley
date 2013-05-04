@@ -2,8 +2,8 @@
 //  SVAboutViewController.h
 //  stourvalley
 //
-//  Created by Bassem on 12/03/2013.
-//  Copyright (c) 2013 Bassem Shaker. All rights reserved.
+//  Created by Treechot Shompoonut on 24/04/2013.
+//  Copyright (c) 2013 Treechot Shompoonut. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

@@ -10,10 +10,17 @@
 #import "SVMapboxViewController.h"
 @class SVViewController;
 
+
 @interface SVAppDelegate : UIResponder <UIApplicationDelegate>
+{
+    NSManagedObjectContext *eventContext;
+    NSArray *allEvents;
+}
 
 @property (strong, nonatomic) UIWindow *window;
 
 @property (strong, nonatomic) SVMapboxViewController *viewController;
+
+- (void)checkEventsData;
 
 @end

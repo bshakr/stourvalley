@@ -3,7 +3,7 @@
 //  stourvalley
 //
 //  Created by Treechot Shompoonut on 22/04/2013.
-//  Copyright (c) 2013 Bassem Shaker. All rights reserved.
+//  Copyright (c) 2013 Treechot Shompoonut. All rights reserved.
 //
 
 #import "SVEventsViewController.h"
@@ -81,22 +81,23 @@
 {
     //Share DataModel
     context = [[EventDataModel sharedDataModel] mainContext];
+    allEvents = nil;
     if(context){
         NSLog(@"Context is ready to use");
-        
         allEvents = [[self shareEvent] getAllEvents];
-        if (allEvents.count != 0) {
-        }else{
-            [[EventDataModel sharedDataModel] creatEvents];
-            allEvents = [[self shareEvent] getAllEvents];
-            
-        }
+            if (allEvents.count == 0) {
+                [[EventDataModel sharedDataModel] creatEvents];
+                allEvents = [[self shareEvent] getAllEvents];
+        
+            }
+        
         _nameArray = [allEvents valueForKey:@"eventName"];
         _detailArray = [allEvents valueForKey:@"detail"];
         _stDateArray = [allEvents valueForKey:@"startDate"];
         _edDateArray = [allEvents valueForKey:@"endDate"];
         _imgNameArray = [allEvents valueForKey:@"imageTag"];
         _inumArray = [allEvents valueForKey:@"imageCount"];
+        _linkArray = [allEvents valueForKey:@"bookingLink"];
         
         
     }else{
@@ -195,6 +196,7 @@
     self.eventDetailView.dateLabel =  [NSString stringWithFormat:@"%@ - %@", start, end];
     self.eventDetailView.cellCount = [[self.inumArray objectAtIndex:indexPath.item] integerValue];
     self.eventDetailView.imageTag = [self.imgNameArray objectAtIndex:indexPath.item];
+    self.eventDetailView.bookingLink = [self.linkArray objectAtIndex:indexPath.item];
     
     
     

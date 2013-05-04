@@ -3,7 +3,7 @@
 //  stourvalley
 //
 //  Created by Treechot Shompoonut on 22/04/2013.
-//  Copyright (c) 2013 Bassem Shaker. All rights reserved.
+//  Copyright (c) 2013 Treechot Shompoonut. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -18,5 +18,6 @@
 @property (nonatomic, retain) NSString * startDate;
 @property (nonatomic, retain) NSString * imageTag;
 @property (nonatomic, retain) NSNumber * imageCount;
+@property (nonatomic, retain) NSString * bookingLink;
 
 @end

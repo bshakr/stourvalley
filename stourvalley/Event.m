@@ -3,7 +3,7 @@
 //  stourvalley
 //
 //  Created by Treechot Shompoonut on 22/04/2013.
-//  Copyright (c) 2013 Bassem Shaker. All rights reserved.
+//  Copyright (c) 2013 Treechot Shompoonut. All rights reserved.
 //
 
 #import "Event.h"
@@ -17,5 +17,6 @@
 @dynamic startDate;
 @dynamic imageTag;
 @dynamic imageCount;
+@dynamic bookingLink;
 
 @end
