@@ -11,6 +11,10 @@
 #import "SVMapboxViewController.h"
 #import "SVMenuViewController.h"
 #import "NVSlideMenuController.h"
+#import "EventDataModel.h"
+
+
+
 @implementation SVAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -19,13 +23,54 @@
     // Override point for customization after application launch.
     
     self.viewController = [[SVMapboxViewController alloc] init];
+
     UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:self.viewController];
+
     SVMenuViewController *menuController = [[SVMenuViewController alloc]init];
     NVSlideMenuController *slideController = [[NVSlideMenuController alloc] initWithMenuViewController:menuController andContentViewController:navController];
     self.window.rootViewController = slideController;
     [self.window makeKeyAndVisible];
+    
+    [self checkEventsData];
+    
     return YES;
 }
+
+
+- (void)checkEventsData
+{
+    eventContext = [[EventDataModel sharedDataModel] mainContext];
+    allEvents = nil;
+    
+    if(eventContext){
+        NSLog(@" Appdeligate Context is ready to use");
+        //[[EventDataModel sharedDataModel] clearAllEvents];
+        allEvents = [[EventDataModel sharedDataModel] getAllEvents];
+        
+        if (allEvents.count == 0) {
+            NSLog(@"Events entity is empty");
+            [[EventDataModel sharedDataModel] creatEvents];
+            allEvents = [[EventDataModel sharedDataModel] getAllEvents];
+            NSLog(@" %d events created", allEvents.count);
+            
+        }else{
+            NSInteger currentEvNum = [[EventDataModel sharedDataModel] arrayForObject].count;
+            if (allEvents.count != currentEvNum) {
+                 NSLog(@"Event.entity diff, current events %d, Stored events %d ",currentEvNum, allEvents.count);
+                [[EventDataModel sharedDataModel] clearAllEvents];
+                [[EventDataModel sharedDataModel] creatEvents];
+                 allEvents = [[EventDataModel sharedDataModel] getAllEvents];
+                 NSLog(@"Updated %d events CoreData", allEvents.count);
+            }
+
+        }
+        
+    }else{
+        NSLog(@"eventContext == nil, Event.entity not found");
+    }
+
+}
+
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {

@@ -19,6 +19,7 @@
 - (id)insertInManagedObjectContext:(NSManagedObjectContext*)moc_;
 - (NSArray *)getAllEvents;
 - (void)creatEvents;
+- (void) clearAllEvents;
 
 @property (nonatomic, readonly) NSManagedObjectContext *mainContext;
 @property (nonatomic, readonly) NSPersistentStoreCoordinator *persistentStoreCoordinator;
@@ -29,6 +30,7 @@
 - (NSString *)pathToModel;
 - (NSString *)storeFilename;
 - (NSString *)pathToLocalStore;
+- (NSArray *) arrayForObject;
 
 
 

@@ -19,10 +19,11 @@
     imagesLayout *customLayout = [[imagesLayout alloc] init];
    
     self.collectionView = [[imageCollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:customLayout];
+    [self.collectionView setBackgroundColor:[UIColor colorWithRed:247/255.0 green:242/255.0 blue:236/255.0 alpha:1.0]];
     
    // [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:CollectionViewCellIdentifier];
     [self.collectionView registerNib:[UINib nibWithNibName:@"collectionCell" bundle:nil] forCellWithReuseIdentifier:CollectionViewCellIdentifier];
-    self.collectionView.backgroundColor = [UIColor whiteColor];
+    
     self.collectionView.showsHorizontalScrollIndicator = NO;
     [self.contentView addSubview:self.collectionView];
     
@@ -41,6 +42,7 @@
     self.collectionView.dataSource = dataSourceDelegate;
     self.collectionView.delegate = dataSourceDelegate;
     self.collectionView.index = index;
+    
     
     [self.collectionView reloadData];
 }

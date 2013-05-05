@@ -3,7 +3,7 @@
 //  stourvalley
 //
 //  Created by Treechot Shompoonut on 22/04/2013.
-//  Copyright (c) 2013 Bassem Shaker. All rights reserved.
+//  Copyright (c) 2013 Treechot Shompoonut. All rights reserved.
 //
 
 #import "SVEventsViewController.h"
@@ -18,7 +18,7 @@
 {
     NSManagedObjectContext *context;
     NSArray *allEvents;
-    NSDateFormatter *df ;
+   // NSDateFormatter *df ;
 }
 
 @property (nonatomic, strong) NSMutableDictionary *contentOffsetDictionary;
@@ -42,22 +42,27 @@
 }
 
 - (UIBarButtonItem *)slideOutBarButton {
-    return [[UIBarButtonItem alloc] initWithImage:[self listImage]
-                                            style:UIBarButtonItemStyleBordered
-                                           target:self
-                                           action:@selector(slideOut:)];
+    UIBarButtonItem *button = [[UIBarButtonItem alloc] initWithImage:[self listImage]
+                                                               style:UIBarButtonItemStyleBordered
+                                                              target:self
+                                                              action:@selector(slideOut:)];
+    [button setTintColor:[UIColor colorWithRed:187/255.0 green:83/255.0 blue:88/255.0 alpha:0.5]];
+    return button;
 }
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    UIImage *navBG = [UIImage imageNamed:@"navbar.jpg"];
+    [self.navigationController.navigationBar setBackgroundImage:navBG forBarMetrics:UIBarMetricsDefault];
+    
+
     self.navigationItem.leftBarButtonItem = [self slideOutBarButton];
 	// Do any additional setup after loading the view.
-    df = [[NSDateFormatter alloc] init];
-    [df setDateFormat:@"MMMM dd, yyyy"];
+  
 
     [self loadData];
        
-    [self.collectionView setBackgroundColor:[UIColor whiteColor]];
+    [self.collectionView setBackgroundColor:[UIColor colorWithRed:247/255.0 green:242/255.0 blue:236/255.0 alpha:1.0]];
    
     [self.collectionView registerNib:[UINib nibWithNibName:@"EventCell" bundle:nil] forCellWithReuseIdentifier:@"EventCell"];
     [self.collectionView setDelegate:self];
@@ -76,22 +81,23 @@
 {
     //Share DataModel
     context = [[EventDataModel sharedDataModel] mainContext];
+    allEvents = nil;
     if(context){
         NSLog(@"Context is ready to use");
-        
         allEvents = [[self shareEvent] getAllEvents];
-        if (allEvents.count != 0) {
-        }else{
-            [[EventDataModel sharedDataModel] creatEvents];
-            allEvents = [[self shareEvent] getAllEvents];
-            
-        }
+            if (allEvents.count == 0) {
+                [[EventDataModel sharedDataModel] creatEvents];
+                allEvents = [[self shareEvent] getAllEvents];
+        
+            }
+        
         _nameArray = [allEvents valueForKey:@"eventName"];
         _detailArray = [allEvents valueForKey:@"detail"];
         _stDateArray = [allEvents valueForKey:@"startDate"];
         _edDateArray = [allEvents valueForKey:@"endDate"];
         _imgNameArray = [allEvents valueForKey:@"imageTag"];
         _inumArray = [allEvents valueForKey:@"imageCount"];
+        _linkArray = [allEvents valueForKey:@"bookingLink"];
         
         
     }else{
@@ -135,9 +141,11 @@
 {
     EventCell *cell = [self.collectionView dequeueReusableCellWithReuseIdentifier:@"EventCell" forIndexPath:indexPath];
     //[cell setNeedsDisplay];
-    cell.backgroundColor = [UIColor whiteColor];
+    cell.backgroundColor = [UIColor colorWithRed:242/255.0 green:242/255.0 blue:242/255.0 alpha:1.0];
+   
     cell.layer.masksToBounds = NO;
-    cell.layer.borderColor = [UIColor whiteColor].CGColor;
+    //cell.layer.borderColor = [UIColor whiteColor].CGColor;
+    cell.layer.borderColor = [UIColor colorWithRed:242/255.0 green:242/255.0 blue:242/255.0 alpha:1.0].CGColor;
     cell.layer.borderWidth = 3.0f;
     cell.layer.contentsScale = [UIScreen mainScreen].scale;
     cell.layer.shadowOpacity = 0.3f;
@@ -150,9 +158,10 @@
     cell.titleLabel.text = [self.nameArray objectAtIndex:indexPath.item];
     
    
-    NSString *start = [df stringFromDate:[_stDateArray objectAtIndex:indexPath.item]];
-    NSString *end = [df stringFromDate:[_edDateArray objectAtIndex:indexPath.item]];
-   
+    
+    NSString *start = [_stDateArray objectAtIndex:indexPath.item];
+    NSString *end = [_edDateArray objectAtIndex:indexPath.item];
+    
     cell.dateLabel.text = [NSString stringWithFormat:@"%@ - %@", start, end];
     
     NSString *iname = [NSString stringWithFormat:@"%@-0.jpg",[self.imgNameArray objectAtIndex:indexPath.item]];
@@ -178,14 +187,16 @@
         
     }
     
-    NSString *start = [df stringFromDate:[_stDateArray objectAtIndex:indexPath.item]];
-    NSString *end = [df stringFromDate:[_edDateArray objectAtIndex:indexPath.item]];
+    
+    NSString *start = [_stDateArray objectAtIndex:indexPath.item];
+    NSString *end = [_edDateArray objectAtIndex:indexPath.item];
 
     self.eventDetailView.titleLabel = [self.nameArray objectAtIndex:indexPath.item];
     self.eventDetailView.descLabel = [self.detailArray objectAtIndex:indexPath.item];
     self.eventDetailView.dateLabel =  [NSString stringWithFormat:@"%@ - %@", start, end];
     self.eventDetailView.cellCount = [[self.inumArray objectAtIndex:indexPath.item] integerValue];
     self.eventDetailView.imageTag = [self.imgNameArray objectAtIndex:indexPath.item];
+    self.eventDetailView.bookingLink = [self.linkArray objectAtIndex:indexPath.item];
     
     
     
@@ -222,6 +233,7 @@
 - (void)slideOut:(id)sender {
     [self.slideMenuController toggleMenuAnimated:self];
 }
+
 
 
 #pragma mark - UIScrollViewDelegate Methods

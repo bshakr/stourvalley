@@ -7,15 +7,16 @@
 //
 
 #import "SVMenuViewController.h"
-#import "SVMenuCell.h"
 #import "NVSlideMenuController.h"
 #import "SVAboutViewController.h"
 #import "SVMapboxViewController.h"
 #import "SVEventsViewController.h"
+#import "SVArtistsViewController.h"
 
 enum {
     MenuMapRow = 0,
     MenuEventRow,
+    MenuArtistRow,
     MenuAboutRow,
     MenuRowCount
 };
@@ -28,20 +29,21 @@ enum {
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.tableView.backgroundColor = [UIColor colorWithWhite:0.173 alpha:1.000];
-    self.tableView.separatorColor = [UIColor blackColor];
-    
-    [self.tableView registerNib:[self menuCellNib] forCellReuseIdentifier:@"SVMenuCell"];
-}
-- (UINib *)menuCellNib {
-    return [UINib nibWithNibName:@"MenuCell" bundle:nil];
-}
+    UIImage *menuBG = [UIImage imageNamed:@"menu-bg.png"];
+    UIColor *backgroundTile = [UIColor colorWithPatternImage:menuBG];
+    self.tableView.backgroundColor = backgroundTile;
+    self.tableView.separatorColor = [UIColor clearColor];
 
+}
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 70.0f;
 }
 
 #pragma mark - Table view data source
@@ -55,7 +57,7 @@ enum {
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return MenuRowCount;
+    return 4;
 }
 
 - (void)configureCell:(SVMenuCell *)cell forIndexPath:(NSIndexPath *)indexPath {
@@ -68,6 +70,10 @@ enum {
             cell.label.text = @"Events";
             break;
     
+        case MenuArtistRow:
+            cell.label.text = @"Artist Commissions";
+            break;
+            
         case MenuAboutRow:
             cell.label.text = @"About SVA";
             break;
@@ -79,11 +85,17 @@ enum {
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *CellIdentifier = @"SVMenuCell";
-    SVMenuCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    SVMenuCell *menuCell =(SVMenuCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    if(menuCell == nil)
+    {
+        [[NSBundle mainBundle] loadNibNamed:@"SVMenuCell" owner:self options:nil];
+        menuCell = _menuCell;
+        _menuCell = nil;
+
+    }
+    [self configureCell:menuCell forIndexPath:indexPath];
     
-    [self configureCell:cell forIndexPath:indexPath];
-    
-    return cell;
+    return menuCell;
 }
 
 #pragma mark - table view delegate
@@ -122,6 +134,10 @@ enum {
     [self showControllerClass:[SVEventsViewController class]];
 }
 
+-  (void)showArtistController{
+    [self showControllerClass:[SVArtistsViewController class]];
+}
+
 - (void)showAboutController {
     [self showControllerClass:[SVAboutViewController class]];
 }
@@ -134,6 +150,10 @@ enum {
             
         case MenuEventRow:
             [self showEventController];
+            break;
+            
+        case MenuArtistRow:
+            [self showArtistController];
             break;
             
         case MenuAboutRow:

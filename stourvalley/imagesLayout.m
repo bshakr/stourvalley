@@ -20,9 +20,10 @@
     if (self)
     {
         self.scrollDirection = UICollectionViewScrollDirectionHorizontal;
-        self.itemSize = (CGSize){180, 120}; //w,h
-        self.sectionInset = UIEdgeInsetsMake(10, 35, 10, 10); //Top,left,bottom,right -> left,top,right, bottom
-        self.minimumLineSpacing = 35.0;
+        self.itemSize = (CGSize){200, 125}; //w,h
+        self.sectionInset = UIEdgeInsetsMake(15, 40, 10, 40); //Top,left,bottom,right -> left,top,right, bottom
+        self.minimumLineSpacing = 45.0;
+        
        
     }
     return self;

@@ -2,8 +2,8 @@
 //  SVAboutViewController.m
 //  stourvalley
 //
-//  Created by Bassem on 12/03/2013.
-//  Copyright (c) 2013 Bassem Shaker. All rights reserved.
+//  Created by Treechot Shompoonut on 24/04/2013.
+//  Copyright (c) 2013 Treechot Shompoonut. All rights reserved.
 //
 
 #import "SVAboutViewController.h"
@@ -35,6 +35,7 @@ static NSString * const AboutCellIdentifier4 = @"socailMenuCell";
     if (self) {
         // Custom initialization
          self.title = NSLocalizedString(@"About SVA", @"About SVA");
+
     }
     return self;
 }
@@ -43,18 +44,22 @@ static NSString * const AboutCellIdentifier4 = @"socailMenuCell";
 }
 
 - (UIBarButtonItem *)slideOutBarButton {
-    return [[UIBarButtonItem alloc] initWithImage:[self listImage]
-                                            style:UIBarButtonItemStyleBordered
-                                           target:self
-                                           action:@selector(slideOut:)];
+    UIBarButtonItem *button = [[UIBarButtonItem alloc] initWithImage:[self listImage]
+                                                               style:UIBarButtonItemStyleBordered
+                                                              target:self
+                                                              action:@selector(slideOut:)];
+    [button setTintColor:[UIColor colorWithRed:187/255.0 green:83/255.0 blue:88/255.0 alpha:0.5]];
+    return button;
 }
 
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.navigationItem.leftBarButtonItem = [self slideOutBarButton];
+    UIImage *navBG = [UIImage imageNamed:@"navbar.jpg"];
+    [self.navigationController.navigationBar setBackgroundImage:navBG forBarMetrics:UIBarMetricsDefault];
     
+
     self.collectionView.backgroundColor = [UIColor colorWithWhite:0.90f alpha:1.0f];
     
     self.navigationItem.leftBarButtonItem = [self slideOutBarButton];
@@ -102,9 +107,11 @@ static NSString * const AboutCellIdentifier4 = @"socailMenuCell";
             //aboutCell.imageView.image = [UIImage imageNamed:@"about_view"];
             UIImageView *imv = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, 191.0f)];
             imv.backgroundColor = [UIColor clearColor];
+            imv.alpha = 0.8f;
             imv.opaque = NO;
             imv.contentMode = UIViewContentModeScaleToFill;
-            imv.image = [UIImage imageNamed:@"about_view"];
+            //imv.image = [UIImage imageNamed:@"about_view"];
+            imv.image = [UIImage imageNamed:@"svabanner"];
             aboutCell.backgroundView = imv;
             return aboutCell;
             break;
@@ -123,6 +130,7 @@ static NSString * const AboutCellIdentifier4 = @"socailMenuCell";
             [detailCell.timeTextLabel1 setText:@"Open hours during exhibitions"];
             [detailCell.timeTextLabel2 setText:@"11am-4pm, Wednesday-Saturday"];
             detailCell.userInteractionEnabled = NO;
+            detailCell.backgroundColor = [UIColor colorWithRed:246/255.0 green:246/255.0 blue:246/255.0 alpha:1.0];
             return detailCell;
             break;
         }
@@ -131,8 +139,9 @@ static NSString * const AboutCellIdentifier4 = @"socailMenuCell";
             AboutMenuCell *cell =
             [collectionView dequeueReusableCellWithReuseIdentifier:AboutCellIdentifier3
                                                       forIndexPath:indexPath];
-            [cell.menuIconImage setImage:[UIImage imageNamed:@"phoneIcon"]];
+            [cell.menuIconImage setImage:[UIImage imageNamed:@"phone"]];
             [cell.menuLabel setText:@"Call for appointment"];
+            cell.backgroundColor = [UIColor colorWithRed:246/255.0 green:246/255.0 blue:246/255.0 alpha:1.0];
             
             return cell;
             break;
@@ -147,17 +156,17 @@ static NSString * const AboutCellIdentifier4 = @"socailMenuCell";
             switch (indexPath.item) {
                 case 0:
                 {    aboutCell.imageView.center = aboutCell.contentView.center;
-                    [aboutCell.imageView setImage:[UIImage imageNamed:@"facebookIcon"]];
+                    [aboutCell.imageView setImage:[UIImage imageNamed:@"facebook"]];
                 }
                     break;
                 case 1:
                 {    aboutCell.imageView.center = aboutCell.contentView.center;
-                    [aboutCell.imageView setImage:[UIImage imageNamed:@"vimeoIcon"]];
+                    [aboutCell.imageView setImage:[UIImage imageNamed:@"vimeo"]];
                 }
                     break;
                 case 2:
                 {   aboutCell.imageView.center = aboutCell.contentView.center;
-                    [aboutCell.imageView setImage:[UIImage imageNamed:@"soundIcon"]];
+                    [aboutCell.imageView setImage:[UIImage imageNamed:@"soundcloud"]];
                 }
                     break;
             }
@@ -193,14 +202,14 @@ static NSString * const AboutCellIdentifier4 = @"socailMenuCell";
             switch (indexPath.item) {
                 case 0:
                 {
-                    NSLog(@"Click to facebook");
+                    //NSLog(@"Click to facebook");
                     
-                    NSURL *urlApp = [NSURL URLWithString: [NSString stringWithFormat:@"%@", @"fb://profile/100000745144271"]];
-                    if ([[UIApplication sharedApplication] canOpenURL:urlApp]){
-                        [[UIApplication sharedApplication] openURL:urlApp];
-                    }else{
-                        UIAlertView *noappAlert = [[UIAlertView alloc] initWithTitle:@"Facebook App Not Installed!" message:@"Please install the App on your iPhone." delegate:nil cancelButtonTitle:nil otherButtonTitles:@"Ok",nil];
-                        [noappAlert show];
+                   // NSURL *urlApp = [NSURL URLWithString: [NSString stringWithFormat:@"%@", @"fb://profile/100000745144271"]];
+                   // if ([[UIApplication sharedApplication] canOpenURL:urlApp]){
+                     //   [[UIApplication sharedApplication] openURL:urlApp];
+                    //}else{
+                      //  UIAlertView *noappAlert = [[UIAlertView alloc] initWithTitle:@"Facebook App Not Installed!" message:@"Please install the App on your iPhone." delegate:nil cancelButtonTitle:nil otherButtonTitles:@"Ok",nil];
+                      //  [noappAlert show];
                         
                         if (!self.webView) {
                             self.webView = [[SVAWebView alloc] initWithNibName:@"SVAWebView" bundle:nil];
@@ -210,7 +219,7 @@ static NSString * const AboutCellIdentifier4 = @"socailMenuCell";
                         self.webView.address = @"https://www.facebook.com/stour.arts";
                         self.webView.pagetitle = @"SVA Facebook";
                         [self.navigationController pushViewController:self.webView animated:YES];
-                    }
+                    //}
                     break;
                 }
                     
@@ -231,11 +240,10 @@ static NSString * const AboutCellIdentifier4 = @"socailMenuCell";
                     }
                 case 2:
                     {
-                        NSLog(@"Click to soundclound");
-                        
+                       
                         
                         if (!self.webView) {
-                            self.webView = [[SVAWebView alloc] initWithNibName:@"WebViewViewController" bundle:nil];
+                            self.webView = [[SVAWebView alloc] initWithNibName:@"SVAWebView" bundle:nil];
                             
                         }
                         

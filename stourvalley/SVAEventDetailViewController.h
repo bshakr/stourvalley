@@ -3,13 +3,14 @@
 //  stourvalley
 //
 //  Created by Treechot Shompoonut on 28/04/2013.
-//  Copyright (c) 2013 Bassem Shaker. All rights reserved.
+//  Copyright (c) 2013 Treechot Shompoonut. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 #import <QuartzCore/QuartzCore.h>
 #import "imageCollectionView.h"
 @class EventDataModel;
+@class SVAWebView;
 
 @interface SVAEventDetailViewController : UIViewController <UITableViewDataSource, UITableViewDelegate,
 UICollectionViewDataSource, UICollectionViewDelegate>
@@ -19,12 +20,14 @@ UICollectionViewDataSource, UICollectionViewDelegate>
 @property (nonatomic, retain) NSString *descLabel;
 @property (nonatomic, retain) NSString *dateLabel;
 @property (nonatomic, retain) NSString *imageTag;
+@property (nonatomic, retain) NSString *bookingLink;
 @property (nonatomic) NSInteger cellCount;
 
 
 
 @property (strong, nonatomic) IBOutlet UITableView *eventTableView;
 @property (nonatomic, strong) imageCollectionView *collectionView;
+@property (strong, nonatomic) SVAWebView *webView;
 
 
 @end

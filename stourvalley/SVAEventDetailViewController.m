@@ -3,7 +3,7 @@
 //  stourvalley
 //
 //  Created by Treechot Shompoonut on 28/04/2013.
-//  Copyright (c) 2013 Bassem Shaker. All rights reserved.
+//  Copyright (c) 2013 Treechot Shompoonut. All rights reserved.
 //
 
 #import "SVAEventDetailViewController.h"
@@ -13,6 +13,7 @@
 #import "cellectionCell.h"
 #import "imageTableCell.h"
 #import "imageCollectionView.h"
+#import "SVAWebView.h"
 
 
 
@@ -32,7 +33,7 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
-        self.title = NSLocalizedString(@"SVA Event", @"SVA Event");
+        //self.title = NSLocalizedString(@"SVA Event", @"SVA Event");
     }
     return self;
 }
@@ -42,23 +43,40 @@
 }
 
 - (UIBarButtonItem *)slideOutBarButton {
-    return [[UIBarButtonItem alloc] initWithImage:[self listImage]
-                                            style:UIBarButtonItemStyleBordered
-                                           target:self
-                                           action:@selector(slideOut:)];
+    UIBarButtonItem *button = [[UIBarButtonItem alloc] initWithImage:[self listImage]
+                                                               style:UIBarButtonItemStyleBordered
+                                                              target:self
+                                                              action:@selector(slideOut:)];
+    [button setTintColor:[UIColor colorWithRed:187/255.0 green:83/255.0 blue:88/255.0 alpha:0.5]];
+    return button;
 }
+
+
+- (void) viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [self.eventTableView deselectRowAtIndexPath:[self.eventTableView indexPathForSelectedRow] animated:YES];
+    self.title = NSLocalizedString(self.titleLabel, @"SVA");
+    
+}
+
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-   
+    
+    UIImage *navBG = [UIImage imageNamed:@"navbar.jpg"];
+    [self.navigationController.navigationBar setBackgroundImage:navBG forBarMetrics:UIBarMetricsDefault];
+    
     self.navigationItem.leftBarButtonItem = [self slideOutBarButton];
 	    
     [self.eventTableView registerNib:[self tableCellNib] forCellReuseIdentifier:@"TBCELL"];
     [self.eventTableView registerNib:[self menuCellNib] forCellReuseIdentifier:@"MenuCell"];
     //  [self.eventTableView registerClass:[imageTableCell class] forCellReuseIdentifier:CollectionViewCellIdentifier];
     [self.collectionView registerNib:[self imageCollectionCellNib] forCellWithReuseIdentifier:CollectionViewCellIdentifier];
+     
     self.contentOffsetDictionary = [NSMutableDictionary dictionary];
+    [self.eventTableView setBackgroundColor:[UIColor colorWithRed:250/255.0 green:249/255.0 blue:249/255.0 alpha:1.0]];
     
     self.eventTableView.delegate = self;
     [self.eventTableView reloadData];
@@ -151,12 +169,13 @@
                                         reuseIdentifier:CellIdentifier];
             }
             [cell.tbImageView setImage:[UIImage imageNamed:@"svaavatar.png"]];
-            
             cell.tbNameField.text = self.titleLabel;
             cell.tbDescField.text = self.descLabel;
             cell.tbDateField.text = self.dateLabel;
             _index = indexPath.row;
             cell.userInteractionEnabled = NO;
+            
+            
             return cell;
             break;
         }
@@ -173,10 +192,12 @@
     if (indexPath.section ==2 && indexPath.row == 0) {
         cell.mcellName.text = [NSString stringWithFormat:@"Booking"];
         [cell.mcellImage setImage:[UIImage imageNamed:@"bookingIcon"]];
+        //cell.selectionStyle = UITableViewCellSelectionStyleGray;
         
     }if (indexPath.section ==2 && indexPath.row == 1) {
         cell.mcellName.text = [NSString stringWithFormat:@"Get direction"];
         [cell.mcellImage setImage:[UIImage imageNamed:@"directionIcon"]];
+        //cell.selectionStyle = UITableViewCellSelectionStyleGray;
     }
     
     return cell;
@@ -191,7 +212,7 @@
     switch (indexPath.section)
     {
         case 0:
-            return 180;
+            return 198;
             break;
         case 1:
             return 200;
@@ -199,6 +220,35 @@
     }
     return 66;
 }
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+
+{
+    if (indexPath.section == 2 && indexPath.row == 0) {
+       // NSLog(@"link %@ length =%d", self.bookingLink, self.bookingLink.length);
+        if (self.bookingLink.length != 0 ) {
+            if (!self.webView) {
+                self.webView = [[SVAWebView alloc] initWithNibName:@"SVAWebView" bundle:nil];
+                
+            }
+            
+            self.webView.address =  self.bookingLink;
+            self.webView.pagetitle = @"SVA Events";
+            [self.navigationController pushViewController:self.webView animated:YES];
+            }
+        else
+        {
+            //NSLog(@"Call SVA");
+            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"tel://01233664987 "]];
+           
+        }
+
+    }
+
+
+
+}
+
 
 #pragma mark - UICollectionViewDataSource Methods
 
@@ -213,8 +263,7 @@
     
     cellectionCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:CollectionViewCellIdentifier forIndexPath:indexPath];
     
-    
-    UIImageView *imv = [[UIImageView alloc] initWithFrame:CGRectMake(10, 10, 180, 120)];
+    UIImageView *imv = [[UIImageView alloc] initWithFrame:CGRectMake(10, 10, 200, 125)];
     imv.backgroundColor = [UIColor clearColor];
     imv.opaque = NO;
     
@@ -228,6 +277,17 @@
     }
     cell.backgroundView = imv;
     
+    cell.layer.masksToBounds = NO;
+    //cell.layer.borderColor = [UIColor whiteColor].CGColor;
+    //cell.layer.borderWidth = 3.0f;
+    cell.layer.contentsScale = [UIScreen mainScreen].scale;
+    cell.layer.shadowOpacity = 0.3f;
+    cell.layer.shadowRadius = 2.0f;
+    cell.layer.shadowOffset = CGSizeMake(1.0f, 2.0f);
+    cell.layer.shadowPath = [UIBezierPath bezierPathWithRect:cell.bounds].CGPath;
+    cell.layer.rasterizationScale = [UIScreen mainScreen].scale;
+    cell.layer.shouldRasterize = YES;
+    
     return cell;
 }
 
@@ -240,9 +300,6 @@
  - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
  {
  // TODO: Select Item
- self.index = indexPath.row;
- //NSLog(@"Selecting index = %d", _index);
- 
  }*/
 
 #pragma mark - UIScrollViewDelegate Methods
