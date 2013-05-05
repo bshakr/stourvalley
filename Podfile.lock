@@ -11,18 +11,21 @@ PODS:
     - FMDB (= 2.0)
     - GRMustache (= 5.4.3)
     - SMCalloutView (= 1.1)
+  - MJPopupViewController (0.4)
   - NVSlideMenuController (1.4.3)
   - SMCalloutView (1.1)
 
 DEPENDENCIES:
   - MapBox
+  - MJPopupViewController (~> 0.4)
   - NVSlideMenuController
 
 SPEC CHECKSUMS:
   FMDB: 30a7cbcdbd354f5ee1ba081a8773fd9130c43b48
   GRMustache: dc2dce488f84524420d0c321c65d9367eb890a34
   JRSwizzle: 6242ff38485d870fc2636899048ee1ab883ae587
-  MapBox: 5bd778f07facd482a702e2f8e40301546c5cd196
+  MapBox: 0153d1a9817e19bfc5abf8448267654530b56d4e
+  MJPopupViewController: 4cd0badf3dae541017e0e16e2d2c7578d9224052
   NVSlideMenuController: 79712443b169cc5717b824e64e6c29da862abcbf
   SMCalloutView: 1c7d62044508a8d405c25495c380b17c613f769e
 

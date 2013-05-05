@@ -14,7 +14,8 @@
 #import "imageTableCell.h"
 #import "imageCollectionView.h"
 #import "SVAWebView.h"
-
+#import "UIViewController+MJPopupViewController.h"
+#import "PopupViewController.h"
 
 
 
@@ -291,7 +292,7 @@
     return cell;
 }
 
-/*#pragma mark - UICollectionViewDelegate
+#pragma mark - UICollectionViewDelegate
  - (BOOL)collectionView:(UICollectionView *)collectionView shouldHighlightItemAtIndexPath:(NSIndexPath *)indexPath
  {
  return YES;
@@ -300,7 +301,28 @@
  - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
  {
  // TODO: Select Item
- }*/
+     PopupViewController *popUpView = [[PopupViewController alloc] initWithNibName:@"PopupViewController" bundle:nil];
+     
+     NSString *iname = [NSString stringWithFormat:@"%@-%i.jpg",self.imageTag,indexPath.item];
+     popUpView.view.backgroundColor = [UIColor blackColor];
+     //popUpView.fullImageView.backgroundColor = [UIColor clearColor];
+     
+     
+     if ([UIImage imageNamed:iname]) {
+                
+        [popUpView.fullImageView setImage:[UIImage imageNamed:iname]];
+         NSLog(@"click at image : %@", iname);
+         
+     }else{
+         [self dismissPopupViewControllerWithanimationType:MJPopupViewAnimationFade];
+
+     }
+    
+
+     [self presentPopupViewController:popUpView animationType:MJPopupViewAnimationFade];
+   
+     
+ }
 
 #pragma mark - UIScrollViewDelegate Methods
 

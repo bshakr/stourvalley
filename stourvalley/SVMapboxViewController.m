@@ -9,8 +9,8 @@
 #import "SVMapboxViewController.h"
 #import "Mapbox.h"
 #import "NVSlideMenuController.h"
-#import "ArtInstallationDataModel.h"
-#import "ArtistDataModel.h"
+//#import "ArtInstallationDataModel.h"
+//#import "ArtistDataModel.h"
 
 @interface SVMapboxViewController ()
 {
@@ -20,8 +20,8 @@
     NSArray *allArtists;
     
 }
--(ArtInstallationDataModel *) shareInstallation;
--(ArtistDataModel *) shareArtist;
+//-(ArtInstallationDataModel *) shareInstallation;
+//-(ArtistDataModel *) shareArtist;
 
 @end
 
@@ -45,7 +45,7 @@
     UIImage *navBG = [UIImage imageNamed:@"navbar.jpg"];
     [self.navigationController.navigationBar setBackgroundImage:navBG forBarMetrics:UIBarMetricsDefault];
 
-    context = [[self shareInstallation ] mainContext];
+   /* context = [[self shareInstallation ] mainContext];
     artistContext = [[self shareArtist] mainContext];
     
     if(context && artistContext){
@@ -72,7 +72,7 @@
         
     }else{
         NSLog(@"Load context failed");
-    }
+    }*/
     
     
     self.navigationItem.leftBarButtonItem = [self slideOutBarButton];
@@ -103,7 +103,7 @@
     [self.view addSubview:mapView];
 }
 
--(ArtInstallationDataModel *) shareInstallation
+/*-(ArtInstallationDataModel *) shareInstallation
 {
     return [ArtInstallationDataModel sharedDataModel];
 }
@@ -111,7 +111,7 @@
 -(ArtistDataModel *) shareArtist
 {
     return [ArtistDataModel sharedDataModel];
-}
+}*/
 
 
 - (void)didReceiveMemoryWarning

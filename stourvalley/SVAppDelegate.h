@@ -13,14 +13,19 @@
 
 @interface SVAppDelegate : UIResponder <UIApplicationDelegate>
 {
-    NSManagedObjectContext *eventContext;
-    NSArray *allEvents;
+   // NSManagedObjectContext *eventContext;
+   // NSArray *allEvents;
+    NSArray *allObjects;
 }
 
 @property (strong, nonatomic) UIWindow *window;
 
 @property (strong, nonatomic) SVMapboxViewController *viewController;
 
-- (void)checkEventsData;
+//- (void)checkEventsData;
+- (void)checkDataByContext:(NSManagedObjectContext *)mngContext atModelIndex:(NSInteger)modelIndex;
+- (NSManagedObjectContext *)eventContext;
+- (NSManagedObjectContext *)artistContext;
+- (NSManagedObjectContext *)artInstallationContext;
 
 @end

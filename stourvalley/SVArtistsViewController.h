@@ -20,10 +20,7 @@
 @property (nonatomic, retain) NSMutableArray *nameArray;
 @property (nonatomic, retain) NSMutableArray *detailArray;
 @property (nonatomic, retain) NSMutableArray *stDateArray;
-//@property (nonatomic, retain) NSMutableArray *edDateArray;
-//@property (nonatomic, retain) NSMutableArray *imgNameArray;
 @property (nonatomic, retain) NSMutableArray *inumArray;
-//@property (nonatomic, retain) NSMutableArray *linkArray;
 @property (nonatomic, retain) NSString *dateLabel;
 
 -(ArtistDataModel *) shareArtist;

@@ -94,20 +94,12 @@
             allArtists = [[self shareArtist] loadAllArtists];
             
         }
-        /**
-         @property (nonatomic, retain) NSString * name;
-         @property (nonatomic, retain) NSString * info;
-         @property (nonatomic, retain) NSNumber * imageCount;
-         @property (nonatomic, retain) NSString * commissionDate;
-         **/
+        
         
         _nameArray = [allArtists valueForKey:@"name"];
         _detailArray = [allArtists valueForKey:@"info"];
         _stDateArray = [allArtists valueForKey:@"commissionDate"];
-        //_edDateArray = [allEvents valueForKey:@"endDate"];
-        //_imgNameArray = [allEvents valueForKey:@"imageTag"];
         _inumArray = [allArtists valueForKey:@"imageCount"];
-        //_linkArray = [allEvents valueForKey:@"bookingLink"];
         
         
     }else{

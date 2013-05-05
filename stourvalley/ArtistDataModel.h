@@ -18,6 +18,7 @@
 - (id)insertInManagedObjectContext:(NSManagedObjectContext*)moc_;
 - (NSArray *)loadAllArtists;
 - (void)creatArtists;
+- (void) clearDataForEntity;
 
 @property (nonatomic, readonly) NSManagedObjectContext *mainContext;
 @property (nonatomic, readonly) NSPersistentStoreCoordinator *persistentStoreCoordinator;

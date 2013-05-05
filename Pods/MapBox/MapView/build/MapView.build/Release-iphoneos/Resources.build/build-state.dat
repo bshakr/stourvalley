@@ -2,401 +2,401 @@ TResources
 v5
 r1
 cCheck dependencies
-cCopyPNGFile /Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/HeadingAngleSmall@2x.png Map/../Map/Resources/HeadingAngleSmall@2x.png
-cCopyPNGFile /Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/mapbox.png Map/../Map/Resources/mapbox.png
-cCopyPNGFile /Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/HeadingAngleSmall.png Map/../Map/Resources/HeadingAngleSmall.png
-cCopyPNGFile /Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/LoadingTile.png Map/../Map/Resources/LoadingTile.png
-cCopyPNGFile /Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/mapbox@2x.png Map/../Map/Resources/mapbox@2x.png
-cCopyPNGFile /Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingDot.png Map/../Map/Resources/TrackingDot.png
-cCopyPNGFile /Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/LoadingTileZoom.png Map/../Map/Resources/LoadingTileZoom.png
-cCopyPNGFile /Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingDot@2x.png Map/../Map/Resources/TrackingDot@2x.png
-cCopyPNGFile /Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingDotHalo.png Map/../Map/Resources/TrackingDotHalo.png
-cCopyPNGFile /Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingDotHalo@2x.png Map/../Map/Resources/TrackingDotHalo@2x.png
-cCopyPNGFile /Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingHeading.png Map/../Map/Resources/TrackingHeading.png
-cCopyPNGFile /Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingHeading@2x.png Map/../Map/Resources/TrackingHeading@2x.png
-cCopyPNGFile /Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingLocation.png Map/../Map/Resources/TrackingLocation.png
-cCopyPNGFile /Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingLocation@2x.png Map/../Map/Resources/TrackingLocation@2x.png
-cCopyPNGFile /Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/HeadingAngleLarge.png Map/../Map/Resources/HeadingAngleLarge.png
-cCopyPNGFile /Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/HeadingAngleLarge@2x.png Map/../Map/Resources/HeadingAngleLarge@2x.png
-cCopyPNGFile /Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/HeadingAngleMedium.png Map/../Map/Resources/HeadingAngleMedium.png
-cCopyPNGFile /Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/HeadingAngleMedium@2x.png Map/../Map/Resources/HeadingAngleMedium@2x.png
+cCopyPNGFile /Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/mapbox.png Map/../Map/Resources/mapbox.png
+cCopyPNGFile /Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/mapbox@2x.png Map/../Map/Resources/mapbox@2x.png
+cCopyPNGFile /Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/HeadingAngleSmall.png Map/../Map/Resources/HeadingAngleSmall.png
+cCopyPNGFile /Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/HeadingAngleSmall@2x.png Map/../Map/Resources/HeadingAngleSmall@2x.png
+cCopyPNGFile /Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/LoadingTile.png Map/../Map/Resources/LoadingTile.png
+cCopyPNGFile /Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/LoadingTileZoom.png Map/../Map/Resources/LoadingTileZoom.png
+cCopyPNGFile /Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingDot.png Map/../Map/Resources/TrackingDot.png
+cCopyPNGFile /Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingDot@2x.png Map/../Map/Resources/TrackingDot@2x.png
+cCopyPNGFile /Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingDotHalo.png Map/../Map/Resources/TrackingDotHalo.png
+cCopyPNGFile /Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingDotHalo@2x.png Map/../Map/Resources/TrackingDotHalo@2x.png
+cCopyPNGFile /Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingHeading.png Map/../Map/Resources/TrackingHeading.png
+cCopyPNGFile /Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingHeading@2x.png Map/../Map/Resources/TrackingHeading@2x.png
+cCopyPNGFile /Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingLocation.png Map/../Map/Resources/TrackingLocation.png
+cCopyPNGFile /Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingLocation@2x.png Map/../Map/Resources/TrackingLocation@2x.png
+cCopyPNGFile /Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/HeadingAngleLarge@2x.png Map/../Map/Resources/HeadingAngleLarge@2x.png
+cCopyPNGFile /Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/HeadingAngleLarge.png Map/../Map/Resources/HeadingAngleLarge.png
+cCopyPNGFile /Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/HeadingAngleMedium.png Map/../Map/Resources/HeadingAngleMedium.png
+cCopyPNGFile /Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/HeadingAngleMedium@2x.png Map/../Map/Resources/HeadingAngleMedium@2x.png
 cCpResource Map/../Map/Resources/examples.map-z2effxa8.json ../../Resources/MapBox.bundle/examples.map-z2effxa8.json
 cCpResource Map/../Map/Resources/examples.map-zswgei2n.json ../../Resources/MapBox.bundle/examples.map-zswgei2n.json
-cTouch /Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle
+cTouch /Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle
 
-N/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle
-t2
-s0
+N/Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle
+t1367612480
+s748
 
-N/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/HeadingAngleLarge.png
-t2
-s0
+N/Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/HeadingAngleLarge.png
+t1367612480
+s3239
 
-N/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/HeadingAngleLarge@2x.png
-t2
-s0
+N/Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/HeadingAngleLarge@2x.png
+t1367612480
+s7191
 
-N/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/HeadingAngleMedium.png
-t2
-s0
+N/Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/HeadingAngleMedium.png
+t1367612480
+s2366
 
-N/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/HeadingAngleMedium@2x.png
-t2
-s0
+N/Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/HeadingAngleMedium@2x.png
+t1367612480
+s5257
 
-N/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/HeadingAngleSmall.png
-t2
-s0
+N/Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/HeadingAngleSmall.png
+t1367612480
+s2254
 
-N/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/HeadingAngleSmall@2x.png
-t2
-s0
+N/Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/HeadingAngleSmall@2x.png
+t1367612480
+s4986
 
-N/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/LoadingTile.png
-t2
-s0
+N/Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/LoadingTile.png
+t1367612480
+s1906
 
-N/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/LoadingTileZoom.png
-t2
-s0
+N/Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/LoadingTileZoom.png
+t1367612480
+s733
 
-N/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingDot.png
-t2
-s0
+N/Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingDot.png
+t1367612480
+s849
 
-N/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingDot@2x.png
-t2
-s0
+N/Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingDot@2x.png
+t1367612480
+s2480
 
-N/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingDotHalo.png
-t2
-s0
+N/Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingDotHalo.png
+t1367612480
+s15224
 
-N/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingDotHalo@2x.png
-t2
-s0
+N/Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingDotHalo@2x.png
+t1367612480
+s32226
 
-N/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingHeading.png
-t2
-s0
+N/Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingHeading.png
+t1367612480
+s1110
 
-N/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingHeading@2x.png
-t2
-s0
+N/Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingHeading@2x.png
+t1367612480
+s3093
 
-N/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingLocation.png
-t2
-s0
+N/Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingLocation.png
+t1367612480
+s356
 
-N/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingLocation@2x.png
-t2
-s0
+N/Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingLocation@2x.png
+t1367612480
+s593
 
-N/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/examples.map-z2effxa8.json
-t2
-s0
-
-N/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/examples.map-zswgei2n.json
-t2
-s0
-
-N/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/mapbox.png
-t2
-s0
-
-N/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/mapbox@2x.png
-t2
-s0
-
-N/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/Map/../Map/Resources/HeadingAngleLarge.png
-c00000000517085680000000000000E2C
-t1366328680
-s3628
-
-N/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/Map/../Map/Resources/HeadingAngleLarge@2x.png
-c00000000517085680000000000002784
-t1366328680
-s10116
-
-N/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/Map/../Map/Resources/HeadingAngleMedium.png
-c000000005170856800000000000009DA
-t1366328680
-s2522
-
-N/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/Map/../Map/Resources/HeadingAngleMedium@2x.png
-c00000000517085680000000000001AA5
-t1366328680
-s6821
-
-N/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/Map/../Map/Resources/HeadingAngleSmall.png
-c00000000517085680000000000000AA7
-t1366328680
-s2727
-
-N/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/Map/../Map/Resources/HeadingAngleSmall@2x.png
-c00000000517085680000000000001F1F
-t1366328680
-s7967
-
-N/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/Map/../Map/Resources/LoadingTile.png
-c00000000517085680000000000000B44
-t1366328680
-s2884
-
-N/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/Map/../Map/Resources/LoadingTileZoom.png
-c000000005170856800000000000002D3
-t1366328680
-s723
-
-N/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/Map/../Map/Resources/TrackingDot.png
-c0000000051708568000000000000035C
-t1366328680
-s860
-
-N/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/Map/../Map/Resources/TrackingDot@2x.png
-c00000000517085680000000000000953
-t1366328680
-s2387
-
-N/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/Map/../Map/Resources/TrackingDotHalo.png
-c00000000517085680000000000002F07
-t1366328680
-s12039
-
-N/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/Map/../Map/Resources/TrackingDotHalo@2x.png
-c00000000517085680000000000006991
-t1366328680
-s27025
-
-N/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/Map/../Map/Resources/TrackingHeading.png
-c000000005170856800000000000002B3
-t1366328680
-s691
-
-N/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/Map/../Map/Resources/TrackingHeading@2x.png
-c00000000517085680000000000000664
-t1366328680
-s1636
-
-N/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/Map/../Map/Resources/TrackingLocation.png
-c0000000051708568000000000000019E
-t1366328680
-s414
-
-N/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/Map/../Map/Resources/TrackingLocation@2x.png
-c00000000517085680000000000000358
-t1366328680
-s856
-
-N/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/Map/../Map/Resources/examples.map-z2effxa8.json
-c000000005170856800000000000002D9
-t1366328680
+N/Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/examples.map-z2effxa8.json
+t1367612480
 s729
 
-N/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/Map/../Map/Resources/examples.map-zswgei2n.json
-c000000005170856800000000000002E2
-t1366328680
+N/Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/examples.map-zswgei2n.json
+t1367612480
 s738
 
-N/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/Map/../Map/Resources/mapbox.png
-c0000000051708568000000000000087B
-t1366328680
+N/Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/mapbox.png
+t1367612480
+s1879
+
+N/Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/mapbox@2x.png
+t1367612480
+s3976
+
+N/Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/Map/../Map/Resources/HeadingAngleLarge.png
+c000000005185CD1F0000000000000E2C
+t1367723295
+s3628
+
+N/Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/Map/../Map/Resources/HeadingAngleLarge@2x.png
+c000000005185CD1F0000000000002784
+t1367723295
+s10116
+
+N/Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/Map/../Map/Resources/HeadingAngleMedium.png
+c000000005185CD1F00000000000009DA
+t1367723295
+s2522
+
+N/Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/Map/../Map/Resources/HeadingAngleMedium@2x.png
+c000000005185CD1F0000000000001AA5
+t1367723295
+s6821
+
+N/Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/Map/../Map/Resources/HeadingAngleSmall.png
+c000000005185CD1F0000000000000AA7
+t1367723295
+s2727
+
+N/Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/Map/../Map/Resources/HeadingAngleSmall@2x.png
+c000000005185CD1F0000000000001F1F
+t1367723295
+s7967
+
+N/Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/Map/../Map/Resources/LoadingTile.png
+c000000005185CD1F0000000000000B44
+t1367723295
+s2884
+
+N/Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/Map/../Map/Resources/LoadingTileZoom.png
+c000000005185CD1F00000000000002D3
+t1367723295
+s723
+
+N/Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/Map/../Map/Resources/TrackingDot.png
+c000000005185CD1F000000000000035C
+t1367723295
+s860
+
+N/Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/Map/../Map/Resources/TrackingDot@2x.png
+c000000005185CD1F0000000000000953
+t1367723295
+s2387
+
+N/Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/Map/../Map/Resources/TrackingDotHalo.png
+c000000005185CD1F0000000000002F07
+t1367723295
+s12039
+
+N/Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/Map/../Map/Resources/TrackingDotHalo@2x.png
+c000000005185CD1F0000000000006991
+t1367723295
+s27025
+
+N/Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/Map/../Map/Resources/TrackingHeading.png
+c000000005185CD1F00000000000002B3
+t1367723295
+s691
+
+N/Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/Map/../Map/Resources/TrackingHeading@2x.png
+c000000005185CD1F0000000000000664
+t1367723295
+s1636
+
+N/Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/Map/../Map/Resources/TrackingLocation.png
+c000000005185CD1F000000000000019E
+t1367723295
+s414
+
+N/Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/Map/../Map/Resources/TrackingLocation@2x.png
+c000000005185CD1F0000000000000358
+t1367723295
+s856
+
+N/Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/Map/../Map/Resources/examples.map-z2effxa8.json
+c000000005185CD1F00000000000002D9
+t1367723295
+s729
+
+N/Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/Map/../Map/Resources/examples.map-zswgei2n.json
+c000000005185CD1F00000000000002E2
+t1367723295
+s738
+
+N/Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/Map/../Map/Resources/mapbox.png
+c000000005185CD1F000000000000087B
+t1367723295
 s2171
 
-N/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/Map/../Map/Resources/mapbox@2x.png
-c000000005170856800000000000013E1
-t1366328680
+N/Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/Map/../Map/Resources/mapbox@2x.png
+c000000005185CD1F00000000000013E1
+t1367723295
 s5089
 
 CCheck dependencies
 r0
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies19c635edbc20b741^9a0740edbc20b741^---0#1#0#--18"Check dependencies36"94C2C0C7-12FA-4975-8378-0E822CCEE141-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependenciese6cc5aa10436b741^f720a8a10436b741^---0#1#0#--18"Check dependencies36"D0E0AAF2-96C0-41FC-8EF6-DB2B77582C19-
 
-CCopyPNGFile /Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/HeadingAngleLarge.png Map/../Map/Resources/HeadingAngleLarge.png
-s388021485.314052
-e388021485.363709
+CCopyPNGFile /Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/HeadingAngleLarge.png Map/../Map/Resources/HeadingAngleLarge.png
+s389416097.825458
+e389416097.867961
 r1
 xCopyPNGFile
-x/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/HeadingAngleLarge.png
+x/Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/HeadingAngleLarge.png
 xMap/../Map/Resources/HeadingAngleLarge.png
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection106"CopyPNGFile ../../Resources/MapBox.bundle/HeadingAngleLarge.png Map/../Map/Resources/HeadingAngleLarge.png7f8550edbc20b741^2a1c5dedbc20b741^---0#0#0#-19%DVTDocumentLocation2@126"file://localhost/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/Map/../Map/Resources/HeadingAngleLarge.png0000000000000000^984"CopyPNGFile ../../Resources/MapBox.bundle/HeadingAngleLarge.png Map/../Map/Resources/HeadingAngleLarge.png    cd "/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/heroku/bin:/Applications/Postgres.app/Contents/MacOS/bin:/Users/bassemreda/.rvm/gems/ruby-1.9.3-p194/bin:/Users/bassemreda/.rvm/gems/ruby-1.9.3-p194@global/bin:/Users/bassemreda/.rvm/rubies/ruby-1.9.3-p194/bin:/Users/bassemreda/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" "/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/Map/../Map/Resources/HeadingAngleLarge.png" "/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/HeadingAngleLarge.png"36"F3F79482-4F7D-4A75-9927-5E82DDC3F1B5-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection106"CopyPNGFile ../../Resources/MapBox.bundle/HeadingAngleLarge.png Map/../Map/Resources/HeadingAngleLarge.png4c6bd3a10436b741^c441dea10436b741^---0#0#0#-19%DVTDocumentLocation2@136"file://localhost/Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/Map/../Map/Resources/HeadingAngleLarge.png0000000000000000^779"CopyPNGFile ../../Resources/MapBox.bundle/HeadingAngleLarge.png Map/../Map/Resources/HeadingAngleLarge.png    cd /Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" /Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/Map/../Map/Resources/HeadingAngleLarge.png /Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/HeadingAngleLarge.png36"980F7763-ACAD-4CF2-8047-74E140DEABD7-
 
-CCopyPNGFile /Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/HeadingAngleLarge@2x.png Map/../Map/Resources/HeadingAngleLarge@2x.png
-s388021485.316406
-e388021485.375198
+CCopyPNGFile /Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/HeadingAngleLarge@2x.png Map/../Map/Resources/HeadingAngleLarge@2x.png
+s389416097.825453
+e389416097.874095
 r1
 xCopyPNGFile
-x/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/HeadingAngleLarge@2x.png
+x/Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/HeadingAngleLarge@2x.png
 xMap/../Map/Resources/HeadingAngleLarge@2x.png
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection112"CopyPNGFile ../../Resources/MapBox.bundle/HeadingAngleLarge@2x.png Map/../Map/Resources/HeadingAngleLarge@2x.png3a2451edbc20b741^ae0e60edbc20b741^---0#0#0#-19%DVTDocumentLocation2@129"file://localhost/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/Map/../Map/Resources/HeadingAngleLarge@2x.png0000000000000000^1000"CopyPNGFile "../../Resources/MapBox.bundle/HeadingAngleLarge@2x.png" "Map/../Map/Resources/HeadingAngleLarge@2x.png"    cd "/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/heroku/bin:/Applications/Postgres.app/Contents/MacOS/bin:/Users/bassemreda/.rvm/gems/ruby-1.9.3-p194/bin:/Users/bassemreda/.rvm/gems/ruby-1.9.3-p194@global/bin:/Users/bassemreda/.rvm/rubies/ruby-1.9.3-p194/bin:/Users/bassemreda/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" "/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/Map/../Map/Resources/HeadingAngleLarge@2x.png" "/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/HeadingAngleLarge@2x.png"36"F2834E1C-BE61-4CEC-BA95-5F193C20CE1F-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection112"CopyPNGFile ../../Resources/MapBox.bundle/HeadingAngleLarge@2x.png Map/../Map/Resources/HeadingAngleLarge@2x.png5d6bd3a10436b741^fdd9dfa10436b741^---0#0#0#-19%DVTDocumentLocation2@139"file://localhost/Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/Map/../Map/Resources/HeadingAngleLarge@2x.png0000000000000000^799"CopyPNGFile "../../Resources/MapBox.bundle/HeadingAngleLarge@2x.png" "Map/../Map/Resources/HeadingAngleLarge@2x.png"    cd /Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" "/Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/Map/../Map/Resources/HeadingAngleLarge@2x.png" "/Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/HeadingAngleLarge@2x.png"36"E8127B4A-179E-40F0-B215-EF8F1B64C563-
 
-CCopyPNGFile /Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/HeadingAngleMedium.png Map/../Map/Resources/HeadingAngleMedium.png
-s388021485.350132
-e388021485.390055
+CCopyPNGFile /Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/HeadingAngleMedium.png Map/../Map/Resources/HeadingAngleMedium.png
+s389416097.851196
+e389416097.891891
 r1
 xCopyPNGFile
-x/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/HeadingAngleMedium.png
+x/Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/HeadingAngleMedium.png
 xMap/../Map/Resources/HeadingAngleMedium.png
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection108"CopyPNGFile ../../Resources/MapBox.bundle/HeadingAngleMedium.png Map/../Map/Resources/HeadingAngleMedium.png11c859edbc20b741^09df63edbc20b741^---0#0#0#-19%DVTDocumentLocation2@127"file://localhost/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/Map/../Map/Resources/HeadingAngleMedium.png0000000000000000^988"CopyPNGFile ../../Resources/MapBox.bundle/HeadingAngleMedium.png Map/../Map/Resources/HeadingAngleMedium.png    cd "/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/heroku/bin:/Applications/Postgres.app/Contents/MacOS/bin:/Users/bassemreda/.rvm/gems/ruby-1.9.3-p194/bin:/Users/bassemreda/.rvm/gems/ruby-1.9.3-p194@global/bin:/Users/bassemreda/.rvm/rubies/ruby-1.9.3-p194/bin:/Users/bassemreda/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" "/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/Map/../Map/Resources/HeadingAngleMedium.png" "/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/HeadingAngleMedium.png"36"BBDD99E2-F375-430C-AC8C-4C8015B0126D-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection108"CopyPNGFile ../../Resources/MapBox.bundle/HeadingAngleMedium.png Map/../Map/Resources/HeadingAngleMedium.png4b04daa10436b741^5455e4a10436b741^---0#0#0#-19%DVTDocumentLocation2@137"file://localhost/Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/Map/../Map/Resources/HeadingAngleMedium.png0000000000000000^783"CopyPNGFile ../../Resources/MapBox.bundle/HeadingAngleMedium.png Map/../Map/Resources/HeadingAngleMedium.png    cd /Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" /Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/Map/../Map/Resources/HeadingAngleMedium.png /Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/HeadingAngleMedium.png36"104695C6-886C-4CD3-9A95-4364234365D6-
 
-CCopyPNGFile /Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/HeadingAngleMedium@2x.png Map/../Map/Resources/HeadingAngleMedium@2x.png
-s388021485.350463
-e388021485.391273
+CCopyPNGFile /Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/HeadingAngleMedium@2x.png Map/../Map/Resources/HeadingAngleMedium@2x.png
+s389416097.853726
+e389416097.894414
 r1
 xCopyPNGFile
-x/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/HeadingAngleMedium@2x.png
+x/Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/HeadingAngleMedium@2x.png
 xMap/../Map/Resources/HeadingAngleMedium@2x.png
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection114"CopyPNGFile ../../Resources/MapBox.bundle/HeadingAngleMedium@2x.png Map/../Map/Resources/HeadingAngleMedium@2x.pngf7e459edbc20b741^dc2a64edbc20b741^---0#0#0#-19%DVTDocumentLocation2@130"file://localhost/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/Map/../Map/Resources/HeadingAngleMedium@2x.png0000000000000000^1004"CopyPNGFile "../../Resources/MapBox.bundle/HeadingAngleMedium@2x.png" "Map/../Map/Resources/HeadingAngleMedium@2x.png"    cd "/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/heroku/bin:/Applications/Postgres.app/Contents/MacOS/bin:/Users/bassemreda/.rvm/gems/ruby-1.9.3-p194/bin:/Users/bassemreda/.rvm/gems/ruby-1.9.3-p194@global/bin:/Users/bassemreda/.rvm/rubies/ruby-1.9.3-p194/bin:/Users/bassemreda/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" "/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/Map/../Map/Resources/HeadingAngleMedium@2x.png" "/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/HeadingAngleMedium@2x.png"36"231048CB-0CB3-4619-9F46-FD8CA3D06CBE-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection114"CopyPNGFile ../../Resources/MapBox.bundle/HeadingAngleMedium@2x.png Map/../Map/Resources/HeadingAngleMedium@2x.png26abdaa10436b741^3cf9e4a10436b741^---0#0#0#-19%DVTDocumentLocation2@140"file://localhost/Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/Map/../Map/Resources/HeadingAngleMedium@2x.png0000000000000000^803"CopyPNGFile "../../Resources/MapBox.bundle/HeadingAngleMedium@2x.png" "Map/../Map/Resources/HeadingAngleMedium@2x.png"    cd /Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" "/Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/Map/../Map/Resources/HeadingAngleMedium@2x.png" "/Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/HeadingAngleMedium@2x.png"36"E91B94F2-3550-4E4D-A872-AAC205C33B8F-
 
-CCopyPNGFile /Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/HeadingAngleSmall.png Map/../Map/Resources/HeadingAngleSmall.png
-s388021485.256268
-e388021485.309199
+CCopyPNGFile /Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/HeadingAngleSmall.png Map/../Map/Resources/HeadingAngleSmall.png
+s389416097.670789
+e389416097.719236
 r1
 xCopyPNGFile
-x/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/HeadingAngleSmall.png
+x/Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/HeadingAngleSmall.png
 xMap/../Map/Resources/HeadingAngleSmall.png
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection106"CopyPNGFile ../../Resources/MapBox.bundle/HeadingAngleSmall.png Map/../Map/Resources/HeadingAngleSmall.pngd3dd41edbc20b741^ec334fedbc20b741^---0#0#0#-19%DVTDocumentLocation2@126"file://localhost/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/Map/../Map/Resources/HeadingAngleSmall.png0000000000000000^984"CopyPNGFile ../../Resources/MapBox.bundle/HeadingAngleSmall.png Map/../Map/Resources/HeadingAngleSmall.png    cd "/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/heroku/bin:/Applications/Postgres.app/Contents/MacOS/bin:/Users/bassemreda/.rvm/gems/ruby-1.9.3-p194/bin:/Users/bassemreda/.rvm/gems/ruby-1.9.3-p194@global/bin:/Users/bassemreda/.rvm/rubies/ruby-1.9.3-p194/bin:/Users/bassemreda/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" "/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/Map/../Map/Resources/HeadingAngleSmall.png" "/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/HeadingAngleSmall.png"36"DCC20282-2BF3-40C8-A724-002DB84A7FEA-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection106"CopyPNGFile ../../Resources/MapBox.bundle/HeadingAngleSmall.png Map/../Map/Resources/HeadingAngleSmall.png11e5aba10436b741^b823b8a10436b741^---0#0#0#-19%DVTDocumentLocation2@136"file://localhost/Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/Map/../Map/Resources/HeadingAngleSmall.png0000000000000000^779"CopyPNGFile ../../Resources/MapBox.bundle/HeadingAngleSmall.png Map/../Map/Resources/HeadingAngleSmall.png    cd /Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" /Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/Map/../Map/Resources/HeadingAngleSmall.png /Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/HeadingAngleSmall.png36"CADF5B9D-B40D-44AE-BDE5-4697DB881FD1-
 
-CCopyPNGFile /Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/HeadingAngleSmall@2x.png Map/../Map/Resources/HeadingAngleSmall@2x.png
-s388021485.256257
-e388021485.313224
+CCopyPNGFile /Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/HeadingAngleSmall@2x.png Map/../Map/Resources/HeadingAngleSmall@2x.png
+s389416097.671065
+e389416097.731579
 r1
 xCopyPNGFile
-x/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/HeadingAngleSmall@2x.png
+x/Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/HeadingAngleSmall@2x.png
 xMap/../Map/Resources/HeadingAngleSmall@2x.png
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection112"CopyPNGFile ../../Resources/MapBox.bundle/HeadingAngleSmall@2x.png Map/../Map/Resources/HeadingAngleSmall@2x.png83e041edbc20b741^7e3850edbc20b741^---0#0#0#-19%DVTDocumentLocation2@129"file://localhost/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/Map/../Map/Resources/HeadingAngleSmall@2x.png0000000000000000^1000"CopyPNGFile "../../Resources/MapBox.bundle/HeadingAngleSmall@2x.png" "Map/../Map/Resources/HeadingAngleSmall@2x.png"    cd "/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/heroku/bin:/Applications/Postgres.app/Contents/MacOS/bin:/Users/bassemreda/.rvm/gems/ruby-1.9.3-p194/bin:/Users/bassemreda/.rvm/gems/ruby-1.9.3-p194@global/bin:/Users/bassemreda/.rvm/rubies/ruby-1.9.3-p194/bin:/Users/bassemreda/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" "/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/Map/../Map/Resources/HeadingAngleSmall@2x.png" "/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/HeadingAngleSmall@2x.png"36"CC8A9B11-DF38-418B-8A25-17786E2AE83B-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection112"CopyPNGFile ../../Resources/MapBox.bundle/HeadingAngleSmall@2x.png Map/../Map/Resources/HeadingAngleSmall@2x.png4be7aba10436b741^ee5dbba10436b741^---0#0#0#-19%DVTDocumentLocation2@139"file://localhost/Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/Map/../Map/Resources/HeadingAngleSmall@2x.png0000000000000000^799"CopyPNGFile "../../Resources/MapBox.bundle/HeadingAngleSmall@2x.png" "Map/../Map/Resources/HeadingAngleSmall@2x.png"    cd /Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" "/Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/Map/../Map/Resources/HeadingAngleSmall@2x.png" "/Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/HeadingAngleSmall@2x.png"36"3988BCB7-F055-4027-88D1-866B3210319C-
 
-CCopyPNGFile /Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/LoadingTile.png Map/../Map/Resources/LoadingTile.png
-s388021485.256283
-e388021485.304735
+CCopyPNGFile /Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/LoadingTile.png Map/../Map/Resources/LoadingTile.png
+s389416097.717698
+e389416097.763547
 r1
 xCopyPNGFile
-x/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/LoadingTile.png
+x/Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/LoadingTile.png
 xMap/../Map/Resources/LoadingTile.png
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection94"CopyPNGFile ../../Resources/MapBox.bundle/LoadingTile.png Map/../Map/Resources/LoadingTile.pngcee241edbc20b741^d80e4eedbc20b741^---0#0#0#-19%DVTDocumentLocation2@120"file://localhost/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/Map/../Map/Resources/LoadingTile.png0000000000000000^960"CopyPNGFile ../../Resources/MapBox.bundle/LoadingTile.png Map/../Map/Resources/LoadingTile.png    cd "/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/heroku/bin:/Applications/Postgres.app/Contents/MacOS/bin:/Users/bassemreda/.rvm/gems/ruby-1.9.3-p194/bin:/Users/bassemreda/.rvm/gems/ruby-1.9.3-p194@global/bin:/Users/bassemreda/.rvm/rubies/ruby-1.9.3-p194/bin:/Users/bassemreda/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" "/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/Map/../Map/Resources/LoadingTile.png" "/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/LoadingTile.png"36"1888A501-8BD0-4FBF-ADEE-D3727AF2FE60-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection94"CopyPNGFile ../../Resources/MapBox.bundle/LoadingTile.png Map/../Map/Resources/LoadingTile.png0bd3b7a10436b741^8880c3a10436b741^---0#0#0#-19%DVTDocumentLocation2@130"file://localhost/Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/Map/../Map/Resources/LoadingTile.png0000000000000000^755"CopyPNGFile ../../Resources/MapBox.bundle/LoadingTile.png Map/../Map/Resources/LoadingTile.png    cd /Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" /Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/Map/../Map/Resources/LoadingTile.png /Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/LoadingTile.png36"13E87519-E857-4D0A-AA95-60BA215398FE-
 
-CCopyPNGFile /Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/LoadingTileZoom.png Map/../Map/Resources/LoadingTileZoom.png
-s388021485.256318
-e388021485.299809
+CCopyPNGFile /Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/LoadingTileZoom.png Map/../Map/Resources/LoadingTileZoom.png
+s389416097.720714
+e389416097.759790
 r1
 xCopyPNGFile
-x/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/LoadingTileZoom.png
+x/Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/LoadingTileZoom.png
 xMap/../Map/Resources/LoadingTileZoom.png
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection102"CopyPNGFile ../../Resources/MapBox.bundle/LoadingTileZoom.png Map/../Map/Resources/LoadingTileZoom.png2ae541edbc20b741^6adb4cedbc20b741^---0#0#0#-19%DVTDocumentLocation2@124"file://localhost/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/Map/../Map/Resources/LoadingTileZoom.png0000000000000000^976"CopyPNGFile ../../Resources/MapBox.bundle/LoadingTileZoom.png Map/../Map/Resources/LoadingTileZoom.png    cd "/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/heroku/bin:/Applications/Postgres.app/Contents/MacOS/bin:/Users/bassemreda/.rvm/gems/ruby-1.9.3-p194/bin:/Users/bassemreda/.rvm/gems/ruby-1.9.3-p194@global/bin:/Users/bassemreda/.rvm/rubies/ruby-1.9.3-p194/bin:/Users/bassemreda/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" "/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/Map/../Map/Resources/LoadingTileZoom.png" "/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/LoadingTileZoom.png"36"5669CE16-118A-48D5-BC8E-A06EDEF23394-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection102"CopyPNGFile ../../Resources/MapBox.bundle/LoadingTileZoom.png Map/../Map/Resources/LoadingTileZoom.png5b99b8a10436b741^dc81c2a10436b741^---0#0#0#-19%DVTDocumentLocation2@134"file://localhost/Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/Map/../Map/Resources/LoadingTileZoom.png0000000000000000^771"CopyPNGFile ../../Resources/MapBox.bundle/LoadingTileZoom.png Map/../Map/Resources/LoadingTileZoom.png    cd /Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" /Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/Map/../Map/Resources/LoadingTileZoom.png /Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/LoadingTileZoom.png36"892B0C35-8B41-4E2C-8BFF-3A43DB024D75-
 
-CCopyPNGFile /Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingDot.png Map/../Map/Resources/TrackingDot.png
-s388021485.256306
-e388021485.312418
+CCopyPNGFile /Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingDot.png Map/../Map/Resources/TrackingDot.png
+s389416097.726273
+e389416097.765560
 r1
 xCopyPNGFile
-x/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingDot.png
+x/Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingDot.png
 xMap/../Map/Resources/TrackingDot.png
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection94"CopyPNGFile ../../Resources/MapBox.bundle/TrackingDot.png Map/../Map/Resources/TrackingDot.pngadde41edbc20b741^7e0250edbc20b741^---0#0#0#-19%DVTDocumentLocation2@120"file://localhost/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/Map/../Map/Resources/TrackingDot.png0000000000000000^960"CopyPNGFile ../../Resources/MapBox.bundle/TrackingDot.png Map/../Map/Resources/TrackingDot.png    cd "/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/heroku/bin:/Applications/Postgres.app/Contents/MacOS/bin:/Users/bassemreda/.rvm/gems/ruby-1.9.3-p194/bin:/Users/bassemreda/.rvm/gems/ruby-1.9.3-p194@global/bin:/Users/bassemreda/.rvm/rubies/ruby-1.9.3-p194/bin:/Users/bassemreda/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" "/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/Map/../Map/Resources/TrackingDot.png" "/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingDot.png"36"604CE11D-275A-49FB-8188-83BE600E5967-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection94"CopyPNGFile ../../Resources/MapBox.bundle/TrackingDot.png Map/../Map/Resources/TrackingDot.png8d08baa10436b741^87fcc3a10436b741^---0#0#0#-19%DVTDocumentLocation2@130"file://localhost/Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/Map/../Map/Resources/TrackingDot.png0000000000000000^755"CopyPNGFile ../../Resources/MapBox.bundle/TrackingDot.png Map/../Map/Resources/TrackingDot.png    cd /Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" /Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/Map/../Map/Resources/TrackingDot.png /Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingDot.png36"40BC2095-A6E5-4096-A7AC-3E492C7EC3C4-
 
-CCopyPNGFile /Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingDot@2x.png Map/../Map/Resources/TrackingDot@2x.png
-s388021485.256612
-e388021485.312998
+CCopyPNGFile /Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingDot@2x.png Map/../Map/Resources/TrackingDot@2x.png
+s389416097.733071
+e389416097.777444
 r1
 xCopyPNGFile
-x/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingDot@2x.png
+x/Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingDot@2x.png
 xMap/../Map/Resources/TrackingDot@2x.png
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection100"CopyPNGFile ../../Resources/MapBox.bundle/TrackingDot@2x.png Map/../Map/Resources/TrackingDot@2x.png2ee441edbc20b741^952750edbc20b741^---0#0#0#-19%DVTDocumentLocation2@123"file://localhost/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/Map/../Map/Resources/TrackingDot@2x.png0000000000000000^976"CopyPNGFile "../../Resources/MapBox.bundle/TrackingDot@2x.png" "Map/../Map/Resources/TrackingDot@2x.png"    cd "/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/heroku/bin:/Applications/Postgres.app/Contents/MacOS/bin:/Users/bassemreda/.rvm/gems/ruby-1.9.3-p194/bin:/Users/bassemreda/.rvm/gems/ruby-1.9.3-p194@global/bin:/Users/bassemreda/.rvm/rubies/ruby-1.9.3-p194/bin:/Users/bassemreda/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" "/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/Map/../Map/Resources/TrackingDot@2x.png" "/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingDot@2x.png"36"0ED1B6C0-9E5C-482D-B9D1-B8E889B24E40-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection100"CopyPNGFile ../../Resources/MapBox.bundle/TrackingDot@2x.png Map/../Map/Resources/TrackingDot@2x.png64cabba10436b741^f50ec7a10436b741^---0#0#0#-19%DVTDocumentLocation2@133"file://localhost/Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/Map/../Map/Resources/TrackingDot@2x.png0000000000000000^775"CopyPNGFile "../../Resources/MapBox.bundle/TrackingDot@2x.png" "Map/../Map/Resources/TrackingDot@2x.png"    cd /Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" "/Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/Map/../Map/Resources/TrackingDot@2x.png" "/Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingDot@2x.png"36"89A6A379-C5D5-42A9-8ABC-96F4E3976015-
 
-CCopyPNGFile /Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingDotHalo.png Map/../Map/Resources/TrackingDotHalo.png
-s388021485.303114
-e388021485.349715
+CCopyPNGFile /Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingDotHalo.png Map/../Map/Resources/TrackingDotHalo.png
+s389416097.761148
+e389416097.811924
 r1
 xCopyPNGFile
-x/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingDotHalo.png
+x/Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingDotHalo.png
 xMap/../Map/Resources/TrackingDotHalo.png
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection102"CopyPNGFile ../../Resources/MapBox.bundle/TrackingDotHalo.png Map/../Map/Resources/TrackingDotHalo.png28bb4dedbc20b741^bdc359edbc20b741^---0#0#0#-19%DVTDocumentLocation2@124"file://localhost/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/Map/../Map/Resources/TrackingDotHalo.png0000000000000000^976"CopyPNGFile ../../Resources/MapBox.bundle/TrackingDotHalo.png Map/../Map/Resources/TrackingDotHalo.png    cd "/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/heroku/bin:/Applications/Postgres.app/Contents/MacOS/bin:/Users/bassemreda/.rvm/gems/ruby-1.9.3-p194/bin:/Users/bassemreda/.rvm/gems/ruby-1.9.3-p194@global/bin:/Users/bassemreda/.rvm/rubies/ruby-1.9.3-p194/bin:/Users/bassemreda/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" "/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/Map/../Map/Resources/TrackingDotHalo.png" "/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingDotHalo.png"36"55F03422-D376-41B6-A7BB-F89EE3C92EDD-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection102"CopyPNGFile ../../Resources/MapBox.bundle/TrackingDotHalo.png Map/../Map/Resources/TrackingDotHalo.png73f6c2a10436b741^cae1cfa10436b741^---0#0#0#-19%DVTDocumentLocation2@134"file://localhost/Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/Map/../Map/Resources/TrackingDotHalo.png0000000000000000^771"CopyPNGFile ../../Resources/MapBox.bundle/TrackingDotHalo.png Map/../Map/Resources/TrackingDotHalo.png    cd /Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" /Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/Map/../Map/Resources/TrackingDotHalo.png /Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingDotHalo.png36"10F0DA6C-68A4-4381-9E5B-D1AD1E879C1A-
 
-CCopyPNGFile /Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingDotHalo@2x.png Map/../Map/Resources/TrackingDotHalo@2x.png
-s388021485.306089
-e388021485.362400
+CCopyPNGFile /Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingDotHalo@2x.png Map/../Map/Resources/TrackingDotHalo@2x.png
+s389416097.764817
+e389416097.824669
 r1
 xCopyPNGFile
-x/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingDotHalo@2x.png
+x/Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingDotHalo@2x.png
 xMap/../Map/Resources/TrackingDotHalo@2x.png
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection108"CopyPNGFile ../../Resources/MapBox.bundle/TrackingDotHalo@2x.png Map/../Map/Resources/TrackingDotHalo@2x.png2d7b4eedbc20b741^eed05cedbc20b741^---0#0#0#-19%DVTDocumentLocation2@127"file://localhost/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/Map/../Map/Resources/TrackingDotHalo@2x.png0000000000000000^992"CopyPNGFile "../../Resources/MapBox.bundle/TrackingDotHalo@2x.png" "Map/../Map/Resources/TrackingDotHalo@2x.png"    cd "/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/heroku/bin:/Applications/Postgres.app/Contents/MacOS/bin:/Users/bassemreda/.rvm/gems/ruby-1.9.3-p194/bin:/Users/bassemreda/.rvm/gems/ruby-1.9.3-p194@global/bin:/Users/bassemreda/.rvm/rubies/ruby-1.9.3-p194/bin:/Users/bassemreda/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" "/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/Map/../Map/Resources/TrackingDotHalo@2x.png" "/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingDotHalo@2x.png"36"6523BBBB-4BF1-41FE-A49F-862C84F55D5A-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection108"CopyPNGFile ../../Resources/MapBox.bundle/TrackingDotHalo@2x.png Map/../Map/Resources/TrackingDotHalo@2x.pngc0e7c3a10436b741^9b1fd3a10436b741^---0#0#0#-19%DVTDocumentLocation2@137"file://localhost/Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/Map/../Map/Resources/TrackingDotHalo@2x.png0000000000000000^791"CopyPNGFile "../../Resources/MapBox.bundle/TrackingDotHalo@2x.png" "Map/../Map/Resources/TrackingDotHalo@2x.png"    cd /Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" "/Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/Map/../Map/Resources/TrackingDotHalo@2x.png" "/Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingDotHalo@2x.png"36"810B1CA9-6412-4F16-8182-F880E5BA5166-
 
-CCopyPNGFile /Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingHeading.png Map/../Map/Resources/TrackingHeading.png
-s388021485.307397
-e388021485.348783
+CCopyPNGFile /Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingHeading.png Map/../Map/Resources/TrackingHeading.png
+s389416097.766761
+e389416097.809860
 r1
 xCopyPNGFile
-x/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingHeading.png
+x/Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingHeading.png
 xMap/../Map/Resources/TrackingHeading.png
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection102"CopyPNGFile ../../Resources/MapBox.bundle/TrackingHeading.png Map/../Map/Resources/TrackingHeading.png04e54eedbc20b741^e75559edbc20b741^---0#0#0#-19%DVTDocumentLocation2@124"file://localhost/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/Map/../Map/Resources/TrackingHeading.png0000000000000000^976"CopyPNGFile ../../Resources/MapBox.bundle/TrackingHeading.png Map/../Map/Resources/TrackingHeading.png    cd "/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/heroku/bin:/Applications/Postgres.app/Contents/MacOS/bin:/Users/bassemreda/.rvm/gems/ruby-1.9.3-p194/bin:/Users/bassemreda/.rvm/gems/ruby-1.9.3-p194@global/bin:/Users/bassemreda/.rvm/rubies/ruby-1.9.3-p194/bin:/Users/bassemreda/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" "/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/Map/../Map/Resources/TrackingHeading.png" "/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingHeading.png"36"7DD06CF3-7E2F-4395-9579-162870266078-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection102"CopyPNGFile ../../Resources/MapBox.bundle/TrackingHeading.png Map/../Map/Resources/TrackingHeading.png8066c4a10436b741^2252cfa10436b741^---0#0#0#-19%DVTDocumentLocation2@134"file://localhost/Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/Map/../Map/Resources/TrackingHeading.png0000000000000000^771"CopyPNGFile ../../Resources/MapBox.bundle/TrackingHeading.png Map/../Map/Resources/TrackingHeading.png    cd /Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" /Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/Map/../Map/Resources/TrackingHeading.png /Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingHeading.png36"C581D38F-66C6-4397-82AB-4696CC5719B1-
 
-CCopyPNGFile /Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingHeading@2x.png Map/../Map/Resources/TrackingHeading@2x.png
-s388021485.310686
-e388021485.362395
+CCopyPNGFile /Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingHeading@2x.png Map/../Map/Resources/TrackingHeading@2x.png
+s389416097.778785
+e389416097.824161
 r1
 xCopyPNGFile
-x/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingHeading@2x.png
+x/Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingHeading@2x.png
 xMap/../Map/Resources/TrackingHeading@2x.png
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection108"CopyPNGFile ../../Resources/MapBox.bundle/TrackingHeading@2x.png Map/../Map/Resources/TrackingHeading@2x.png9acd4fedbc20b741^e8d95cedbc20b741^---0#0#0#-19%DVTDocumentLocation2@127"file://localhost/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/Map/../Map/Resources/TrackingHeading@2x.png0000000000000000^992"CopyPNGFile "../../Resources/MapBox.bundle/TrackingHeading@2x.png" "Map/../Map/Resources/TrackingHeading@2x.png"    cd "/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/heroku/bin:/Applications/Postgres.app/Contents/MacOS/bin:/Users/bassemreda/.rvm/gems/ruby-1.9.3-p194/bin:/Users/bassemreda/.rvm/gems/ruby-1.9.3-p194@global/bin:/Users/bassemreda/.rvm/rubies/ruby-1.9.3-p194/bin:/Users/bassemreda/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" "/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/Map/../Map/Resources/TrackingHeading@2x.png" "/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingHeading@2x.png"36"A530FD36-7A24-4D11-BDE9-5D97B9038146-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection108"CopyPNGFile ../../Resources/MapBox.bundle/TrackingHeading@2x.png Map/../Map/Resources/TrackingHeading@2x.pngb37ec7a10436b741^ae0fd3a10436b741^---0#0#0#-19%DVTDocumentLocation2@137"file://localhost/Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/Map/../Map/Resources/TrackingHeading@2x.png0000000000000000^791"CopyPNGFile "../../Resources/MapBox.bundle/TrackingHeading@2x.png" "Map/../Map/Resources/TrackingHeading@2x.png"    cd /Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" "/Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/Map/../Map/Resources/TrackingHeading@2x.png" "/Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingHeading@2x.png"36"14E84595-3071-4E0B-8621-ABCA77A5797F-
 
-CCopyPNGFile /Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingLocation.png Map/../Map/Resources/TrackingLocation.png
-s388021485.313955
-e388021485.353052
+CCopyPNGFile /Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingLocation.png Map/../Map/Resources/TrackingLocation.png
+s389416097.811328
+e389416097.849756
 r1
 xCopyPNGFile
-x/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingLocation.png
+x/Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingLocation.png
 xMap/../Map/Resources/TrackingLocation.png
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection104"CopyPNGFile ../../Resources/MapBox.bundle/TrackingLocation.png Map/../Map/Resources/TrackingLocation.pnga68050edbc20b741^e57b5aedbc20b741^---0#0#0#-19%DVTDocumentLocation2@125"file://localhost/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/Map/../Map/Resources/TrackingLocation.png0000000000000000^980"CopyPNGFile ../../Resources/MapBox.bundle/TrackingLocation.png Map/../Map/Resources/TrackingLocation.png    cd "/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/heroku/bin:/Applications/Postgres.app/Contents/MacOS/bin:/Users/bassemreda/.rvm/gems/ruby-1.9.3-p194/bin:/Users/bassemreda/.rvm/gems/ruby-1.9.3-p194@global/bin:/Users/bassemreda/.rvm/rubies/ruby-1.9.3-p194/bin:/Users/bassemreda/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" "/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/Map/../Map/Resources/TrackingLocation.png" "/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingLocation.png"36"F354921C-83B5-4D8F-AB1A-481EC7E7E899-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection104"CopyPNGFile ../../Resources/MapBox.bundle/TrackingLocation.png Map/../Map/Resources/TrackingLocation.pngf2d0cfa10436b741^1495d9a10436b741^---0#0#0#-19%DVTDocumentLocation2@135"file://localhost/Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/Map/../Map/Resources/TrackingLocation.png0000000000000000^775"CopyPNGFile ../../Resources/MapBox.bundle/TrackingLocation.png Map/../Map/Resources/TrackingLocation.png    cd /Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" /Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/Map/../Map/Resources/TrackingLocation.png /Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingLocation.png36"23719650-D3F8-4490-9DF5-A4FD1C2AF8D4-
 
-CCopyPNGFile /Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingLocation@2x.png Map/../Map/Resources/TrackingLocation@2x.png
-s388021485.314009
-e388021485.361171
+CCopyPNGFile /Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingLocation@2x.png Map/../Map/Resources/TrackingLocation@2x.png
+s389416097.813099
+e389416097.852462
 r1
 xCopyPNGFile
-x/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingLocation@2x.png
+x/Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingLocation@2x.png
 xMap/../Map/Resources/TrackingLocation@2x.png
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection110"CopyPNGFile ../../Resources/MapBox.bundle/TrackingLocation@2x.png Map/../Map/Resources/TrackingLocation@2x.png738450edbc20b741^73805cedbc20b741^---0#0#0#-19%DVTDocumentLocation2@128"file://localhost/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/Map/../Map/Resources/TrackingLocation@2x.png0000000000000000^996"CopyPNGFile "../../Resources/MapBox.bundle/TrackingLocation@2x.png" "Map/../Map/Resources/TrackingLocation@2x.png"    cd "/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/heroku/bin:/Applications/Postgres.app/Contents/MacOS/bin:/Users/bassemreda/.rvm/gems/ruby-1.9.3-p194/bin:/Users/bassemreda/.rvm/gems/ruby-1.9.3-p194@global/bin:/Users/bassemreda/.rvm/rubies/ruby-1.9.3-p194/bin:/Users/bassemreda/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" "/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/Map/../Map/Resources/TrackingLocation@2x.png" "/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingLocation@2x.png"36"86138ADC-08AF-47DF-B87D-EE3755CF850B-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection110"CopyPNGFile ../../Resources/MapBox.bundle/TrackingLocation@2x.png Map/../Map/Resources/TrackingLocation@2x.png7f4fd0a10436b741^f33edaa10436b741^---0#0#0#-19%DVTDocumentLocation2@138"file://localhost/Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/Map/../Map/Resources/TrackingLocation@2x.png0000000000000000^795"CopyPNGFile "../../Resources/MapBox.bundle/TrackingLocation@2x.png" "Map/../Map/Resources/TrackingLocation@2x.png"    cd /Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" "/Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/Map/../Map/Resources/TrackingLocation@2x.png" "/Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingLocation@2x.png"36"304A093C-83FA-4E8E-8A9F-9B89D098728E-
 
-CCopyPNGFile /Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/mapbox.png Map/../Map/Resources/mapbox.png
-s388021485.256262
-e388021485.306271
+CCopyPNGFile /Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/mapbox.png Map/../Map/Resources/mapbox.png
+s389416097.670414
+e389416097.716296
 r1
 xCopyPNGFile
-x/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/mapbox.png
+x/Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/mapbox.png
 xMap/../Map/Resources/mapbox.png
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection84"CopyPNGFile ../../Resources/MapBox.bundle/mapbox.png Map/../Map/Resources/mapbox.png7ae241edbc20b741^27844eedbc20b741^---0#0#0#-19%DVTDocumentLocation2@115"file://localhost/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/Map/../Map/Resources/mapbox.png0000000000000000^940"CopyPNGFile ../../Resources/MapBox.bundle/mapbox.png Map/../Map/Resources/mapbox.png    cd "/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/heroku/bin:/Applications/Postgres.app/Contents/MacOS/bin:/Users/bassemreda/.rvm/gems/ruby-1.9.3-p194/bin:/Users/bassemreda/.rvm/gems/ruby-1.9.3-p194@global/bin:/Users/bassemreda/.rvm/rubies/ruby-1.9.3-p194/bin:/Users/bassemreda/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" "/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/Map/../Map/Resources/mapbox.png" "/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/mapbox.png"36"489CA007-7558-4ED2-86C4-BD33711E4EDD-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection84"CopyPNGFile ../../Resources/MapBox.bundle/mapbox.png Map/../Map/Resources/mapbox.png08ccaba10436b741^936eb7a10436b741^---0#0#0#-19%DVTDocumentLocation2@125"file://localhost/Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/Map/../Map/Resources/mapbox.png0000000000000000^735"CopyPNGFile ../../Resources/MapBox.bundle/mapbox.png Map/../Map/Resources/mapbox.png    cd /Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" /Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/Map/../Map/Resources/mapbox.png /Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/mapbox.png36"C9410257-51AB-448D-AE03-DA19D3A5AA21-
 
-CCopyPNGFile /Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/mapbox@2x.png Map/../Map/Resources/mapbox@2x.png
-s388021485.256293
-e388021485.315175
+CCopyPNGFile /Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/mapbox@2x.png Map/../Map/Resources/mapbox@2x.png
+s389416097.670436
+e389416097.724956
 r1
 xCopyPNGFile
-x/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/mapbox@2x.png
+x/Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/mapbox@2x.png
 xMap/../Map/Resources/mapbox@2x.png
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection90"CopyPNGFile ../../Resources/MapBox.bundle/mapbox@2x.png Map/../Map/Resources/mapbox@2x.pnga4e041edbc20b741^e2b050edbc20b741^---0#0#0#-19%DVTDocumentLocation2@118"file://localhost/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/Map/../Map/Resources/mapbox@2x.png0000000000000000^956"CopyPNGFile "../../Resources/MapBox.bundle/mapbox@2x.png" "Map/../Map/Resources/mapbox@2x.png"    cd "/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/heroku/bin:/Applications/Postgres.app/Contents/MacOS/bin:/Users/bassemreda/.rvm/gems/ruby-1.9.3-p194/bin:/Users/bassemreda/.rvm/gems/ruby-1.9.3-p194@global/bin:/Users/bassemreda/.rvm/rubies/ruby-1.9.3-p194/bin:/Users/bassemreda/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" "/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/Map/../Map/Resources/mapbox@2x.png" "/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/mapbox@2x.png"36"A370A5CF-446D-4DFC-939A-8F4121A201D2-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection90"CopyPNGFile ../../Resources/MapBox.bundle/mapbox@2x.png Map/../Map/Resources/mapbox@2x.png43e1aba10436b741^dd95b9a10436b741^---0#0#0#-19%DVTDocumentLocation2@128"file://localhost/Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/Map/../Map/Resources/mapbox@2x.png0000000000000000^755"CopyPNGFile "../../Resources/MapBox.bundle/mapbox@2x.png" "Map/../Map/Resources/mapbox@2x.png"    cd /Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" "/Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/Map/../Map/Resources/mapbox@2x.png" "/Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/mapbox@2x.png"36"7166BB60-2F60-4FFC-AA8A-C182DEFA200E-
 
 CCpResource Map/../Map/Resources/examples.map-z2effxa8.json ../../Resources/MapBox.bundle/examples.map-z2effxa8.json
-s388021485.354254
-e388021485.362038
+s389416097.869263
+e389416097.872337
 r1
 xCpResource
 xMap/../Map/Resources/examples.map-z2effxa8.json
 x../../Resources/MapBox.bundle/examples.map-z2effxa8.json
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection61"Copy ../../Resources/MapBox.bundle/examples.map-z2effxa8.json80d45aedbc20b741^feb55cedbc20b741^---0#0#0#-19%DVTDocumentLocation2@140"file://localhost/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/examples.map-z2effxa8.json000000000080d041^1100"CpResource Map/../Map/Resources/examples.map-z2effxa8.json ../../Resources/MapBox.bundle/examples.map-z2effxa8.json    cd "/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/heroku/bin:/Applications/Postgres.app/Contents/MacOS/bin:/Users/bassemreda/.rvm/gems/ruby-1.9.3-p194/bin:/Users/bassemreda/.rvm/gems/ruby-1.9.3-p194@global/bin:/Users/bassemreda/.rvm/rubies/ruby-1.9.3-p194/bin:/Users/bassemreda/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-debug-symbols -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks "/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/Map/../Map/Resources/examples.map-z2effxa8.json" "/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle"36"6354EEF9-3DE9-45FB-8E1A-DCF6B139F643-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection61"Copy ../../Resources/MapBox.bundle/examples.map-z2effxa8.jsoneba8dea10436b741^9566dfa10436b741^---0#0#0#-19%DVTDocumentLocation2@150"file://localhost/Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/examples.map-z2effxa8.json0000000000000000^895"CpResource Map/../Map/Resources/examples.map-z2effxa8.json ../../Resources/MapBox.bundle/examples.map-z2effxa8.json    cd /Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-debug-symbols -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks /Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/Map/../Map/Resources/examples.map-z2effxa8.json /Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle36"CE257B10-7AA5-48DC-A7F8-B3A120685C92-
 
 CCpResource Map/../Map/Resources/examples.map-zswgei2n.json ../../Resources/MapBox.bundle/examples.map-zswgei2n.json
-s388021485.362515
-e388021485.364941
+s389416097.873831
+e389416097.876544
 r1
 xCpResource
 xMap/../Map/Resources/examples.map-zswgei2n.json
 x../../Resources/MapBox.bundle/examples.map-zswgei2n.json
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection61"Copy ../../Resources/MapBox.bundle/examples.map-zswgei2n.jsoncbf75cedbc20b741^c66c5dedbc20b741^---0#0#0#-19%DVTDocumentLocation2@140"file://localhost/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/examples.map-zswgei2n.json000000000080d041^1100"CpResource Map/../Map/Resources/examples.map-zswgei2n.json ../../Resources/MapBox.bundle/examples.map-zswgei2n.json    cd "/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/heroku/bin:/Applications/Postgres.app/Contents/MacOS/bin:/Users/bassemreda/.rvm/gems/ruby-1.9.3-p194/bin:/Users/bassemreda/.rvm/gems/ruby-1.9.3-p194@global/bin:/Users/bassemreda/.rvm/rubies/ruby-1.9.3-p194/bin:/Users/bassemreda/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-debug-symbols -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks "/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/Map/../Map/Resources/examples.map-zswgei2n.json" "/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle"36"866DD49E-38C6-4B8C-9C31-07B88A6C0981-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection61"Copy ../../Resources/MapBox.bundle/examples.map-zswgei2n.jsona5dadfa10436b741^fe64e0a10436b741^---0#0#0#-19%DVTDocumentLocation2@150"file://localhost/Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle/examples.map-zswgei2n.json0000000000000000^895"CpResource Map/../Map/Resources/examples.map-zswgei2n.json ../../Resources/MapBox.bundle/examples.map-zswgei2n.json    cd /Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-debug-symbols -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks /Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/Map/../Map/Resources/examples.map-zswgei2n.json /Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle36"1F81DFA1-5776-40E5-A148-6362D0BF3E6D-
 
-CTouch /Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle
-s388021485.398781
-e388021485.405033
+CTouch /Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle
+s389416097.902706
+e389416097.908407
 r1
 xTouch
-x/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection103"Touch /Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle7e3666edbc20b741^1db067edbc20b741^---0#0#0#--686"Touch ../../Resources/MapBox.bundle    cd "/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/heroku/bin:/Applications/Postgres.app/Contents/MacOS/bin:/Users/bassemreda/.rvm/gems/ruby-1.9.3-p194/bin:/Users/bassemreda/.rvm/gems/ruby-1.9.3-p194@global/bin:/Users/bassemreda/.rvm/rubies/ruby-1.9.3-p194/bin:/Users/bassemreda/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    /usr/bin/touch -c "/Users/bassemreda/Dropbox/@Projects/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle"36"C45D108B-7F87-4798-AB34-872DE29F310A-
+x/Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection113"Touch /Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle622ce7a10436b741^f88ce8a10436b741^---0#0#0#--473"Touch ../../Resources/MapBox.bundle    cd /Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    /usr/bin/touch -c /Users/st396/Documents/SVA_project/App/MapBox/stourvalley/Pods/MapBox/MapView/../../Resources/MapBox.bundle36"01F3767B-FB8D-4BF5-BC3A-D21F59D5034E-
 

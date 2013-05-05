@@ -12,8 +12,14 @@
 #import "SVMenuViewController.h"
 #import "NVSlideMenuController.h"
 #import "EventDataModel.h"
+#import "ArtistDataModel.h"
+#import "ArtInstallationDataModel.h"
 
-
+enum {
+    SVAartists = 0,
+    SVAinstallations,
+    SVAevents,
+};
 
 @implementation SVAppDelegate
 
@@ -31,13 +37,17 @@
     self.window.rootViewController = slideController;
     [self.window makeKeyAndVisible];
     
-    [self checkEventsData];
+    //[self checkEventsData];
+   
+    [self checkDataByContext:[self artistContext] atModelIndex:SVAartists];
+    [self checkDataByContext:[self artInstallationContext] atModelIndex:SVAinstallations];
+    [self checkDataByContext:[self eventContext] atModelIndex:SVAevents];
     
     return YES;
 }
 
 
-- (void)checkEventsData
+/*- (void)checkEventsData
 {
     eventContext = [[EventDataModel sharedDataModel] mainContext];
     allEvents = nil;
@@ -70,6 +80,109 @@
     }
 
 }
+ */
+
+- (void)checkDataByContext:(NSManagedObjectContext *)mngContext atModelIndex:(NSInteger)modelIndex
+{
+    //eventContext = [[EventDataModel sharedDataModel] mainContext];
+    allObjects = nil;
+    if(mngContext){
+         NSLog(@" Appdeligate Context is ready to use %d", modelIndex);
+    switch (modelIndex) {
+        case SVAartists:
+        {
+            allObjects = [[ArtistDataModel sharedDataModel] loadAllArtists];
+            
+            if (allObjects.count == 0) {
+                NSLog(@"Artist entity is empty");
+                [[ArtistDataModel sharedDataModel] creatArtists];
+                allObjects = [[ArtistDataModel sharedDataModel] loadAllArtists];
+                NSLog(@" %d Artists created", allObjects.count);
+                
+            }else{
+                NSInteger currentEvNum = [[ArtistDataModel sharedDataModel] arrayForObject].count;
+                if (allObjects.count != currentEvNum) {
+                    NSLog(@"Artist.entity diff, current artists %d, Stored artits %d ",currentEvNum, allObjects.count);
+                    [[ArtistDataModel sharedDataModel] clearDataForEntity];
+                    [[ArtistDataModel sharedDataModel] creatArtists];
+                    allObjects = [[ArtistDataModel sharedDataModel] loadAllArtists];
+                    NSLog(@"Updated %d artists CoreData", allObjects.count);
+                }
+                
+            }
+        }
+            break;
+            
+        case SVAinstallations:
+        {
+            allObjects = [[ArtInstallationDataModel sharedDataModel] loadAllArtInstallations];
+            
+            if (allObjects.count == 0) {
+                NSLog(@"ArtInstallationDataModel entity is empty");
+                [[ArtInstallationDataModel sharedDataModel] createArtInstallations];
+                allObjects = [[ArtInstallationDataModel sharedDataModel] loadAllArtInstallations];
+                NSLog(@" %d ArtInstallation created", allObjects.count);
+                
+            }else{
+                NSInteger currentEvNum = [[ArtInstallationDataModel sharedDataModel] arrayForObject].count;
+                if (allObjects.count != currentEvNum) {
+                    NSLog(@"ArtInstallation.entity diff, current ArtInstallation %d, Stored ArtInstallation %d ",currentEvNum, allObjects.count);
+                    [[ArtInstallationDataModel sharedDataModel] clearDataForEntity];
+                    [[ArtInstallationDataModel sharedDataModel] createArtInstallations];
+                    allObjects = [[EventDataModel sharedDataModel] loadAllArtInstallations];
+                    NSLog(@"Updated %d ArtInstallation CoreData", allObjects.count);
+                }
+                
+            }
+        }
+            break;
+            
+        case SVAevents:
+        {
+            allObjects = [[EventDataModel sharedDataModel] getAllEvents];
+            
+            if (allObjects.count == 0) {
+                NSLog(@"Events entity is empty");
+                [[EventDataModel sharedDataModel] creatEvents];
+                allObjects = [[EventDataModel sharedDataModel] getAllEvents];
+                NSLog(@" %d events created", allObjects.count);
+                
+            }else{
+                NSInteger currentEvNum = [[EventDataModel sharedDataModel] arrayForObject].count;
+                if (allObjects.count != currentEvNum) {
+                    NSLog(@"Event.entity diff, current events %d, Stored events %d ",currentEvNum, allObjects.count);
+                    [[EventDataModel sharedDataModel] clearAllEvents];
+                    [[EventDataModel sharedDataModel] creatEvents];
+                    allObjects = [[EventDataModel sharedDataModel] getAllEvents];
+                    NSLog(@"Updated %d events CoreData", allObjects.count);
+                }
+                
+            }
+        }
+            break;
+    }
+    
+    }else{
+        NSLog(@"eventContext == nil, entity not found");
+    }
+    
+}
+
+-(NSManagedObjectContext *)artistContext
+{
+    return [[ArtistDataModel sharedDataModel] mainContext];
+}
+
+-(NSManagedObjectContext *)artInstallationContext
+{
+    return [[ArtInstallationDataModel sharedDataModel] mainContext];
+}
+
+-(NSManagedObjectContext *)eventContext
+{
+    return [[EventDataModel sharedDataModel] mainContext];
+}
+
 
 
 - (void)applicationWillResignActive:(UIApplication *)application

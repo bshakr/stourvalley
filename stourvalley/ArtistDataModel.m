@@ -169,6 +169,31 @@
     
 }
 
+- (void) clearDataForEntity
+{
+    // Define our table/entity to use
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Artist" inManagedObjectContext:_mainContext];
+    // Setup the fetch request
+    NSFetchRequest *request = [[NSFetchRequest alloc] init];
+    [request setEntity:entity];
+    
+    NSError *error;
+    NSArray *results = [[_mainContext executeFetchRequest:request error:&error] mutableCopy];
+    
+    //[allCars setIncludesPropertyValues:NO]; //only fetch the managedObjectID
+    
+    //error handling goes here
+    for (NSManagedObject * obj in results) {
+        [_mainContext deleteObject:obj];
+    }
+    
+    [_mainContext save:nil];
+    
+    _allArtits = [[NSMutableArray alloc] initWithArray:results];
+    NSLog(@"Deleted all artists : %d", _allArtits.count);
+    
+}
+
 - (id)insertInManagedObjectContext:(NSManagedObjectContext *)moc_
 {
     NSParameterAssert(moc_);

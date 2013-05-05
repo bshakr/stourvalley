@@ -16,6 +16,7 @@
 
 - (NSArray *)loadAllArtInstallations;
 - (void)createArtInstallations;
+- (void) clearDataForEntity;
 
 @property (nonatomic, readonly) NSManagedObjectContext *mainContext;
 @property (nonatomic, readonly) NSPersistentStoreCoordinator *persistentStoreCoordinator;

@@ -11,6 +11,7 @@
 #import "imageCollectionView.h"
 @class EventDataModel;
 @class SVAWebView;
+//@class PopupViewController;
 
 @interface SVAEventDetailViewController : UIViewController <UITableViewDataSource, UITableViewDelegate,
 UICollectionViewDataSource, UICollectionViewDelegate>
@@ -28,6 +29,7 @@ UICollectionViewDataSource, UICollectionViewDelegate>
 @property (strong, nonatomic) IBOutlet UITableView *eventTableView;
 @property (nonatomic, strong) imageCollectionView *collectionView;
 @property (strong, nonatomic) SVAWebView *webView;
+//@property (strong, nonatomic) PopupViewController *popUpView;
 
 
 @end
