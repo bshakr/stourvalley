@@ -85,7 +85,6 @@
     //Share DataModel
     context = [[ArtistDataModel sharedDataModel] mainContext];
     allArtists = nil;
-    
     if(context){
         NSLog(@"Context is ready to use");
         allArtists = [[self shareArtist] loadAllArtists];
@@ -93,9 +92,7 @@
             [[ArtistDataModel sharedDataModel] creatArtists];
             allArtists = [[self shareArtist] loadAllArtists];
             
-        }
-        
-        
+        }        
         _nameArray = [allArtists valueForKey:@"name"];
         _detailArray = [allArtists valueForKey:@"info"];
         _stDateArray = [allArtists valueForKey:@"commissionDate"];
@@ -123,8 +120,6 @@
     return 1;
     
 }
-
-
 
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView
@@ -211,7 +206,6 @@
     transition.subtype = kCATransitionFromBottom;
     [self.navigationController.view.layer addAnimation:transition forKey:nil];
     [self.navigationController pushViewController:self.artistsDetailView animated:NO];
-    
     
 }
 

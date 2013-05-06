@@ -11,4 +11,6 @@
 
 @interface SVMapboxViewController : UIViewController
 
+- (void) loadData;
+
 @end

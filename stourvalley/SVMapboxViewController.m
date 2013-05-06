@@ -9,19 +9,18 @@
 #import "SVMapboxViewController.h"
 #import "Mapbox.h"
 #import "NVSlideMenuController.h"
-//#import "ArtInstallationDataModel.h"
-//#import "ArtistDataModel.h"
+#import "ArtInstallationDataModel.h"
+#import "ArtistDataModel.h"
 
 @interface SVMapboxViewController ()
 {
     NSManagedObjectContext *context;
-    NSManagedObjectContext *artistContext;
     NSArray *allInstallations;
-    NSArray *allArtists;
+    RMMapView *mapView;
     
 }
-//-(ArtInstallationDataModel *) shareInstallation;
-//-(ArtistDataModel *) shareArtist;
+-(ArtInstallationDataModel *) shareInstallation;
+-(ArtistDataModel *) shareArtist;
 
 @end
 
@@ -45,34 +44,6 @@
     UIImage *navBG = [UIImage imageNamed:@"navbar.jpg"];
     [self.navigationController.navigationBar setBackgroundImage:navBG forBarMetrics:UIBarMetricsDefault];
 
-   /* context = [[self shareInstallation ] mainContext];
-    artistContext = [[self shareArtist] mainContext];
-    
-    if(context && artistContext){
-        NSLog(@"Context is ready to use");
-        allInstallations = [[self shareInstallation] loadAllArtInstallations];
-        allArtists = [[self shareArtist] loadAllArtists];
-        
-        if (allInstallations.count == 0) {
-            
-            NSLog(@"No data, allInstallations is nil");
-            [[self shareInstallation] createArtInstallations];
-            NSLog(@"Inserted installations");
-            allInstallations = [[self shareInstallation] loadAllArtInstallations];
-            NSLog(@"allInstalltion = %d", allInstallations.count);
-        }
-        
-        if (allArtists.count == 0){
-            NSLog(@"No data, allArtists is nil");
-            [[self shareArtist] creatArtists];
-            NSLog(@"Inserted artists");
-            allArtists = [[self shareArtist] loadAllArtists];
-            NSLog(@"allArtist = %d", allArtists.count);
-        }
-        
-    }else{
-        NSLog(@"Load context failed");
-    }*/
     
     
     self.navigationItem.leftBarButtonItem = [self slideOutBarButton];
@@ -91,28 +62,67 @@
     
     [mapView addAnnotation:annotation];
     ***/
-    
+    [self initalizeMapView];
+}
+
+- (void) initalizeMapView
+{
     RMMBTilesSource *offlineSource = [[RMMBTilesSource alloc] initWithTileSetResource:@"stourvalley3" ofType:@"mbtiles"];
     CLLocationCoordinate2D initialLocation = CLLocationCoordinate2DMake(51.2133, 0.8963);
-
-    RMMapView *mapView = [[RMMapView alloc] initWithFrame:self.view.bounds andTilesource:offlineSource
-                          centerCoordinate:initialLocation zoomLevel:17 maxZoomLevel:19 minZoomLevel:13 backgroundImage:nil];
+    
+    mapView = [[RMMapView alloc] initWithFrame:self.view.bounds andTilesource:offlineSource
+                                         centerCoordinate:initialLocation zoomLevel:15 maxZoomLevel:19 minZoomLevel:13 backgroundImage:nil];
     
     mapView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
     mapView.adjustTilesForRetinaDisplay = YES;
-    [self.view addSubview:mapView];
-}
+    mapView.showsUserLocation = YES;
+    [self loadData];
+    [self loadAnnotations];
 
-/*-(ArtInstallationDataModel *) shareInstallation
+}
+-(void) loadData{
+    context = [[self shareInstallation ] mainContext];
+    
+    if(context){
+        NSLog(@"Context is ready to use");
+        allInstallations = [[self shareInstallation] loadAllArtInstallations];
+        
+        if (allInstallations.count == 0) {
+            
+            NSLog(@"No data, allInstallations is nil");
+            [[self shareInstallation] createArtInstallations];
+            NSLog(@"Inserted installations");
+            allInstallations = [[self shareInstallation] loadAllArtInstallations];
+            NSLog(@"allInstalltion = %d", allInstallations.count);
+        }
+    }else{
+        NSLog(@"Load context failed");
+    }
+
+}
+-(ArtInstallationDataModel *) shareInstallation
 {
     return [ArtInstallationDataModel sharedDataModel];
 }
 
--(ArtistDataModel *) shareArtist
+-(void) loadAnnotations
 {
-    return [ArtistDataModel sharedDataModel];
-}*/
+    for(id installation in allInstallations)
+    {
+        NSLog(@"The art installation latitude is : %@", [installation valueForKey:@"latitude"]);
+        double latitude = [[installation valueForKey:@"latitude"] doubleValue];
+        double longitude = [[installation valueForKey:@"longitude"] doubleValue];
+        NSString *name = [installation valueForKey:@"name"];
+        CLLocationCoordinate2D artCoordinate     = CLLocationCoordinate2DMake(latitude, longitude);
+        RMPointAnnotation *artAnnotation = [[RMPointAnnotation alloc] initWithMapView:mapView
+                                                                               coordinate:artCoordinate
+                                                                                 andTitle:name];
+        [mapView addAnnotation:artAnnotation];
 
+    }
+    [self.view addSubview:mapView];
+
+}
 
 - (void)didReceiveMemoryWarning
 {
@@ -134,6 +144,8 @@
 }
 
 #pragma mark - Event handlers
+
+
 
 - (void)slideOut:(id)sender {
     [self.slideMenuController toggleMenuAnimated:self];
