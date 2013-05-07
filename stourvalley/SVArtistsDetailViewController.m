@@ -299,7 +299,7 @@
         
         if (installationArray.count == 0) {
             UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Destination not found"
-                                                            message:@"The art commission has been claimed by the forest"
+                                                            message:@"This commission might be claimed by the forest. Please contact SVA staff for more detail."
                                                            delegate:nil
                                                   cancelButtonTitle:@"OK"
                                                   otherButtonTitles:nil];
