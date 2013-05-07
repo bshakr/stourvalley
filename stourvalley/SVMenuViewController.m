@@ -55,6 +55,18 @@ enum {
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
     return @"Menu";
 }
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
+    return 44;
+}
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
+    UIView *headerView = [[UIView alloc] initWithFrame:CGRectMake(0,0, 320, 44)];
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(40,10,300,24)];
+    label.backgroundColor = [UIColor clearColor];
+    label.textColor = [UIColor redColor];
+    label.text = @"Menu";
+    [headerView addSubview:label];
+    return headerView;
+}
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return 4;
