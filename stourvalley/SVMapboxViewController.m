@@ -78,7 +78,7 @@
     RMMBTilesSource *offlineSource = [[RMMBTilesSource alloc] initWithTileSetResource:@"stourvalley3" ofType:@"mbtiles"];
     
     mapView = [[RMMapView alloc] initWithFrame:self.view.bounds andTilesource:offlineSource
-                                         centerCoordinate:initialLocation zoomLevel:15 maxZoomLevel:19 minZoomLevel:13 backgroundImage:nil];
+                                         centerCoordinate:initialLocation zoomLevel:14 maxZoomLevel:18 minZoomLevel:14 backgroundImage:nil];
     
     mapView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
     mapView.adjustTilesForRetinaDisplay = YES;
