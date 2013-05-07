@@ -119,7 +119,8 @@ enum {
 - (void)showControllerClass:(Class)class {
     if ([self isShowingClass:class]) {
         [self.slideMenuController toggleMenuAnimated:self];
-    } else {
+    }
+    else {
         id mainVC = [[class alloc] init];
         UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:mainVC];
         [self.slideMenuController setContentViewController:nav animated:YES completion:nil];

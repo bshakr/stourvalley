@@ -17,6 +17,7 @@
     NSManagedObjectContext *context;
     NSArray *allInstallations;
     RMMapView *mapView;
+    CLLocationCoordinate2D initialLocation;
     
 }
 -(ArtInstallationDataModel *) shareInstallation;
@@ -26,6 +27,25 @@
 
 @implementation SVMapboxViewController
 
+
+-(id) initWithLatitude:(NSNumber*)latitude andLongitude:(NSNumber*)longitude
+{
+    self = [self init];
+    if (self)
+    {
+        initialLocation = CLLocationCoordinate2DMake([latitude doubleValue], [longitude doubleValue]);
+    }
+}
+-(id) init
+{
+    self = [super init];
+    if(self)
+    {
+        initialLocation = CLLocationCoordinate2DMake(51.2133, 0.8963);
+    }
+
+
+}
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];

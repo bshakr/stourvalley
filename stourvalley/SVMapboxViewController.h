@@ -11,6 +11,6 @@
 
 @interface SVMapboxViewController : UIViewController
 
+-(id) initWithLatitude:(NSNumber*)latitude andLongitude:(NSNumber*)longitude;
 - (void) loadData;
-
 @end
