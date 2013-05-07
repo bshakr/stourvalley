@@ -16,9 +16,20 @@
 #import "SVAWebView.h"
 #import "UIViewController+MJPopupViewController.h"
 #import "PopupViewController.h"
+#import "ArtInstallationDataModel.h"
+#import "SVMapboxViewController.h"
 
 
 @interface SVArtistsDetailViewController ()
+{
+    NSManagedObjectContext *context;
+    NSArray *installationArray;
+    float la, lo;
+    NSString *installationName;
+    NSMutableArray *arrayforLat;
+    NSMutableArray *arrayforLon;
+    
+}
 @property (nonatomic, strong) NSMutableDictionary *contentOffsetDictionary;
 
 @end
@@ -46,7 +57,7 @@
  [button setTintColor:[UIColor colorWithRed:187/255.0 green:83/255.0 blue:88/255.0 alpha:0.5]];
  return button;
  }
-*/
+ */
 
 
 - (void) viewWillAppear:(BOOL)animated
@@ -67,7 +78,7 @@
     UIImage *navBG = [UIImage imageNamed:@"navbar.jpg"];
     [self.navigationController.navigationBar setBackgroundImage:navBG forBarMetrics:UIBarMetricsDefault];
     [[UIBarButtonItem appearance] setTintColor:[UIColor colorWithRed:187/255.0 green:83/255.0 blue:88/255.0 alpha:0.5]];
-
+    
     //self.navigationItem.leftBarButtonItem = [self slideOutBarButton];
     
     [self.artistTableView registerNib:[self tableCellNib] forCellReuseIdentifier:@"TBCELL"];
@@ -98,6 +109,49 @@
     return [UINib nibWithNibName:@"collectionCell" bundle:nil];
 }
 
+- (ArtInstallationDataModel *) shareInstallation
+{
+    return [ArtInstallationDataModel sharedDataModel];
+}
+
+- (void) getInstallationforArtist
+{
+    //Share DataModel
+    context = [self.shareInstallation mainContext];
+    installationArray = nil;
+    NSString *thisArtist =  self.titleLabel ;
+    NSLog(@"This Artist is %@", thisArtist);
+    if(context){
+        NSLog(@"Context is ready to use");
+        installationArray = [[self shareInstallation] getLocationByName:thisArtist];
+        if (installationArray.count == 0) {
+            // [[ArtistDataModel sharedDataModel] creatArtists];
+            // allArtists = [[self shareArtist] loadAllArtists];
+            NSLog(@"Not found installation for %@", thisArtist);
+            
+        }else{
+            
+            NSLog(@"Found %d installation in db -> %@", installationArray.count, [[installationArray objectAtIndex:0] description]);
+            arrayforLat = [installationArray valueForKey:@"latitude"];
+            arrayforLon = [installationArray valueForKey:@"longitude"];
+            
+            
+            
+        }
+        // _nameArray = [allArtists valueForKey:@"name"];
+        // _detailArray = [allArtists valueForKey:@"info"];
+        // _stDateArray = [allArtists valueForKey:@"commissionDate"];
+        // _inumArray = [allArtists valueForKey:@"imageCount"];
+        
+        
+    }else{
+        NSLog(@"Context == nil");
+    }
+    
+}
+
+
+
 
 - (void)didReceiveMemoryWarning
 {
@@ -121,17 +175,17 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-   /* switch (section)
-    {
-        case 0:
-            return 1;
-            break;
-        case 1:
-            return 1;
-            break;
-    }
-    return 2;
-    */
+    /* switch (section)
+     {
+     case 0:
+     return 1;
+     break;
+     case 1:
+     return 1;
+     break;
+     }
+     return 2;
+     */
     return 1;
     
 }
@@ -179,7 +233,7 @@
             cell.tbImageView.layer.shouldRasterize = YES;
             //self.imageView.contentMode = UIViewContentModeScaleToFill;
             cell.tbImageView.clipsToBounds = YES;
-                       
+            
             
             NSString *avatar = [NSString stringWithFormat:@"%@-avt.jpg", self.imageTag];
             [cell.tbImageView setImage:[UIImage imageNamed:avatar]];
@@ -210,11 +264,11 @@
         
     }
     /*
-    if (indexPath.section ==2 && indexPath.row == 1) {
-        cell.mcellName.text = [NSString stringWithFormat:@"Get direction"];
-        [cell.mcellImage setImage:[UIImage imageNamed:@"directionIcon"]];
-        //cell.selectionStyle = UITableViewCellSelectionStyleGray;
-    }*/
+     if (indexPath.section ==2 && indexPath.row == 1) {
+     cell.mcellName.text = [NSString stringWithFormat:@"Get direction"];
+     [cell.mcellImage setImage:[UIImage imageNamed:@"directionIcon"]];
+     //cell.selectionStyle = UITableViewCellSelectionStyleGray;
+     }*/
     
     return cell;
     
@@ -237,31 +291,41 @@
     return 77;
 }
 
-/*
+
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (indexPath.section == 2 && indexPath.row == 0) {
-        // NSLog(@"link %@ length =%d", self.bookingLink, self.bookingLink.length);
-        if (self.bookingLink.length != 0 ) {
-            if (!self.webView) {
-                self.webView = [[SVAWebView alloc] initWithNibName:@"SVAWebView" bundle:nil];
+        [self getInstallationforArtist];
+        
+        if (installationArray.count == 0) {
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Destination not found"
+                                                            message:@"The art commission has been claimed by the forest"
+                                                           delegate:nil
+                                                  cancelButtonTitle:@"OK"
+                                                  otherButtonTitles:nil];
+            [alert show];
+            [self.artistTableView deselectRowAtIndexPath:[self.artistTableView indexPathForSelectedRow] animated:YES];
+        }else{
+            
+            la = [[arrayforLat objectAtIndex:0] floatValue];
+            lo = [[arrayforLon objectAtIndex:0] floatValue];
+            NSLog(@"lat/lon %f/%f", la,lo);
+            
+            if (!self.mapView) {
+                //initial lat/lon around carpark 51.2133, 0.8963
+                self.mapView = [[SVMapboxViewController alloc] initWithLatitude:[NSNumber numberWithFloat:la] andLongitude:[NSNumber numberWithFloat:lo]];
                 
             }
             
-            self.webView.address =  self.bookingLink;
-            self.webView.pagetitle = @"SVA Events";
-            [self.navigationController pushViewController:self.webView animated:YES];
-        }
-        else
-        {
-            //NSLog(@"Call SVA");
-            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"tel://01233664987 "]];
+            //self.webView.address =  self.bookingLink;
+            //self.webView.pagetitle = @"SVA Events";
+            [self.navigationController pushViewController:self.mapView animated:YES];
             
         }
         
     }
- 
-}*/
+    
+}
 
 
 #pragma mark - UICollectionViewDataSource Methods
@@ -306,37 +370,37 @@
 }
 
 #pragma mark - UICollectionViewDelegate
- - (BOOL)collectionView:(UICollectionView *)collectionView shouldHighlightItemAtIndexPath:(NSIndexPath *)indexPath
- {
- return YES;
- }
- 
- - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
- {
- // TODO: Select Item
-     
-     PopupViewController *popUpView = [[PopupViewController alloc] initWithNibName:@"PopupViewController" bundle:nil];
-     
-     NSString *iname = [NSString stringWithFormat:@"%@-%i.jpg",self.imageTag,indexPath.item];
-     popUpView.view.backgroundColor = [UIColor blackColor];
-     //popUpView.fullImageView.backgroundColor = [UIColor clearColor];
-     
-     
-     if ([UIImage imageNamed:iname]) {
-         
-         [popUpView.fullImageView setImage:[UIImage imageNamed:iname]];
-         NSLog(@"click at image : %@", iname);
-         
-     }else{
-         [self dismissPopupViewControllerWithanimationType:MJPopupViewAnimationFade];
-         
-     }
-     
-     
-     [self presentPopupViewController:popUpView animationType:MJPopupViewAnimationFade];
-     
+- (BOOL)collectionView:(UICollectionView *)collectionView shouldHighlightItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    return YES;
+}
 
- }
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    // TODO: Select Item
+    
+    PopupViewController *popUpView = [[PopupViewController alloc] initWithNibName:@"PopupViewController" bundle:nil];
+    
+    NSString *iname = [NSString stringWithFormat:@"%@-%i.jpg",self.imageTag,indexPath.item];
+    popUpView.view.backgroundColor = [UIColor blackColor];
+    //popUpView.fullImageView.backgroundColor = [UIColor clearColor];
+    
+    
+    if ([UIImage imageNamed:iname]) {
+        
+        [popUpView.fullImageView setImage:[UIImage imageNamed:iname]];
+        NSLog(@"click at image : %@", iname);
+        
+    }else{
+        [self dismissPopupViewControllerWithanimationType:MJPopupViewAnimationFade];
+        
+    }
+    
+    
+    [self presentPopupViewController:popUpView animationType:MJPopupViewAnimationFade];
+    
+    
+}
 
 #pragma mark - UIScrollViewDelegate Methods
 

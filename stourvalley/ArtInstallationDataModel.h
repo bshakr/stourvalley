@@ -17,10 +17,13 @@
 - (NSArray *)loadAllArtInstallations;
 - (void)createArtInstallations;
 - (void) clearDataForEntity;
+- (NSArray *) getLocationByName: (NSString *)artistName;
 
 @property (nonatomic, readonly) NSManagedObjectContext *mainContext;
 @property (nonatomic, readonly) NSPersistentStoreCoordinator *persistentStoreCoordinator;
 @property (nonatomic, retain) NSMutableArray *allArtInstallations;
+@property (nonatomic, retain) NSMutableArray *thisInstallation;
+
 
 - (NSString *)modelName;
 - (NSString *)pathToModel;

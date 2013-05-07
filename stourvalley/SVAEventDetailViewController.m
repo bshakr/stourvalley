@@ -16,12 +16,15 @@
 #import "SVAWebView.h"
 #import "UIViewController+MJPopupViewController.h"
 #import "PopupViewController.h"
+#import "SVMapboxViewController.h"
+//#import "ArtInstallationDataModel.h"
 
 
 
 @interface SVAEventDetailViewController ()
 {
-   
+    //NSManagedObjectContext *context;
+    //NSArray *installationArray;
 }
 @property (nonatomic, strong) NSMutableDictionary *contentOffsetDictionary;
 
@@ -70,19 +73,19 @@
     [self.navigationController.navigationBar setBackgroundImage:navBG forBarMetrics:UIBarMetricsDefault];
     
     self.navigationItem.leftBarButtonItem = [self slideOutBarButton];
-	    
+    
     [self.eventTableView registerNib:[self tableCellNib] forCellReuseIdentifier:@"TBCELL"];
     [self.eventTableView registerNib:[self menuCellNib] forCellReuseIdentifier:@"MenuCell"];
     //  [self.eventTableView registerClass:[imageTableCell class] forCellReuseIdentifier:CollectionViewCellIdentifier];
     [self.collectionView registerNib:[self imageCollectionCellNib] forCellWithReuseIdentifier:CollectionViewCellIdentifier];
-     
+    
     self.contentOffsetDictionary = [NSMutableDictionary dictionary];
     [self.eventTableView setBackgroundColor:[UIColor colorWithRed:250/255.0 green:249/255.0 blue:249/255.0 alpha:1.0]];
     
     self.eventTableView.delegate = self;
     [self.eventTableView reloadData];
     [self.collectionView reloadData];
-
+    
 }
 
 - (UINib *)tableCellNib {
@@ -105,6 +108,14 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
+/*- (ArtInstallationDataModel *) shareInstallation
+ {
+ return [ArtInstallationDataModel sharedDataModel];
+ }*/
+
+
 
 
 #pragma mark - Event handlers
@@ -226,7 +237,7 @@
 
 {
     if (indexPath.section == 2 && indexPath.row == 0) {
-       // NSLog(@"link %@ length =%d", self.bookingLink, self.bookingLink.length);
+        // NSLog(@"link %@ length =%d", self.bookingLink, self.bookingLink.length);
         if (self.bookingLink.length != 0 ) {
             if (!self.webView) {
                 self.webView = [[SVAWebView alloc] initWithNibName:@"SVAWebView" bundle:nil];
@@ -236,18 +247,30 @@
             self.webView.address =  self.bookingLink;
             self.webView.pagetitle = @"SVA Events";
             [self.navigationController pushViewController:self.webView animated:YES];
-            }
+        }
         else
         {
             //NSLog(@"Call SVA");
             [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"tel://01233664987 "]];
-           
+            
         }
-
+        
+    }if (indexPath.section == 2 && indexPath.row == 1) {
+        
+        if (!self.mapView) {
+            //initial lat/lon around carpark 51.2133, 0.8963
+            self.mapView = [[SVMapboxViewController alloc] initWithLatitude:[NSNumber numberWithFloat:51.2133f] andLongitude:[NSNumber numberWithFloat:0.8963f]];
+            
+        }
+        
+        //self.webView.address =  self.bookingLink;
+        //self.webView.pagetitle = @"SVA Events";
+        [self.navigationController pushViewController:self.mapView animated:YES];
+        
     }
-
-
-
+    
+    
+    
 }
 
 
@@ -255,7 +278,7 @@
 
 -(NSInteger)collectionView:(imageCollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-   
+    
     return  self.cellCount;
 }
 
@@ -268,8 +291,8 @@
     imv.backgroundColor = [UIColor clearColor];
     imv.opaque = NO;
     
-     NSString *iname = [NSString stringWithFormat:@"%@-%i.jpg",self.imageTag,indexPath.row];
-   
+    NSString *iname = [NSString stringWithFormat:@"%@-%i.jpg",self.imageTag,indexPath.row];
+    
     if ([UIImage imageNamed:iname]) {
         imv.image = [UIImage imageNamed:iname];
     }else{
@@ -293,36 +316,36 @@
 }
 
 #pragma mark - UICollectionViewDelegate
- - (BOOL)collectionView:(UICollectionView *)collectionView shouldHighlightItemAtIndexPath:(NSIndexPath *)indexPath
- {
- return YES;
- }
- 
- - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
- {
- // TODO: Select Item
-     PopupViewController *popUpView = [[PopupViewController alloc] initWithNibName:@"PopupViewController" bundle:nil];
-     
-     NSString *iname = [NSString stringWithFormat:@"%@-%i.jpg",self.imageTag,indexPath.item];
-     popUpView.view.backgroundColor = [UIColor blackColor];
-     //popUpView.fullImageView.backgroundColor = [UIColor clearColor];
-     
-     
-     if ([UIImage imageNamed:iname]) {
-                
-        [popUpView.fullImageView setImage:[UIImage imageNamed:iname]];
-         NSLog(@"click at image : %@", iname);
-         
-     }else{
-         [self dismissPopupViewControllerWithanimationType:MJPopupViewAnimationFade];
+- (BOOL)collectionView:(UICollectionView *)collectionView shouldHighlightItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    return YES;
+}
 
-     }
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    // TODO: Select Item
+    PopupViewController *popUpView = [[PopupViewController alloc] initWithNibName:@"PopupViewController" bundle:nil];
     
-
-     [self presentPopupViewController:popUpView animationType:MJPopupViewAnimationFade];
-   
-     
- }
+    NSString *iname = [NSString stringWithFormat:@"%@-%i.jpg",self.imageTag,indexPath.item];
+    popUpView.view.backgroundColor = [UIColor blackColor];
+    //popUpView.fullImageView.backgroundColor = [UIColor clearColor];
+    
+    
+    if ([UIImage imageNamed:iname]) {
+        
+        [popUpView.fullImageView setImage:[UIImage imageNamed:iname]];
+        NSLog(@"click at image : %@", iname);
+        
+    }else{
+        [self dismissPopupViewControllerWithanimationType:MJPopupViewAnimationFade];
+        
+    }
+    
+    
+    [self presentPopupViewController:popUpView animationType:MJPopupViewAnimationFade];
+    
+    
+}
 
 #pragma mark - UIScrollViewDelegate Methods
 

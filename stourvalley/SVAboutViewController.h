@@ -11,7 +11,7 @@
 @class SVAWebView;
 
 
-@interface SVAboutViewController : UIViewController <UICollectionViewDelegate, UICollectionViewDataSource>
+@interface SVAboutViewController : UIViewController <UICollectionViewDelegate, UICollectionViewDataSource, UIAlertViewDelegate>
 
 
 //@property (nonatomic, strong) NSOperationQueue *thumbnailQueue;

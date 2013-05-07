@@ -11,6 +11,9 @@
 #import "imageCollectionView.h"
 @class EventDataModel;
 @class SVAWebView;
+//@class ArtInstallationDataModel;
+
+@class SVMapboxViewController;
 //@class PopupViewController;
 
 @interface SVAEventDetailViewController : UIViewController <UITableViewDataSource, UITableViewDelegate,
@@ -24,12 +27,14 @@ UICollectionViewDataSource, UICollectionViewDelegate>
 @property (nonatomic, retain) NSString *bookingLink;
 @property (nonatomic) NSInteger cellCount;
 
+//- (ArtInstallationDataModel *) shareInstallation;
 
 
 @property (strong, nonatomic) IBOutlet UITableView *eventTableView;
 @property (nonatomic, strong) imageCollectionView *collectionView;
 @property (strong, nonatomic) SVAWebView *webView;
 //@property (strong, nonatomic) PopupViewController *popUpView;
+@property (strong, nonatomic) SVMapboxViewController *mapView;
 
 
 @end

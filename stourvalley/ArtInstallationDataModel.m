@@ -12,9 +12,9 @@
 
 @interface ArtInstallationDataModel()
 {
-   
+    
     ArtInstallation *artInst;
-   
+    
     
 }
 
@@ -140,11 +140,37 @@
         [NSException raise:@"Fetch data failed" format:@"Error : %@", [error localizedDescription]];
         NSLog(@"Error : %@", error);
     }
-   
+    
     _allArtInstallations = [[NSMutableArray alloc] initWithArray:results];
-     NSLog(@"ArtInstallations.all : %d", _allArtInstallations.count);
+    NSLog(@"ArtInstallations.all : %d", _allArtInstallations.count);
     
     return  _allArtInstallations;
+}
+
+- (NSArray *) getLocationByName: (NSString *)artistName
+{
+    // Define our table/entity to use
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"ArtInstallation" inManagedObjectContext:_mainContext];
+    
+    NSFetchRequest *request = [[NSFetchRequest alloc] init];
+    [request setEntity:entity];
+    request.predicate = [NSPredicate predicateWithFormat:@"artist = %@", artistName];
+    // request.predicate = [NSPredicate predicateWithFormat:
+    //                     @"country = %@ AND active = 1", country];
+    
+    NSError *error;
+    NSArray *results = [[_mainContext executeFetchRequest:request error:&error] mutableCopy];
+    if (!results) {
+        // Handle the error.
+        // This is a serious error and should advise the user to restart the application
+        [NSException raise:@"Fetch data failed" format:@"Error : %@", [error localizedDescription]];
+        NSLog(@"Error : %@", error);
+    }
+    
+    _thisInstallation = [[NSMutableArray alloc] initWithArray:results];
+    NSLog(@"ArtInstallations.byArtistName : %d", _thisInstallation.count);
+    
+    return  _thisInstallation;
 }
 
 -(void)createArtInstallations
@@ -160,7 +186,7 @@
         NSString *createDate = [obj objectForKey:@"creationDate"];
         NSString *info = [obj objectForKey:@"info"];
         
-       // NSLog(@"This is installation %@ by %@ at %@, %@  - %@ : %@", name, artist, lat, lon, createDate, info);
+        // NSLog(@"This is installation %@ by %@ at %@, %@  - %@ : %@", name, artist, lat, lon, createDate, info);
         artInst = [NSEntityDescription insertNewObjectForEntityForName:@"ArtInstallation" inManagedObjectContext:_mainContext];
         
         [artInst setName:name];
@@ -171,7 +197,7 @@
         [artInst setInfo:info];
         
         [_mainContext save:nil];
-
+        
         
     }
     NSLog(@"Created");
@@ -224,14 +250,14 @@
     
     NSArray *key = [NSArray arrayWithArray:[self arrayForKey]];
     NSArray *arrayObj = [NSArray arrayWithArray:[self arrayForObject]];
-   
+    
     for (int i = 0; i < [[self arrayForObject] count]; i++) {
         NSArray *obj = [NSArray arrayWithArray:[arrayObj objectAtIndex:i]];
         
         NSDictionary *dict = [NSDictionary dictionaryWithObjects:obj forKeys:key];
         [installations addObject:dict];
     }
-  
+    
     
     return installations;
 }
@@ -255,7 +281,7 @@
     
     
     NSArray *obj12 = [NSArray arrayWithObjects:@"Score for a Hole in the Ground", @"Jem Finer", @"2006 - 2011", @"51.223000", @"0.909833", @"An award-winning piece inspired by suikinkutsu, water chimes found in temple gardens of Japan, Score for a Hole in the Ground uses tuned percussive instruments, played by falling water, to create music. Finer describes his piece as “both music and an integrated part of the landscape and the forces that operate on it and in it",  nil];
-  
+    
     NSArray *obj13 = [NSArray arrayWithObjects:@"Super Kingdom", @"London Fieldworks", @"2008", @"51.224834", @"0.908333", @"Super Kingdom is a development of new animal habitats within King’s Wood. These luxury homes are modelled on the imperious palaces of Stalin, Ceauscescu and Mussolini and offer nesting and over-winter sites to native and migrant species.",  nil];
     
     NSArray *obj14 = [NSArray arrayWithObjects:@"Miracle of the Legs", @"Gregory Pryor", @"2009", @"51.222079", @"0.911522", @"Modelled on the legs of forest walkers, 3 wooden limbs appear high in the canopy of beech trees. This unexpected grafting echoes the iconography associated with Sts. Cosmas and Damian, patron saints of Challock’s parish church.",  nil];
@@ -263,7 +289,7 @@
     //obj2, obj4, obj6, obj8, obj11, obj12, obj13 from site survey
     //obj9, obj10, obj14 from SVA-google map
     NSArray *all = [NSArray arrayWithObjects:obj2, obj4, obj6, obj8, obj9, obj10, obj11, obj12, obj13, obj14, nil];
-   
+    
     return [NSArray arrayWithArray:all] ;
 }
 

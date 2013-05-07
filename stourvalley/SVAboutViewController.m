@@ -34,8 +34,8 @@ static NSString * const AboutCellIdentifier4 = @"socailMenuCell";
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
-         self.title = NSLocalizedString(@"About SVA", @"About SVA");
-
+        self.title = NSLocalizedString(@"About SVA", @"About SVA");
+        
     }
     return self;
 }
@@ -59,10 +59,11 @@ static NSString * const AboutCellIdentifier4 = @"socailMenuCell";
     UIImage *navBG = [UIImage imageNamed:@"navbar.jpg"];
     [self.navigationController.navigationBar setBackgroundImage:navBG forBarMetrics:UIBarMetricsDefault];
     
-
+    
     self.collectionView.backgroundColor = [UIColor colorWithWhite:0.90f alpha:1.0f];
     
     self.navigationItem.leftBarButtonItem = [self slideOutBarButton];
+    
     [self.collectionView setDelegate:self];
     [self.collectionView registerClass:[AboutCollectionCell class] forCellWithReuseIdentifier:AboutCellIdentifier];
     [self.collectionView registerNib:[UINib nibWithNibName:@"DetailCell" bundle:nil] forCellWithReuseIdentifier:AboutCellIdentifier2];
@@ -97,7 +98,7 @@ static NSString * const AboutCellIdentifier4 = @"socailMenuCell";
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView
                   cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-  
+    
     switch (indexPath.section) {
         case 0:
         {
@@ -115,7 +116,7 @@ static NSString * const AboutCellIdentifier4 = @"socailMenuCell";
             aboutCell.backgroundView = imv;
             return aboutCell;
             break;
-    
+            
             return aboutCell;
             break;
             
@@ -178,8 +179,16 @@ static NSString * const AboutCellIdentifier4 = @"socailMenuCell";
     }
     
     return nil;
-
     
+    
+}
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+    
+    
+    if (buttonIndex == 1) {
+        NSLog(@"making a call");
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"tel://01233664987 "]];
+    }
 }
 
 #pragma mark - UICollectionViewDelegate
@@ -195,7 +204,15 @@ static NSString * const AboutCellIdentifier4 = @"socailMenuCell";
     switch (indexPath.section) {
         case 2:
         {
-            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"tel://01233664987 "]];
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Contact StourValley Arts"
+                                                            message:@"Calling SVA office"
+                                                           delegate:self
+                                                  cancelButtonTitle:@"Cancel"
+                                                  otherButtonTitles:@"OK", nil];
+            [alert show];
+            
+            
+            //[[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"tel://01233664987 "]];
             break;
         }
         case 3:
@@ -204,55 +221,55 @@ static NSString * const AboutCellIdentifier4 = @"socailMenuCell";
                 {
                     //NSLog(@"Click to facebook");
                     
-                   // NSURL *urlApp = [NSURL URLWithString: [NSString stringWithFormat:@"%@", @"fb://profile/100000745144271"]];
-                   // if ([[UIApplication sharedApplication] canOpenURL:urlApp]){
-                     //   [[UIApplication sharedApplication] openURL:urlApp];
+                    // NSURL *urlApp = [NSURL URLWithString: [NSString stringWithFormat:@"%@", @"fb://profile/100000745144271"]];
+                    // if ([[UIApplication sharedApplication] canOpenURL:urlApp]){
+                    //   [[UIApplication sharedApplication] openURL:urlApp];
                     //}else{
-                      //  UIAlertView *noappAlert = [[UIAlertView alloc] initWithTitle:@"Facebook App Not Installed!" message:@"Please install the App on your iPhone." delegate:nil cancelButtonTitle:nil otherButtonTitles:@"Ok",nil];
-                      //  [noappAlert show];
+                    //  UIAlertView *noappAlert = [[UIAlertView alloc] initWithTitle:@"Facebook App Not Installed!" message:@"Please install the App on your iPhone." delegate:nil cancelButtonTitle:nil otherButtonTitles:@"Ok",nil];
+                    //  [noappAlert show];
+                    
+                    if (!self.webView) {
+                        self.webView = [[SVAWebView alloc] initWithNibName:@"SVAWebView" bundle:nil];
                         
-                        if (!self.webView) {
-                            self.webView = [[SVAWebView alloc] initWithNibName:@"SVAWebView" bundle:nil];
-                            
-                        }
-                        
-                        self.webView.address = @"https://www.facebook.com/stour.arts";
-                        self.webView.pagetitle = @"SVA Facebook";
-                        [self.navigationController pushViewController:self.webView animated:YES];
+                    }
+                    
+                    self.webView.address = @"https://www.facebook.com/stour.arts";
+                    self.webView.pagetitle = @"SVA Facebook";
+                    [self.navigationController pushViewController:self.webView animated:YES];
                     //}
                     break;
                 }
                     
                 case 1:
-                    {   
-                        if (!self.webView) {
-                            self.webView = [[SVAWebView alloc] initWithNibName:@"SVAWebView" bundle:nil];
-                            
-                        }
-                        
-                        self.webView.address =  @"http://vimeo.com/user3494787";
-                        self.webView.pagetitle = @"SVA Vimeo";
-                        [self.navigationController pushViewController:self.webView animated:YES];
-                        
-                        
-                        break;
+                {
+                    if (!self.webView) {
+                        self.webView = [[SVAWebView alloc] initWithNibName:@"SVAWebView" bundle:nil];
                         
                     }
+                    
+                    self.webView.address =  @"http://vimeo.com/user3494787";
+                    self.webView.pagetitle = @"SVA Vimeo";
+                    [self.navigationController pushViewController:self.webView animated:YES];
+                    
+                    
+                    break;
+                    
+                }
                 case 2:
-                    {
-                       
+                {
+                    
+                    
+                    if (!self.webView) {
+                        self.webView = [[SVAWebView alloc] initWithNibName:@"SVAWebView" bundle:nil];
                         
-                        if (!self.webView) {
-                            self.webView = [[SVAWebView alloc] initWithNibName:@"SVAWebView" bundle:nil];
-                            
-                        }
-                        
-                        self.webView.address =  @"https://soundcloud.com/sva";
-                        self.webView.pagetitle = @"SVA SoundCloud";
-                        [self.navigationController pushViewController:self.webView animated:YES];
-                        
-                        break;
                     }
+                    
+                    self.webView.address =  @"https://soundcloud.com/sva";
+                    self.webView.pagetitle = @"SVA SoundCloud";
+                    [self.navigationController pushViewController:self.webView animated:YES];
+                    
+                    break;
+                }
             }
             break;
     }

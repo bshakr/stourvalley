@@ -11,6 +11,8 @@
 #import "imageCollectionView.h"
 @class ArtistDataModel;
 //@class SVAWebView;
+@class ArtInstallationDataModel;
+@class SVMapboxViewController;
 
 @interface SVArtistsDetailViewController : UIViewController <UITableViewDataSource, UITableViewDelegate,
 UICollectionViewDataSource, UICollectionViewDelegate>
@@ -20,13 +22,16 @@ UICollectionViewDataSource, UICollectionViewDelegate>
 @property (nonatomic, retain) NSString *descLabel;
 @property (nonatomic, retain) NSString *dateLabel;
 @property (nonatomic, retain) NSString *imageTag;
+
 //@property (nonatomic, retain) NSString *bookingLink;
 @property (nonatomic) NSInteger cellCount;
 
-
+- (ArtInstallationDataModel *) shareInstallation;
+- (void) getInstallationforArtist;
 
 @property (strong, nonatomic) IBOutlet UITableView *artistTableView;
 @property (nonatomic, strong) imageCollectionView *collectionView;
 //@property (strong, nonatomic) SVAWebView *webView;
+@property (strong, nonatomic) SVMapboxViewController *mapView;
 
 @end
