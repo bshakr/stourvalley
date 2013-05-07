@@ -42,6 +42,7 @@
 		7F9C510E16F7275D00BAD5F7 /* SVMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F9C510D16F7275D00BAD5F7 /* SVMenuCell.m */; };
 		7F9C511016F74B6D00BAD5F7 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F9C510F16F74B6D00BAD5F7 /* MapKit.framework */; };
 		7F9C511216F7679B00BAD5F7 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F9C511116F7679B00BAD5F7 /* CoreLocation.framework */; };
+		7FC5B7AF17394A15002353DE /* UIImage+Shadow.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FC5B7AE17394A15002353DE /* UIImage+Shadow.m */; };
 		7FCD9B3E1732C8C40088A654 /* stourvalley3.mbtiles in Resources */ = {isa = PBXBuildFile; fileRef = 7FCD9B3D1732C8C40088A654 /* stourvalley3.mbtiles */; };
 		BA05A951173311A300927C4F /* event1-3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BA05A950173311A300927C4F /* event1-3.jpg */; };
 		BA05A953173311AA00927C4F /* event1-4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BA05A952173311AA00927C4F /* event1-4.jpg */; };
@@ -256,6 +257,8 @@
 		7F9C510D16F7275D00BAD5F7 /* SVMenuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVMenuCell.m; sourceTree = "<group>"; };
 		7F9C510F16F74B6D00BAD5F7 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		7F9C511116F7679B00BAD5F7 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		7FC5B7AD17394A15002353DE /* UIImage+Shadow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Shadow.h"; sourceTree = "<group>"; };
+		7FC5B7AE17394A15002353DE /* UIImage+Shadow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Shadow.m"; sourceTree = "<group>"; };
 		7FCD9B3D1732C8C40088A654 /* stourvalley3.mbtiles */ = {isa = PBXFileReference; lastKnownFileType = file; path = stourvalley3.mbtiles; sourceTree = "<group>"; };
 		BA05A950173311A300927C4F /* event1-3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "event1-3.jpg"; sourceTree = "<group>"; };
 		BA05A952173311AA00927C4F /* event1-4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "event1-4.jpg"; sourceTree = "<group>"; };
@@ -602,6 +605,8 @@
 				7F0C3E5F1720BDF000C28B59 /* SVMapboxViewController.m */,
 				7F10959F17390CC900A9F2BD /* SVMapAnnotation.h */,
 				7F1095A017390CC900A9F2BD /* SVMapAnnotation.m */,
+				7FC5B7AD17394A15002353DE /* UIImage+Shadow.h */,
+				7FC5B7AE17394A15002353DE /* UIImage+Shadow.m */,
 			);
 			name = Map;
 			sourceTree = "<group>";
@@ -1149,6 +1154,7 @@
 				BA0F022B1735B4E600859A35 /* SVArtistsDetailViewController.m in Sources */,
 				BAA658A817360567006C2923 /* PopupViewController.m in Sources */,
 				7F1095A117390CC900A9F2BD /* SVMapAnnotation.m in Sources */,
+				7FC5B7AF17394A15002353DE /* UIImage+Shadow.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

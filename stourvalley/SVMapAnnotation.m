@@ -7,10 +7,20 @@
 //
 
 #import "SVMapAnnotation.h"
-
+#import <CoreGraphics/CoreGraphics.h>
 #import "RMMarker.h"
+#import "UIImage+Shadow.h"
 
 @implementation SVMapAnnotation
+- (id)initWithMapView:(RMMapView *)aMapView coordinate:(CLLocationCoordinate2D)aCoordinate andTitle:(NSString *)aTitle andImageName:(NSString *)imageName
+{
+    self = [super initWithMapView:aMapView coordinate:aCoordinate andTitle:aTitle];
+    if(self)
+    {
+        self.markerImageName = imageName;
+    }
+    return self;
+}
 - (void)setLayer:(RMMapLayer *)newLayer
 {
     if ( ! newLayer)
@@ -21,8 +31,9 @@
 {
     if ( ! [super layer])
     {
-        UIImage *markerImage = [UIImage imageNamed:@"map-marker.png"];
-        RMMarker *marker = [[RMMarker alloc] initWithUIImage:markerImage];
+        UIImage *markerImage = [UIImage imageNamed:self.markerImageName];
+        UIImage *shadowMarkerImage = [markerImage imageWithShadow];
+        RMMarker *marker = [[RMMarker alloc] initWithUIImage:shadowMarkerImage];
         
         marker.canShowCallout = YES;
         
@@ -31,6 +42,5 @@
     
     return [super layer];
 }
-
 
 @end

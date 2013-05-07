@@ -113,6 +113,7 @@
 
 -(void) loadAnnotations
 {
+    NSUInteger count = 0;
     for(id installation in allInstallations)
     {
         NSLog(@"The art installation latitude is : %@", [installation valueForKey:@"latitude"]);
@@ -120,10 +121,14 @@
         double longitude = [[installation valueForKey:@"longitude"] doubleValue];
         NSString *name = [installation valueForKey:@"name"];
         CLLocationCoordinate2D artCoordinate     = CLLocationCoordinate2DMake(latitude, longitude);
+        NSString *imageName = [NSString stringWithFormat:@"install%d.png",count];
         SVMapAnnotation *artAnnotation = [[SVMapAnnotation alloc] initWithMapView:mapView
                                                                                coordinate:artCoordinate
-                                                                                 andTitle:name];
+                                                                                 andTitle:name
+                                                                                andImageName:imageName];
+
         [mapView addAnnotation:artAnnotation];
+        count++;
 
     }
     [self.view addSubview:mapView];
