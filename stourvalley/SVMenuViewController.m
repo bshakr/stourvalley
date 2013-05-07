@@ -61,7 +61,7 @@ enum {
 }
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
     UIView *headerView = [[UIView alloc] initWithFrame:CGRectMake(0,0, 320, 44)];
-    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(40,10,300,24)];
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(70,10,300,24)];
     label.backgroundColor = [UIColor clearColor];
     label.textColor = [UIColor colorWithR:187 g:83 b:88 a:1.0];
     label.text = @"Stour Valley Arts";
@@ -76,18 +76,22 @@ enum {
 - (void)configureCell:(SVMenuCell *)cell forIndexPath:(NSIndexPath *)indexPath {
     switch (indexPath.row) {
         case MenuMapRow:
+            cell.icon.image = [UIImage  imageNamed:@"map-icon.png"];
             cell.label.text = @"Map";
             break;
 
         case MenuEventRow:
+            cell.icon.image = [UIImage  imageNamed:@"calendar-icon.png"];
             cell.label.text = @"Events";
             break;
     
         case MenuArtistRow:
+            cell.icon.image = [UIImage  imageNamed:@"exhibition-icon.png"];
             cell.label.text = @"Artist Commissions";
             break;
             
         case MenuAboutRow:
+            cell.icon.image = [UIImage  imageNamed:@"about-icon.png"];
             cell.label.text = @"About SVA";
             break;
             

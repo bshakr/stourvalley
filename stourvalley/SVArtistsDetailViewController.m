@@ -75,7 +75,7 @@
 {
     [super viewDidLoad];
     
-    UIImage *navBG = [UIImage imageNamed:@"navbar.jpg"];
+    UIImage *navBG = [UIImage imageNamed:@"navbar.png"];
     [self.navigationController.navigationBar setBackgroundImage:navBG forBarMetrics:UIBarMetricsDefault];
     [[UIBarButtonItem appearance] setTintColor:[UIColor colorWithRed:187/255.0 green:83/255.0 blue:88/255.0 alpha:0.5]];
     

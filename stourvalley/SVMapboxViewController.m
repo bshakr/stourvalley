@@ -64,7 +64,7 @@
 	// Do any additional setup after loading the view.
     
     //Fetch data from datamodel
-    UIImage *navBG = [UIImage imageNamed:@"navbar.jpg"];
+    UIImage *navBG = [UIImage imageNamed:@"navbar.png"];
     [self.navigationController.navigationBar setBackgroundImage:navBG forBarMetrics:UIBarMetricsDefault];
 
     

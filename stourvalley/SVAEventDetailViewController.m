@@ -69,7 +69,7 @@
 {
     [super viewDidLoad];
     
-    UIImage *navBG = [UIImage imageNamed:@"navbar.jpg"];
+    UIImage *navBG = [UIImage imageNamed:@"navbar.png"];
     [self.navigationController.navigationBar setBackgroundImage:navBG forBarMetrics:UIBarMetricsDefault];
     
     self.navigationItem.leftBarButtonItem = [self slideOutBarButton];
