@@ -18,6 +18,7 @@
 		7F1095A51739108800A9F2BD /* map-marker@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F1095A31739108800A9F2BD /* map-marker@2x.png */; };
 		7F109E411700B6A6008C0048 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F109E401700B6A6008C0048 /* CoreData.framework */; };
 		7F109E441700B716008C0048 /* Stourvalley.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7F109E421700B716008C0048 /* Stourvalley.xcdatamodeld */; };
+		7F1354DC173962D8005AA92E /* UIColor+RGB.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F1354DB173962D8005AA92E /* UIColor+RGB.m */; };
 		7F1DFD6B1733AB5600B1C860 /* menu-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F1DFD691733AB5600B1C860 /* menu-bg.png */; };
 		7F1DFD6C1733AB5600B1C860 /* menu-bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F1DFD6A1733AB5600B1C860 /* menu-bg@2x.png */; };
 		7F1DFD701733BC9C00B1C860 /* SVMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F1DFD6F1733BC9C00B1C860 /* SVMenuCell.xib */; };
@@ -224,6 +225,8 @@
 		7F1095A31739108800A9F2BD /* map-marker@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "map-marker@2x.png"; sourceTree = "<group>"; };
 		7F109E401700B6A6008C0048 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		7F109E431700B716008C0048 /* Stourvalley.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Stourvalley.xcdatamodel; sourceTree = "<group>"; };
+		7F1354DA173962D8005AA92E /* UIColor+RGB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+RGB.h"; sourceTree = "<group>"; };
+		7F1354DB173962D8005AA92E /* UIColor+RGB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+RGB.m"; sourceTree = "<group>"; };
 		7F1DFD691733AB5600B1C860 /* menu-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu-bg.png"; sourceTree = "<group>"; };
 		7F1DFD6A1733AB5600B1C860 /* menu-bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu-bg@2x.png"; sourceTree = "<group>"; };
 		7F1DFD6F1733BC9C00B1C860 /* SVMenuCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SVMenuCell.xib; sourceTree = "<group>"; };
@@ -537,6 +540,10 @@
 		7F1F629F16EE4DBA00018974 /* stourvalley */ = {
 			isa = PBXGroup;
 			children = (
+				7FC5B7AD17394A15002353DE /* UIImage+Shadow.h */,
+				7FC5B7AE17394A15002353DE /* UIImage+Shadow.m */,
+				7F1354DA173962D8005AA92E /* UIColor+RGB.h */,
+				7F1354DB173962D8005AA92E /* UIColor+RGB.m */,
 				7FCD9B3D1732C8C40088A654 /* stourvalley3.mbtiles */,
 				7F109E451700BFBB008C0048 /* Model Class */,
 				7F9C510416F725AD00BAD5F7 /* Images */,
@@ -605,8 +612,6 @@
 				7F0C3E5F1720BDF000C28B59 /* SVMapboxViewController.m */,
 				7F10959F17390CC900A9F2BD /* SVMapAnnotation.h */,
 				7F1095A017390CC900A9F2BD /* SVMapAnnotation.m */,
-				7FC5B7AD17394A15002353DE /* UIImage+Shadow.h */,
-				7FC5B7AE17394A15002353DE /* UIImage+Shadow.m */,
 			);
 			name = Map;
 			sourceTree = "<group>";
@@ -1155,6 +1160,7 @@
 				BAA658A817360567006C2923 /* PopupViewController.m in Sources */,
 				7F1095A117390CC900A9F2BD /* SVMapAnnotation.m in Sources */,
 				7FC5B7AF17394A15002353DE /* UIImage+Shadow.m in Sources */,
+				7F1354DC173962D8005AA92E /* UIColor+RGB.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

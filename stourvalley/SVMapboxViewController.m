@@ -12,6 +12,7 @@
 #import "ArtInstallationDataModel.h"
 #import "ArtistDataModel.h"
 #import "SVMapAnnotation.h"
+#import "UIColor+RGB.h"
 
 @interface SVMapboxViewController ()
 {
@@ -150,7 +151,7 @@
                                                                style:UIBarButtonItemStyleBordered
                                                               target:self
                                                               action:@selector(slideOut:)];
-    [button setTintColor:[UIColor colorWithRed:187/255.0 green:83/255.0 blue:88/255.0 alpha:0.5]];
+    [button setTintColor:[UIColor colorWithR:187 g:83 b:88 a:0.5]];
     return button;
 }
 

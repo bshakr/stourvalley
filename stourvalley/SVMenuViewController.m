@@ -12,6 +12,7 @@
 #import "SVMapboxViewController.h"
 #import "SVEventsViewController.h"
 #import "SVArtistsViewController.h"
+#import "UIColor+RGB.h"
 
 enum {
     MenuMapRow = 0,
@@ -62,8 +63,8 @@ enum {
     UIView *headerView = [[UIView alloc] initWithFrame:CGRectMake(0,0, 320, 44)];
     UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(40,10,300,24)];
     label.backgroundColor = [UIColor clearColor];
-    label.textColor = [UIColor redColor];
-    label.text = @"Menu";
+    label.textColor = [UIColor colorWithR:187 g:83 b:88 a:1.0];
+    label.text = @"Stour Valley Arts";
     [headerView addSubview:label];
     return headerView;
 }
