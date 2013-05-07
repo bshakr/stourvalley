@@ -11,6 +11,7 @@
 #import "NVSlideMenuController.h"
 #import "ArtInstallationDataModel.h"
 #import "ArtistDataModel.h"
+#import "SVMapAnnotation.h"
 
 @interface SVMapboxViewController ()
 {
@@ -119,7 +120,7 @@
         double longitude = [[installation valueForKey:@"longitude"] doubleValue];
         NSString *name = [installation valueForKey:@"name"];
         CLLocationCoordinate2D artCoordinate     = CLLocationCoordinate2DMake(latitude, longitude);
-        RMPointAnnotation *artAnnotation = [[RMPointAnnotation alloc] initWithMapView:mapView
+        SVMapAnnotation *artAnnotation = [[SVMapAnnotation alloc] initWithMapView:mapView
                                                                                coordinate:artCoordinate
                                                                                  andTitle:name];
         [mapView addAnnotation:artAnnotation];

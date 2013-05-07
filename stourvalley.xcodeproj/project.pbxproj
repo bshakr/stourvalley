@@ -13,6 +13,9 @@
 		7F0C3E501720BCA100C28B59 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F1F629B16EE4DBA00018974 /* Foundation.framework */; };
 		7F0C3E5D1720BDC600C28B59 /* libProj4.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F0C3E5C1720BDC600C28B59 /* libProj4.a */; };
 		7F0C3E601720BDF000C28B59 /* SVMapboxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F0C3E5F1720BDF000C28B59 /* SVMapboxViewController.m */; };
+		7F1095A117390CC900A9F2BD /* SVMapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F1095A017390CC900A9F2BD /* SVMapAnnotation.m */; };
+		7F1095A41739108800A9F2BD /* map-marker.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F1095A21739108800A9F2BD /* map-marker.png */; };
+		7F1095A51739108800A9F2BD /* map-marker@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F1095A31739108800A9F2BD /* map-marker@2x.png */; };
 		7F109E411700B6A6008C0048 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F109E401700B6A6008C0048 /* CoreData.framework */; };
 		7F109E441700B716008C0048 /* Stourvalley.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7F109E421700B716008C0048 /* Stourvalley.xcdatamodeld */; };
 		7F1DFD6B1733AB5600B1C860 /* menu-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F1DFD691733AB5600B1C860 /* menu-bg.png */; };
@@ -194,6 +197,10 @@
 		7F0C3E5C1720BDC600C28B59 /* libProj4.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libProj4.a; path = Pods/MapBox/Proj4/libProj4.a; sourceTree = "<group>"; };
 		7F0C3E5E1720BDF000C28B59 /* SVMapboxViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVMapboxViewController.h; sourceTree = "<group>"; };
 		7F0C3E5F1720BDF000C28B59 /* SVMapboxViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVMapboxViewController.m; sourceTree = "<group>"; };
+		7F10959F17390CC900A9F2BD /* SVMapAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVMapAnnotation.h; sourceTree = "<group>"; };
+		7F1095A017390CC900A9F2BD /* SVMapAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVMapAnnotation.m; sourceTree = "<group>"; };
+		7F1095A21739108800A9F2BD /* map-marker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "map-marker.png"; sourceTree = "<group>"; };
+		7F1095A31739108800A9F2BD /* map-marker@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "map-marker@2x.png"; sourceTree = "<group>"; };
 		7F109E401700B6A6008C0048 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		7F109E431700B716008C0048 /* Stourvalley.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Stourvalley.xcdatamodel; sourceTree = "<group>"; };
 		7F1DFD691733AB5600B1C860 /* menu-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu-bg.png"; sourceTree = "<group>"; };
@@ -553,6 +560,8 @@
 				7F1F630416EF66BF00018974 /* SVMapViewController.xib */,
 				7F0C3E5E1720BDF000C28B59 /* SVMapboxViewController.h */,
 				7F0C3E5F1720BDF000C28B59 /* SVMapboxViewController.m */,
+				7F10959F17390CC900A9F2BD /* SVMapAnnotation.h */,
+				7F1095A017390CC900A9F2BD /* SVMapAnnotation.m */,
 			);
 			name = Map;
 			sourceTree = "<group>";
@@ -572,6 +581,8 @@
 		7F9C510416F725AD00BAD5F7 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				7F1095A21739108800A9F2BD /* map-marker.png */,
+				7F1095A31739108800A9F2BD /* map-marker@2x.png */,
 				7F1DFD691733AB5600B1C860 /* menu-bg.png */,
 				7F1DFD6A1733AB5600B1C860 /* menu-bg@2x.png */,
 				7F3C5B181730182A00793A2D /* navbar.jpg */,
@@ -987,6 +998,8 @@
 				BA0F02C31735ED0D00859A35 /* Bethan Huws-2.jpg in Resources */,
 				BA0F02C51735ED2400859A35 /* Bethan Huws-3.jpg in Resources */,
 				BAA658A917360567006C2923 /* PopupViewController.xib in Resources */,
+				7F1095A41739108800A9F2BD /* map-marker.png in Resources */,
+				7F1095A51739108800A9F2BD /* map-marker@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1047,6 +1060,7 @@
 				BA0F021C17359EE300859A35 /* SVArtistsViewController.m in Sources */,
 				BA0F022B1735B4E600859A35 /* SVArtistsDetailViewController.m in Sources */,
 				BAA658A817360567006C2923 /* PopupViewController.m in Sources */,
+				7F1095A117390CC900A9F2BD /* SVMapAnnotation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
