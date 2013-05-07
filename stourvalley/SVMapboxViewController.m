@@ -35,6 +35,7 @@
     {
         initialLocation = CLLocationCoordinate2DMake([latitude doubleValue], [longitude doubleValue]);
     }
+    return self;
 }
 -(id) init
 {
@@ -44,7 +45,7 @@
         initialLocation = CLLocationCoordinate2DMake(51.2133, 0.8963);
     }
 
-
+    return self;
 }
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
